@@ -23,6 +23,9 @@
 		673626F82217225600E55B8D /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673626F72217225600E55B8D /* Storyboard.swift */; };
 		673626FB221725A200E55B8D /* RightNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673626FA221725A200E55B8D /* RightNavigationItem.swift */; };
 		673626FD2217277800E55B8D /* NavigationTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673626FC2217277800E55B8D /* NavigationTitleView.swift */; };
+		674C2235221743CD00DB7E3C /* LeftNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674C2234221743CD00DB7E3C /* LeftNavigationItem.swift */; };
+		674C2237221743D300DB7E3C /* FontName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674C2236221743D300DB7E3C /* FontName.swift */; };
+		674C223B2217441700DB7E3C /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 674C223A2217441700DB7E3C /* FontAwesome.otf */; };
 		67A5F64522172FFA00D13907 /* CreateTransformerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A5F64422172FFA00D13907 /* CreateTransformerViewController.swift */; };
 		67BB98EA221740A30011AA7D /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BB98E7221740A30011AA7D /* UIColor.swift */; };
 		67BB98EB221740A30011AA7D /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BB98E8221740A30011AA7D /* UIApplication.swift */; };
@@ -74,6 +77,9 @@
 		673626F72217225600E55B8D /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		673626FA221725A200E55B8D /* RightNavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightNavigationItem.swift; sourceTree = "<group>"; };
 		673626FC2217277800E55B8D /* NavigationTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTitleView.swift; sourceTree = "<group>"; };
+		674C2234221743CD00DB7E3C /* LeftNavigationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftNavigationItem.swift; sourceTree = "<group>"; };
+		674C2236221743D300DB7E3C /* FontName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontName.swift; sourceTree = "<group>"; };
+		674C223A2217441700DB7E3C /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
 		67A5F64422172FFA00D13907 /* CreateTransformerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTransformerViewController.swift; sourceTree = "<group>"; };
 		67BB98E7221740A30011AA7D /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		67BB98E8221740A30011AA7D /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
@@ -146,6 +152,7 @@
 		67041D6C221718C100BD9C91 /* Transformers */ = {
 			isa = PBXGroup;
 			children = (
+				674C22382217440100DB7E3C /* Resources */,
 				673626B522171FAC00E55B8D /* Constants */,
 				673626B122171EB100E55B8D /* ViewControllers */,
 				673626AE22171D9500E55B8D /* Extensions */,
@@ -208,6 +215,7 @@
 		673626B522171FAC00E55B8D /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				674C2236221743D300DB7E3C /* FontName.swift */,
 				673626B622171FD700E55B8D /* SharedInstances.swift */,
 				673626F72217225600E55B8D /* Storyboard.swift */,
 			);
@@ -217,10 +225,27 @@
 		673626F92217258500E55B8D /* NavigationViewItems */ = {
 			isa = PBXGroup;
 			children = (
+				674C2234221743CD00DB7E3C /* LeftNavigationItem.swift */,
 				673626FA221725A200E55B8D /* RightNavigationItem.swift */,
 				673626FC2217277800E55B8D /* NavigationTitleView.swift */,
 			);
 			path = NavigationViewItems;
+			sourceTree = "<group>";
+		};
+		674C22382217440100DB7E3C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				674C22392217440A00DB7E3C /* Font */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		674C22392217440A00DB7E3C /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				674C223A2217441700DB7E3C /* FontAwesome.otf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 		67A5F64322172FD800D13907 /* CreateTransformerViewController */ = {
@@ -364,6 +389,7 @@
 			files = (
 				67041D7B221718C100BD9C91 /* LaunchScreen.storyboard in Resources */,
 				67041D78221718C100BD9C91 /* Assets.xcassets in Resources */,
+				674C223B2217441700DB7E3C /* FontAwesome.otf in Resources */,
 				67041D73221718C100BD9C91 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -480,6 +506,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				674C2237221743D300DB7E3C /* FontName.swift in Sources */,
 				67BB98EB221740A30011AA7D /* UIApplication.swift in Sources */,
 				67BB98EC221740A30011AA7D /* Int.swift in Sources */,
 				67041D70221718C100BD9C91 /* ViewController.swift in Sources */,
@@ -491,6 +518,7 @@
 				673626B722171FD700E55B8D /* SharedInstances.swift in Sources */,
 				67BB98EA221740A30011AA7D /* UIColor.swift in Sources */,
 				673626FD2217277800E55B8D /* NavigationTitleView.swift in Sources */,
+				674C2235221743CD00DB7E3C /* LeftNavigationItem.swift in Sources */,
 				673626B422171ECA00E55B8D /* NavigationViewController.swift in Sources */,
 				67041D76221718C100BD9C91 /* Transformers.xcdatamodeld in Sources */,
 			);
