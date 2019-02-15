@@ -27,6 +27,8 @@
 		674C2237221743D300DB7E3C /* FontName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674C2236221743D300DB7E3C /* FontName.swift */; };
 		674C223B2217441700DB7E3C /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 674C223A2217441700DB7E3C /* FontAwesome.otf */; };
 		67A5F64522172FFA00D13907 /* CreateTransformerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A5F64422172FFA00D13907 /* CreateTransformerViewController.swift */; };
+		67AF1FF722174A9C00E78E4B /* CreateTransformerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AF1FF622174A9C00E78E4B /* CreateTransformerView.swift */; };
+		67AF1FF92217549B00E78E4B /* Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AF1FF82217549B00E78E4B /* Sizes.swift */; };
 		67BB98EA221740A30011AA7D /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BB98E7221740A30011AA7D /* UIColor.swift */; };
 		67BB98EB221740A30011AA7D /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BB98E8221740A30011AA7D /* UIApplication.swift */; };
 		67BB98EC221740A30011AA7D /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BB98E9221740A30011AA7D /* Int.swift */; };
@@ -81,6 +83,8 @@
 		674C2236221743D300DB7E3C /* FontName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontName.swift; sourceTree = "<group>"; };
 		674C223A2217441700DB7E3C /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
 		67A5F64422172FFA00D13907 /* CreateTransformerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTransformerViewController.swift; sourceTree = "<group>"; };
+		67AF1FF622174A9C00E78E4B /* CreateTransformerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTransformerView.swift; sourceTree = "<group>"; };
+		67AF1FF82217549B00E78E4B /* Sizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sizes.swift; sourceTree = "<group>"; };
 		67BB98E7221740A30011AA7D /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		67BB98E8221740A30011AA7D /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		67BB98E9221740A30011AA7D /* Int.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
@@ -152,6 +156,7 @@
 		67041D6C221718C100BD9C91 /* Transformers */ = {
 			isa = PBXGroup;
 			children = (
+				67AF1FF422174A7800E78E4B /* Views */,
 				674C22382217440100DB7E3C /* Resources */,
 				673626B522171FAC00E55B8D /* Constants */,
 				673626B122171EB100E55B8D /* ViewControllers */,
@@ -218,6 +223,7 @@
 				674C2236221743D300DB7E3C /* FontName.swift */,
 				673626B622171FD700E55B8D /* SharedInstances.swift */,
 				673626F72217225600E55B8D /* Storyboard.swift */,
+				67AF1FF82217549B00E78E4B /* Sizes.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -254,6 +260,22 @@
 				67A5F64422172FFA00D13907 /* CreateTransformerViewController.swift */,
 			);
 			path = CreateTransformerViewController;
+			sourceTree = "<group>";
+		};
+		67AF1FF422174A7800E78E4B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				67AF1FF522174A8700E78E4B /* CreateTransformerView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		67AF1FF522174A8700E78E4B /* CreateTransformerView */ = {
+			isa = PBXGroup;
+			children = (
+				67AF1FF622174A9C00E78E4B /* CreateTransformerView.swift */,
+			);
+			path = CreateTransformerView;
 			sourceTree = "<group>";
 		};
 		67BB98E6221740890011AA7D /* CommonExtensions */ = {
@@ -514,10 +536,12 @@
 				67041D6E221718C100BD9C91 /* AppDelegate.swift in Sources */,
 				673626B022171DBB00E55B8D /* AppDelegateExtension.swift in Sources */,
 				67A5F64522172FFA00D13907 /* CreateTransformerViewController.swift in Sources */,
+				67AF1FF722174A9C00E78E4B /* CreateTransformerView.swift in Sources */,
 				673626F82217225600E55B8D /* Storyboard.swift in Sources */,
 				673626B722171FD700E55B8D /* SharedInstances.swift in Sources */,
 				67BB98EA221740A30011AA7D /* UIColor.swift in Sources */,
 				673626FD2217277800E55B8D /* NavigationTitleView.swift in Sources */,
+				67AF1FF92217549B00E78E4B /* Sizes.swift in Sources */,
 				674C2235221743CD00DB7E3C /* LeftNavigationItem.swift in Sources */,
 				673626B422171ECA00E55B8D /* NavigationViewController.swift in Sources */,
 				67041D76221718C100BD9C91 /* Transformers.xcdatamodeld in Sources */,
