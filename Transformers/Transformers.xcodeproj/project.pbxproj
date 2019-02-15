@@ -17,6 +17,12 @@
 		67041D7B221718C100BD9C91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67041D79221718C100BD9C91 /* LaunchScreen.storyboard */; };
 		67041D86221718C100BD9C91 /* TransformersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67041D85221718C100BD9C91 /* TransformersTests.swift */; };
 		67041D91221718C100BD9C91 /* TransformersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67041D90221718C100BD9C91 /* TransformersUITests.swift */; };
+		673626B022171DBB00E55B8D /* AppDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673626AF22171DBB00E55B8D /* AppDelegateExtension.swift */; };
+		673626B422171ECA00E55B8D /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673626B322171ECA00E55B8D /* NavigationViewController.swift */; };
+		673626B722171FD700E55B8D /* SharedInstances.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673626B622171FD700E55B8D /* SharedInstances.swift */; };
+		673626F82217225600E55B8D /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673626F72217225600E55B8D /* Storyboard.swift */; };
+		673626FB221725A200E55B8D /* RightNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673626FA221725A200E55B8D /* RightNavigationItem.swift */; };
+		673626FD2217277800E55B8D /* NavigationTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673626FC2217277800E55B8D /* NavigationTitleView.swift */; };
 		DC68710E46FDE949EE5B6811 /* Pods_TransformersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E334CE754C7ABA4F12046F9 /* Pods_TransformersTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +64,12 @@
 		67041D8C221718C100BD9C91 /* TransformersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransformersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67041D90221718C100BD9C91 /* TransformersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformersUITests.swift; sourceTree = "<group>"; };
 		67041D92221718C100BD9C91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		673626AF22171DBB00E55B8D /* AppDelegateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateExtension.swift; sourceTree = "<group>"; };
+		673626B322171ECA00E55B8D /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		673626B622171FD700E55B8D /* SharedInstances.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedInstances.swift; sourceTree = "<group>"; };
+		673626F72217225600E55B8D /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		673626FA221725A200E55B8D /* RightNavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightNavigationItem.swift; sourceTree = "<group>"; };
+		673626FC2217277800E55B8D /* NavigationTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTitleView.swift; sourceTree = "<group>"; };
 		814D78B3851195A73CA23241 /* Pods-TransformersUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransformersUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TransformersUITests/Pods-TransformersUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9CEC778652FDD018406A3F18 /* Pods-Transformers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transformers.release.xcconfig"; path = "Pods/Target Support Files/Pods-Transformers/Pods-Transformers.release.xcconfig"; sourceTree = "<group>"; };
 		D1CEB5CAD0A6F8270C561235 /* Pods-Transformers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transformers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Transformers/Pods-Transformers.debug.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +138,9 @@
 		67041D6C221718C100BD9C91 /* Transformers */ = {
 			isa = PBXGroup;
 			children = (
+				673626B522171FAC00E55B8D /* Constants */,
+				673626B122171EB100E55B8D /* ViewControllers */,
+				673626AE22171D9500E55B8D /* Extensions */,
 				67041D6D221718C100BD9C91 /* AppDelegate.swift */,
 				67041D6F221718C100BD9C91 /* ViewController.swift */,
 				67041D71221718C100BD9C91 /* Main.storyboard */,
@@ -153,6 +168,49 @@
 				67041D92221718C100BD9C91 /* Info.plist */,
 			);
 			path = TransformersUITests;
+			sourceTree = "<group>";
+		};
+		673626AE22171D9500E55B8D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				673626AF22171DBB00E55B8D /* AppDelegateExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		673626B122171EB100E55B8D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				673626B222171EB800E55B8D /* NavigationViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		673626B222171EB800E55B8D /* NavigationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				673626F92217258500E55B8D /* NavigationViewItems */,
+				673626B322171ECA00E55B8D /* NavigationViewController.swift */,
+			);
+			path = NavigationViewController;
+			sourceTree = "<group>";
+		};
+		673626B522171FAC00E55B8D /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				673626B622171FD700E55B8D /* SharedInstances.swift */,
+				673626F72217225600E55B8D /* Storyboard.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		673626F92217258500E55B8D /* NavigationViewItems */ = {
+			isa = PBXGroup;
+			children = (
+				673626FA221725A200E55B8D /* RightNavigationItem.swift */,
+				673626FC2217277800E55B8D /* NavigationTitleView.swift */,
+			);
+			path = NavigationViewItems;
 			sourceTree = "<group>";
 		};
 		743F439576E34E05C7C0FAEE /* Pods */ = {
@@ -372,7 +430,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				67041D70221718C100BD9C91 /* ViewController.swift in Sources */,
+				673626FB221725A200E55B8D /* RightNavigationItem.swift in Sources */,
 				67041D6E221718C100BD9C91 /* AppDelegate.swift in Sources */,
+				673626B022171DBB00E55B8D /* AppDelegateExtension.swift in Sources */,
+				673626F82217225600E55B8D /* Storyboard.swift in Sources */,
+				673626B722171FD700E55B8D /* SharedInstances.swift in Sources */,
+				673626FD2217277800E55B8D /* NavigationTitleView.swift in Sources */,
+				673626B422171ECA00E55B8D /* NavigationViewController.swift in Sources */,
 				67041D76221718C100BD9C91 /* Transformers.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

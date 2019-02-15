@@ -9,10 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    let kTitle = "TRANFORMERS"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        NavigationViewController.shared.setTitle(title: kTitle)
+        NavigationViewController.shared.addPlusButton()
     }
 
 
