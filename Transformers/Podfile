@@ -6,6 +6,8 @@ target 'Transformers' do
   use_frameworks!
 
   # Pods for Transformers
+  
+  pod 'IQKeyboardManagerSwift'
 
   target 'TransformersTests' do
     inherit! :search_paths

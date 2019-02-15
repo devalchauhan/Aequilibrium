@@ -23,6 +23,10 @@
 		673626F82217225600E55B8D /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673626F72217225600E55B8D /* Storyboard.swift */; };
 		673626FB221725A200E55B8D /* RightNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673626FA221725A200E55B8D /* RightNavigationItem.swift */; };
 		673626FD2217277800E55B8D /* NavigationTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673626FC2217277800E55B8D /* NavigationTitleView.swift */; };
+		67A5F64522172FFA00D13907 /* CreateTransformerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A5F64422172FFA00D13907 /* CreateTransformerViewController.swift */; };
+		67BB98EA221740A30011AA7D /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BB98E7221740A30011AA7D /* UIColor.swift */; };
+		67BB98EB221740A30011AA7D /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BB98E8221740A30011AA7D /* UIApplication.swift */; };
+		67BB98EC221740A30011AA7D /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BB98E9221740A30011AA7D /* Int.swift */; };
 		DC68710E46FDE949EE5B6811 /* Pods_TransformersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E334CE754C7ABA4F12046F9 /* Pods_TransformersTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +74,10 @@
 		673626F72217225600E55B8D /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		673626FA221725A200E55B8D /* RightNavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightNavigationItem.swift; sourceTree = "<group>"; };
 		673626FC2217277800E55B8D /* NavigationTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTitleView.swift; sourceTree = "<group>"; };
+		67A5F64422172FFA00D13907 /* CreateTransformerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTransformerViewController.swift; sourceTree = "<group>"; };
+		67BB98E7221740A30011AA7D /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		67BB98E8221740A30011AA7D /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		67BB98E9221740A30011AA7D /* Int.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
 		814D78B3851195A73CA23241 /* Pods-TransformersUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransformersUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TransformersUITests/Pods-TransformersUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9CEC778652FDD018406A3F18 /* Pods-Transformers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transformers.release.xcconfig"; path = "Pods/Target Support Files/Pods-Transformers/Pods-Transformers.release.xcconfig"; sourceTree = "<group>"; };
 		D1CEB5CAD0A6F8270C561235 /* Pods-Transformers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transformers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Transformers/Pods-Transformers.debug.xcconfig"; sourceTree = "<group>"; };
@@ -173,6 +181,7 @@
 		673626AE22171D9500E55B8D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				67BB98E6221740890011AA7D /* CommonExtensions */,
 				673626AF22171DBB00E55B8D /* AppDelegateExtension.swift */,
 			);
 			path = Extensions;
@@ -181,6 +190,7 @@
 		673626B122171EB100E55B8D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				67A5F64322172FD800D13907 /* CreateTransformerViewController */,
 				673626B222171EB800E55B8D /* NavigationViewController */,
 			);
 			path = ViewControllers;
@@ -213,6 +223,24 @@
 			path = NavigationViewItems;
 			sourceTree = "<group>";
 		};
+		67A5F64322172FD800D13907 /* CreateTransformerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				67A5F64422172FFA00D13907 /* CreateTransformerViewController.swift */,
+			);
+			path = CreateTransformerViewController;
+			sourceTree = "<group>";
+		};
+		67BB98E6221740890011AA7D /* CommonExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				67BB98E9221740A30011AA7D /* Int.swift */,
+				67BB98E8221740A30011AA7D /* UIApplication.swift */,
+				67BB98E7221740A30011AA7D /* UIColor.swift */,
+			);
+			path = CommonExtensions;
+			sourceTree = "<group>";
+		};
 		743F439576E34E05C7C0FAEE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,6 +265,7 @@
 				67041D66221718C100BD9C91 /* Sources */,
 				67041D67221718C100BD9C91 /* Frameworks */,
 				67041D68221718C100BD9C91 /* Resources */,
+				C4280F786DB95F47451A56F9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -378,6 +407,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C4280F786DB95F47451A56F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Transformers/Pods-Transformers-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Transformers/Pods-Transformers-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C8EB8F1CF85C1B2B5F52B342 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -429,12 +480,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67BB98EB221740A30011AA7D /* UIApplication.swift in Sources */,
+				67BB98EC221740A30011AA7D /* Int.swift in Sources */,
 				67041D70221718C100BD9C91 /* ViewController.swift in Sources */,
 				673626FB221725A200E55B8D /* RightNavigationItem.swift in Sources */,
 				67041D6E221718C100BD9C91 /* AppDelegate.swift in Sources */,
 				673626B022171DBB00E55B8D /* AppDelegateExtension.swift in Sources */,
+				67A5F64522172FFA00D13907 /* CreateTransformerViewController.swift in Sources */,
 				673626F82217225600E55B8D /* Storyboard.swift in Sources */,
 				673626B722171FD700E55B8D /* SharedInstances.swift in Sources */,
+				67BB98EA221740A30011AA7D /* UIColor.swift in Sources */,
 				673626FD2217277800E55B8D /* NavigationTitleView.swift in Sources */,
 				673626B422171ECA00E55B8D /* NavigationViewController.swift in Sources */,
 				67041D76221718C100BD9C91 /* Transformers.xcdatamodeld in Sources */,
