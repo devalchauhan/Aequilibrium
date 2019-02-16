@@ -21,8 +21,8 @@ extension AppDelegate {
     }
     
     func initializeFirstViewController() {
-        let viewController = ViewControllerInstence.fromStoryboard(Storyboard.main, identifire: Storyboard.Identifier.ViewController) as! ViewController
-        NavigationViewController.shared.setRootViewControllerWithDefaultProperties(viewController)
+        let teamViewController = ViewControllerInstence.fromStoryboard(Storyboard.main, identifire: Storyboard.Identifier.TeamViewController) as! TeamViewController
+        NavigationViewController.shared.setRootViewControllerWithDefaultProperties(teamViewController)
         setRootViewController(NavigationViewController.shared)
     }
 }

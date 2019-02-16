@@ -34,9 +34,18 @@ extension NavigationViewController {
         self.topViewController!.navigationItem.rightBarButtonItem?.isEnabled = true
         
     }
+    
+    func gotoCreateTransformer(isUpdate : Bool, transformer : Transformer?) {
+        let createTransformerViewController = ViewControllerInstence.fromStoryboard(Storyboard.main, identifire: Storyboard.Identifier.CreateTransformerViewController) as! CreateTransformerViewController
+        createTransformerViewController.isUpdate = isUpdate
+        if isUpdate {
+            createTransformerViewController.tranformer = transformer!
+        }
+        NavigationViewController.shared.pushViewController(createTransformerViewController, animated: true)
+    }
+    
     @objc func onPlusButtonClick(sender: AnyObject?) {
-        let CreateTransformerViewController = ViewControllerInstence.fromStoryboard(Storyboard.main, identifire: Storyboard.Identifier.CreateTransformerViewController) as! CreateTransformerViewController
-        NavigationViewController.shared.pushViewController(CreateTransformerViewController, animated: true)
+        gotoCreateTransformer(isUpdate: false, transformer: nil)
     }
     
     @objc func onCancelButtonClick(sender: AnyObject?) {
