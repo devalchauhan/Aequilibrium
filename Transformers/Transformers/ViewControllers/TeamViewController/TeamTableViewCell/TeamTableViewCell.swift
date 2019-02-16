@@ -9,9 +9,23 @@
 import UIKit
 
 class TeamTableViewCell: UITableViewCell {
+    
+    
 
-    @IBOutlet weak var transformerName : UILabel!
-    @IBOutlet var transformerImage : UIImageView!
+    @IBOutlet weak var autobotName : UILabel!
+    @IBOutlet var autobotImage : UIImageView!
+    @IBOutlet weak var autobotButton : UIButton!
+    @IBOutlet weak var decepticonName : UILabel!
+    @IBOutlet var decepticonImage : UIImageView!
+    @IBOutlet weak var decepticonButton : UIButton!
+    
+    var callbackClosure: (() -> Void)?
+    
+    // Configure the cell here
+    func configure(callbackClosure: (() -> Void)?) {
+        self.callbackClosure = callbackClosure
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -23,4 +37,18 @@ class TeamTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    @IBAction func autobotButtonClicked(sender: AnyObject?) {
+    
+    }
+    
+    @IBAction func decepticonButtonClicked(sender: AnyObject?) {
+        
+    }
+    
+}
+extension TeamTableViewCell {
+    @IBAction func actionPressed(_ sender: Any) {
+        guard let closure = callbackClosure else { return }
+        closure()
+    }
 }

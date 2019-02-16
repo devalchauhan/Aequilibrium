@@ -23,7 +23,7 @@ class TeamViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        teamDataSource?.getTransformers()
+        teamDataSource?.getAllTransformerFromWS()
     }
 
 }
