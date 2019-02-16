@@ -41,7 +41,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLO-FT-ZEr">
                                 <rect key="frame" x="0.0" y="0.0" width="160" height="119.5"/>
                                 <connections>
-                                    <action selector="actionPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="9Bn-nm-X95"/>
+                                    <action selector="autobotUpdatePressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="1zU-6P-VHT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -81,7 +81,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KsR-X1-hme">
                                 <rect key="frame" x="0.0" y="0.0" width="160" height="119.5"/>
                                 <connections>
-                                    <action selector="actionPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="3nc-dC-kzO"/>
+                                    <action selector="decepticonUpdatePressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="n5P-zo-VGc"/>
                                 </connections>
                             </button>
                         </subviews>

@@ -9,10 +9,12 @@
 import UIKit
 import SDWebImage
 
+var autobots = [Transformer]()
+var decepticons = [Transformer]()
+
 class TeamViewModelDataSource: NSObject {
     
-    var autobots = [Transformer]()
-    var decepticons = [Transformer]()
+    
     
     var tableView : UITableView?
     
@@ -41,10 +43,7 @@ class TeamViewModelDataSource: NSObject {
     }
     
     func reloadTableView(_tableView : UITableView) {
-        if self.autobots.count > 0 || self.decepticons.count > 0{
-            _tableView.reloadData()
-        }
-        
+        _tableView.reloadData()
     }
     
     func getAllSpark() {
@@ -83,8 +82,8 @@ class TeamViewModelDataSource: NSObject {
                 }
             } catch { }
             
-            self.autobots = transformers.filter() { $0.team == "A" }
-            self.decepticons = transformers.filter() { $0.team == "D" }
+            autobots = (transformers.filter() { $0.team == "A" }.sorted(by: { $0.rank > $1.rank }))
+            decepticons = (transformers.filter() { $0.team == "D" }.sorted(by: { $0.rank > $1.rank }))
             self.reloadTableView(_tableView: self.tableView!)
         }) { (error) -> (Void) in
             print(error)
@@ -112,6 +111,10 @@ extension TeamViewModelDataSource : UITableViewDataSource {
             let autobotImageURL = autobots[indexPath.row].team_icon
             cell.autobotImage.sd_setImage(with: URL(string: autobotImageURL!), placeholderImage: UIImage(named: "placeholder.png"))
             cell.autobotButton.tag = indexPath.row
+            cell.autobotUpdateConfigure(transformer: autobots[indexPath.row]) {
+                Transformer.shared = autobots[indexPath.row]
+                NavigationViewController.shared.gotoCreateTransformer(isUpdate: true)
+            }
         }
         else {
             cell.autobotImage.image = UIImage(named: "not_available.png")
@@ -122,6 +125,10 @@ extension TeamViewModelDataSource : UITableViewDataSource {
             let decepticonImageURL = decepticons[indexPath.row].team_icon
             cell.decepticonImage.sd_setImage(with: URL(string: decepticonImageURL!), placeholderImage: UIImage(named: "placeholder.png"))
             cell.decepticonButton.tag = indexPath.row
+            cell.decepticonUpdateConfigure(transformer: decepticons[indexPath.row]) {
+                Transformer.shared = decepticons[indexPath.row]
+                NavigationViewController.shared.gotoCreateTransformer(isUpdate: true)
+            }
         }
         else {
             cell.decepticonImage.image = UIImage(named: "not_available.png")
@@ -134,19 +141,5 @@ extension TeamViewModelDataSource : UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return tableView.estimatedRowHeight
-    }
-    
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        guard let cell: TeamTableViewCell = cell as? TeamTableViewCell else { return }
-        cell.configure( callbackClosure: { [weak self] in
-            //self?.buttonAction()
-        })
-    }
-    
-}
-fileprivate extension TeamViewController {
-    
-    func buttonAction() {
-        // do your actions here
     }
 }

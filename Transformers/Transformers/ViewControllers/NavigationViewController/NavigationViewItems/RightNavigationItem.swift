@@ -35,22 +35,18 @@ extension NavigationViewController {
         
     }
     
-    func gotoCreateTransformer(isUpdate : Bool, transformer : Transformer?) {
+    func gotoCreateTransformer(isUpdate : Bool) {
         let createTransformerViewController = ViewControllerInstence.fromStoryboard(Storyboard.main, identifire: Storyboard.Identifier.CreateTransformerViewController) as! CreateTransformerViewController
         createTransformerViewController.isUpdate = isUpdate
-        if isUpdate {
-            createTransformerViewController.tranformer = transformer!
-        }
         NavigationViewController.shared.pushViewController(createTransformerViewController, animated: true)
     }
     
     @objc func onPlusButtonClick(sender: AnyObject?) {
-        gotoCreateTransformer(isUpdate: false, transformer: nil)
+        gotoCreateTransformer(isUpdate: false)
     }
     
     @objc func onCancelButtonClick(sender: AnyObject?) {
         NavigationViewController.shared.popViewController(animated: true)
-        //NavigationViewController.shared.dismiss(animated: true, completion: nil)
     }
 }
 

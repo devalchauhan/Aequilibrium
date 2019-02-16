@@ -27,7 +27,6 @@ class Transformer: NSObject {
     var skill : Int = 0 // Skill value, must be between 1 and 10.
     var team_icon : String? // An image URL that represents what team the Transformer is on.
     
-    
     func configure(JSON: [AnyHashable : Any]) {
         let transformerInfo: Dictionary = JSON
         id = transformerInfo["id"] as? String

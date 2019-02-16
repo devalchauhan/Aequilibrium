@@ -17,6 +17,7 @@ struct Storyboard {
     struct Identifier {
         static let TeamViewController = "TeamViewController"
         static let CreateTransformerViewController = "CreateTransformerViewController"
+        static let ResultViewController = "ResultViewController"
     }
     
 }

@@ -19,11 +19,16 @@ class TeamTableViewCell: UITableViewCell {
     @IBOutlet var decepticonImage : UIImageView!
     @IBOutlet weak var decepticonButton : UIButton!
     
-    var callbackClosure: (() -> Void)?
+    var autobotUpdateClosure: (() -> Void)?
+    var decepticonUpdateClosure: (() -> Void)?
     
     // Configure the cell here
-    func configure(callbackClosure: (() -> Void)?) {
-        self.callbackClosure = callbackClosure
+    func autobotUpdateConfigure(transformer:Transformer, autobotUpdateClosure: (() -> Void)?) {
+        self.autobotUpdateClosure = autobotUpdateClosure
+    }
+    
+    func decepticonUpdateConfigure(transformer:Transformer, decepticonUpdateClosure: (() -> Void)?) {
+        self.decepticonUpdateClosure = decepticonUpdateClosure
     }
     
     override func awakeFromNib() {
@@ -36,19 +41,16 @@ class TeamTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
-    @IBAction func autobotButtonClicked(sender: AnyObject?) {
-    
-    }
-    
-    @IBAction func decepticonButtonClicked(sender: AnyObject?) {
-        
-    }
-    
+
 }
 extension TeamTableViewCell {
-    @IBAction func actionPressed(_ sender: Any) {
-        guard let closure = callbackClosure else { return }
+    @IBAction func autobotUpdatePressed(_ sender: Any) {
+        guard let closure = autobotUpdateClosure else { return }
+        closure()
+    }
+    
+    @IBAction func decepticonUpdatePressed(_ sender: Any) {
+        guard let closure = decepticonUpdateClosure else { return }
         closure()
     }
 }

@@ -25,6 +25,11 @@ class TeamViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         teamDataSource?.getAllTransformerFromWS()
     }
+    
+    @IBAction func warClicked () {
+        let resultViewController = ViewControllerInstence.fromStoryboard(Storyboard.main, identifire: Storyboard.Identifier.ResultViewController) as! ResultViewController
+        NavigationViewController.shared.pushViewController(resultViewController, animated: true)
+    }
 
 }
 
