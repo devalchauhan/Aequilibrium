@@ -25,12 +25,11 @@ class CreateTransformerViewController: UIViewController {
     @IBOutlet weak var firepowerTextField : UITextField!
     @IBOutlet weak var skillTextField : UITextField!
     @IBOutlet weak var createButton : UIButton!
+    @IBOutlet weak var clearButton : UIButton!
     
     var isUpdate : Bool = false
     
     var tranformer = Transformer()
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,7 +48,9 @@ class CreateTransformerViewController: UIViewController {
     
     func configureUI() {
         createButton.setTitle((isUpdate ? "UPDATE" : "CREATE"), for: .normal)
+        clearButton.setTitle((isUpdate ? "DELETE" : "CLEAR"), for: .normal)
         if isUpdate {
+            tranformer = Transformer.shared
             nameTextField.text = tranformer.name
             switch (tranformer.team) {
             case "A" :
@@ -75,12 +76,12 @@ class CreateTransformerViewController: UIViewController {
             do {
                 let transformerJson = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments)
                 Transformer.shared.configure(JSON: transformerJson as! [AnyHashable : Any])
-                if self.isUpdate {
-                    TransformerCoreData.updateTransformerFromCoreData(transformer: Transformer.shared)
-                }
-                else {
-                    TransformerCoreData.saveTransformerToCoredata(transformer: Transformer.shared)
-                }
+//                if self.isUpdate {
+//                    TransformerCoreData.updateTransformerFromCoreData(transformer: Transformer.shared)
+//                }
+//                else {
+//                    TransformerCoreData.saveTransformerToCoredata(transformer: Transformer.shared)
+//                }
                 DispatchQueue.main.async {
                     NavigationViewController.shared.popViewController(animated: true)
                 }
@@ -120,11 +121,16 @@ class CreateTransformerViewController: UIViewController {
         return transformer
     }
     
-    
-    
-    
     @IBAction func clearFields () {
-        
+        if isUpdate {
+            APIServiceClient.shared.deleteTransformer(path: (URLPath.Transformers + "/" + tranformer.id!), success: { (data, response, error) in
+                NavigationViewController.shared.popViewController(animated: true)
+            }) { (error) -> (Void) in
+                
+            }
+        } else {
+            nameTextField.text = ""; strengthTextField.text = ""; intelligenceTextField.text = ""; speedTextField.text = ""; enduranceTextField.text = ""; rankTextField.text = ""; courageTextField.text = ""; firepowerTextField.text = ""; skillTextField.text = "";
+        }
     }
 }
 

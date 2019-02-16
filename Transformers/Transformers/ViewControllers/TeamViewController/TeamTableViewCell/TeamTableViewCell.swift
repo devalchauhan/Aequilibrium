@@ -9,9 +9,28 @@
 import UIKit
 
 class TeamTableViewCell: UITableViewCell {
+    
+    
 
-    @IBOutlet weak var transformerName : UILabel!
-    @IBOutlet var transformerImage : UIImageView!
+    @IBOutlet weak var autobotName : UILabel!
+    @IBOutlet var autobotImage : UIImageView!
+    @IBOutlet weak var autobotButton : UIButton!
+    @IBOutlet weak var decepticonName : UILabel!
+    @IBOutlet var decepticonImage : UIImageView!
+    @IBOutlet weak var decepticonButton : UIButton!
+    
+    var autobotUpdateClosure: (() -> Void)?
+    var decepticonUpdateClosure: (() -> Void)?
+    
+    // Configure the cell here
+    func autobotUpdateConfigure(transformer:Transformer, autobotUpdateClosure: (() -> Void)?) {
+        self.autobotUpdateClosure = autobotUpdateClosure
+    }
+    
+    func decepticonUpdateConfigure(transformer:Transformer, decepticonUpdateClosure: (() -> Void)?) {
+        self.decepticonUpdateClosure = decepticonUpdateClosure
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -22,5 +41,16 @@ class TeamTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+
+}
+extension TeamTableViewCell {
+    @IBAction func autobotUpdatePressed(_ sender: Any) {
+        guard let closure = autobotUpdateClosure else { return }
+        closure()
+    }
     
+    @IBAction func decepticonUpdatePressed(_ sender: Any) {
+        guard let closure = decepticonUpdateClosure else { return }
+        closure()
+    }
 }

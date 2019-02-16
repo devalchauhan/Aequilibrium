@@ -82,4 +82,19 @@ class APIServiceClient: NSObject {
         }
     }
     
+    func deleteTransformer(path: String, success: @escaping SuccessCompletion, failure: @escaping FailureCompletion) -> Void {
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+        APISessionService.shared.callWebServiceWithoutMapping(method: .delete, path: path, params: nil) { (data, response, error) in
+            DispatchQueue.main.async {
+                UIApplication.shared.isNetworkActivityIndicatorVisible = false
+                
+                if !self.handleError(error: error as NSError?, failure: failure, responseCode: response?.statusCode) {
+                    success(data, response, error)
+                } else {
+                    failure(error?.localizedDescription ?? "error")
+                }
+            }
+        }
+    }
+    
 }
