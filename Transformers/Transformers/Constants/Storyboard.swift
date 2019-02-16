@@ -15,7 +15,7 @@ struct Storyboard {
     
     // MARK:- Segue identifires
     struct Identifier {
-        static let ViewController = "ViewController"
+        static let TeamViewController = "TeamViewController"
         static let CreateTransformerViewController = "CreateTransformerViewController"
     }
     

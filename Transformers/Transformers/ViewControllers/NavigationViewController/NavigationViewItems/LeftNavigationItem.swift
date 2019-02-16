@@ -11,6 +11,6 @@ import UIKit
 
 extension NavigationViewController {
     func removeBackButton() {
-        self.topViewController?.navigationItem.backBarButtonItem = nil
+        self.topViewController?.navigationItem.setHidesBackButton(true, animated:true);
     }
 }

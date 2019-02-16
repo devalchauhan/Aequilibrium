@@ -10,20 +10,32 @@
 		053C4CD7564BBD11DC3B322E /* Pods_Transformers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11E5EC52DEA236F0A91AF0C1 /* Pods_Transformers.framework */; };
 		55E2CC5C0BD82EBEDA61A7F8 /* Pods_TransformersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F1D9993905FE0833D29EF22 /* Pods_TransformersUITests.framework */; };
 		67041D6E221718C100BD9C91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67041D6D221718C100BD9C91 /* AppDelegate.swift */; };
-		67041D70221718C100BD9C91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67041D6F221718C100BD9C91 /* ViewController.swift */; };
+		67041D70221718C100BD9C91 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67041D6F221718C100BD9C91 /* TeamViewController.swift */; };
 		67041D73221718C100BD9C91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67041D71221718C100BD9C91 /* Main.storyboard */; };
 		67041D76221718C100BD9C91 /* Transformers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 67041D74221718C100BD9C91 /* Transformers.xcdatamodeld */; };
 		67041D78221718C100BD9C91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67041D77221718C100BD9C91 /* Assets.xcassets */; };
 		67041D7B221718C100BD9C91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67041D79221718C100BD9C91 /* LaunchScreen.storyboard */; };
 		67041D86221718C100BD9C91 /* TransformersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67041D85221718C100BD9C91 /* TransformersTests.swift */; };
 		67041D91221718C100BD9C91 /* TransformersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67041D90221718C100BD9C91 /* TransformersUITests.swift */; };
+		671A83DE2217DD0A003D7A7E /* TeamViewModelDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671A83DD2217DD0A003D7A7E /* TeamViewModelDataSource.swift */; };
+		671A83E22217DE35003D7A7E /* TeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671A83E02217DE35003D7A7E /* TeamTableViewCell.swift */; };
+		671A83E32217DE35003D7A7E /* TeamTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 671A83E12217DE35003D7A7E /* TeamTableViewCell.xib */; };
+		671A83E82217E241003D7A7E /* Transformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671A83E72217E241003D7A7E /* Transformer.swift */; };
+		671A83EC2217E6C2003D7A7E /* APIServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671A83EB2217E6C2003D7A7E /* APIServiceClient.swift */; };
+		671A83EE2217E6FD003D7A7E /* APISessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671A83ED2217E6FD003D7A7E /* APISessionService.swift */; };
+		671A83F02217E9DB003D7A7E /* ServerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671A83EF2217E9DB003D7A7E /* ServerConfiguration.swift */; };
+		671A83F3221818CE003D7A7E /* TransformerCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671A83F2221818CE003D7A7E /* TransformerCoreData.swift */; };
 		673626B022171DBB00E55B8D /* AppDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673626AF22171DBB00E55B8D /* AppDelegateExtension.swift */; };
 		673626B422171ECA00E55B8D /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673626B322171ECA00E55B8D /* NavigationViewController.swift */; };
 		673626B722171FD700E55B8D /* SharedInstances.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673626B622171FD700E55B8D /* SharedInstances.swift */; };
 		673626F82217225600E55B8D /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673626F72217225600E55B8D /* Storyboard.swift */; };
 		673626FB221725A200E55B8D /* RightNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673626FA221725A200E55B8D /* RightNavigationItem.swift */; };
 		673626FD2217277800E55B8D /* NavigationTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673626FC2217277800E55B8D /* NavigationTitleView.swift */; };
+		674C2235221743CD00DB7E3C /* LeftNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674C2234221743CD00DB7E3C /* LeftNavigationItem.swift */; };
+		674C2237221743D300DB7E3C /* FontName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674C2236221743D300DB7E3C /* FontName.swift */; };
+		674C223B2217441700DB7E3C /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 674C223A2217441700DB7E3C /* FontAwesome.otf */; };
 		67A5F64522172FFA00D13907 /* CreateTransformerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A5F64422172FFA00D13907 /* CreateTransformerViewController.swift */; };
+		67AF1FF92217549B00E78E4B /* Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AF1FF82217549B00E78E4B /* Sizes.swift */; };
 		67BB98EA221740A30011AA7D /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BB98E7221740A30011AA7D /* UIColor.swift */; };
 		67BB98EB221740A30011AA7D /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BB98E8221740A30011AA7D /* UIApplication.swift */; };
 		67BB98EC221740A30011AA7D /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BB98E9221740A30011AA7D /* Int.swift */; };
@@ -56,7 +68,7 @@
 		5F1D9993905FE0833D29EF22 /* Pods_TransformersUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TransformersUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67041D6A221718C100BD9C91 /* Transformers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transformers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67041D6D221718C100BD9C91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		67041D6F221718C100BD9C91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		67041D6F221718C100BD9C91 /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
 		67041D72221718C100BD9C91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		67041D75221718C100BD9C91 /* Transformers.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Transformers.xcdatamodel; sourceTree = "<group>"; };
 		67041D77221718C100BD9C91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -68,13 +80,25 @@
 		67041D8C221718C100BD9C91 /* TransformersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransformersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67041D90221718C100BD9C91 /* TransformersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformersUITests.swift; sourceTree = "<group>"; };
 		67041D92221718C100BD9C91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		671A83DD2217DD0A003D7A7E /* TeamViewModelDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewModelDataSource.swift; sourceTree = "<group>"; };
+		671A83E02217DE35003D7A7E /* TeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTableViewCell.swift; sourceTree = "<group>"; };
+		671A83E12217DE35003D7A7E /* TeamTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamTableViewCell.xib; sourceTree = "<group>"; };
+		671A83E72217E241003D7A7E /* Transformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transformer.swift; sourceTree = "<group>"; };
+		671A83EB2217E6C2003D7A7E /* APIServiceClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceClient.swift; sourceTree = "<group>"; };
+		671A83ED2217E6FD003D7A7E /* APISessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISessionService.swift; sourceTree = "<group>"; };
+		671A83EF2217E9DB003D7A7E /* ServerConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerConfiguration.swift; sourceTree = "<group>"; };
+		671A83F2221818CE003D7A7E /* TransformerCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerCoreData.swift; sourceTree = "<group>"; };
 		673626AF22171DBB00E55B8D /* AppDelegateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateExtension.swift; sourceTree = "<group>"; };
 		673626B322171ECA00E55B8D /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		673626B622171FD700E55B8D /* SharedInstances.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedInstances.swift; sourceTree = "<group>"; };
 		673626F72217225600E55B8D /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		673626FA221725A200E55B8D /* RightNavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightNavigationItem.swift; sourceTree = "<group>"; };
 		673626FC2217277800E55B8D /* NavigationTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTitleView.swift; sourceTree = "<group>"; };
+		674C2234221743CD00DB7E3C /* LeftNavigationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftNavigationItem.swift; sourceTree = "<group>"; };
+		674C2236221743D300DB7E3C /* FontName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontName.swift; sourceTree = "<group>"; };
+		674C223A2217441700DB7E3C /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
 		67A5F64422172FFA00D13907 /* CreateTransformerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTransformerViewController.swift; sourceTree = "<group>"; };
+		67AF1FF82217549B00E78E4B /* Sizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sizes.swift; sourceTree = "<group>"; };
 		67BB98E7221740A30011AA7D /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		67BB98E8221740A30011AA7D /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		67BB98E9221740A30011AA7D /* Int.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
@@ -146,11 +170,13 @@
 		67041D6C221718C100BD9C91 /* Transformers */ = {
 			isa = PBXGroup;
 			children = (
+				671A83E62217E231003D7A7E /* Model */,
+				671A83DC2217DBC1003D7A7E /* ViewModel */,
+				674C22382217440100DB7E3C /* Resources */,
 				673626B522171FAC00E55B8D /* Constants */,
 				673626B122171EB100E55B8D /* ViewControllers */,
 				673626AE22171D9500E55B8D /* Extensions */,
 				67041D6D221718C100BD9C91 /* AppDelegate.swift */,
-				67041D6F221718C100BD9C91 /* ViewController.swift */,
 				67041D71221718C100BD9C91 /* Main.storyboard */,
 				67041D77221718C100BD9C91 /* Assets.xcassets */,
 				67041D79221718C100BD9C91 /* LaunchScreen.storyboard */,
@@ -178,9 +204,70 @@
 			path = TransformersUITests;
 			sourceTree = "<group>";
 		};
+		671A83DB2217DB83003D7A7E /* TeamViewController */ = {
+			isa = PBXGroup;
+			children = (
+				671A83DF2217DE1C003D7A7E /* TeamTableViewCell */,
+				67041D6F221718C100BD9C91 /* TeamViewController.swift */,
+			);
+			path = TeamViewController;
+			sourceTree = "<group>";
+		};
+		671A83DC2217DBC1003D7A7E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				671A83DD2217DD0A003D7A7E /* TeamViewModelDataSource.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		671A83DF2217DE1C003D7A7E /* TeamTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				671A83E02217DE35003D7A7E /* TeamTableViewCell.swift */,
+				671A83E12217DE35003D7A7E /* TeamTableViewCell.xib */,
+			);
+			path = TeamTableViewCell;
+			sourceTree = "<group>";
+		};
+		671A83E62217E231003D7A7E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				671A83F12218189D003D7A7E /* CoreData */,
+				671A83E72217E241003D7A7E /* Transformer.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		671A83E92217E648003D7A7E /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				671A83EA2217E652003D7A7E /* API */,
+			);
+			path = Clients;
+			sourceTree = "<group>";
+		};
+		671A83EA2217E652003D7A7E /* API */ = {
+			isa = PBXGroup;
+			children = (
+				671A83EB2217E6C2003D7A7E /* APIServiceClient.swift */,
+				671A83ED2217E6FD003D7A7E /* APISessionService.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		671A83F12218189D003D7A7E /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				671A83F2221818CE003D7A7E /* TransformerCoreData.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		673626AE22171D9500E55B8D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				671A83E92217E648003D7A7E /* Clients */,
 				67BB98E6221740890011AA7D /* CommonExtensions */,
 				673626AF22171DBB00E55B8D /* AppDelegateExtension.swift */,
 			);
@@ -190,6 +277,7 @@
 		673626B122171EB100E55B8D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				671A83DB2217DB83003D7A7E /* TeamViewController */,
 				67A5F64322172FD800D13907 /* CreateTransformerViewController */,
 				673626B222171EB800E55B8D /* NavigationViewController */,
 			);
@@ -208,8 +296,11 @@
 		673626B522171FAC00E55B8D /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				674C2236221743D300DB7E3C /* FontName.swift */,
 				673626B622171FD700E55B8D /* SharedInstances.swift */,
 				673626F72217225600E55B8D /* Storyboard.swift */,
+				67AF1FF82217549B00E78E4B /* Sizes.swift */,
+				671A83EF2217E9DB003D7A7E /* ServerConfiguration.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -217,10 +308,27 @@
 		673626F92217258500E55B8D /* NavigationViewItems */ = {
 			isa = PBXGroup;
 			children = (
+				674C2234221743CD00DB7E3C /* LeftNavigationItem.swift */,
 				673626FA221725A200E55B8D /* RightNavigationItem.swift */,
 				673626FC2217277800E55B8D /* NavigationTitleView.swift */,
 			);
 			path = NavigationViewItems;
+			sourceTree = "<group>";
+		};
+		674C22382217440100DB7E3C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				674C22392217440A00DB7E3C /* Font */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		674C22392217440A00DB7E3C /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				674C223A2217441700DB7E3C /* FontAwesome.otf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 		67A5F64322172FD800D13907 /* CreateTransformerViewController */ = {
@@ -363,7 +471,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				67041D7B221718C100BD9C91 /* LaunchScreen.storyboard in Resources */,
+				671A83E32217DE35003D7A7E /* TeamTableViewCell.xib in Resources */,
 				67041D78221718C100BD9C91 /* Assets.xcassets in Resources */,
+				674C223B2217441700DB7E3C /* FontAwesome.otf in Resources */,
 				67041D73221718C100BD9C91 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,12 +527,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Transformers/Pods-Transformers-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -480,19 +592,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				674C2237221743D300DB7E3C /* FontName.swift in Sources */,
 				67BB98EB221740A30011AA7D /* UIApplication.swift in Sources */,
+				671A83E82217E241003D7A7E /* Transformer.swift in Sources */,
 				67BB98EC221740A30011AA7D /* Int.swift in Sources */,
-				67041D70221718C100BD9C91 /* ViewController.swift in Sources */,
+				67041D70221718C100BD9C91 /* TeamViewController.swift in Sources */,
+				671A83F02217E9DB003D7A7E /* ServerConfiguration.swift in Sources */,
 				673626FB221725A200E55B8D /* RightNavigationItem.swift in Sources */,
 				67041D6E221718C100BD9C91 /* AppDelegate.swift in Sources */,
 				673626B022171DBB00E55B8D /* AppDelegateExtension.swift in Sources */,
 				67A5F64522172FFA00D13907 /* CreateTransformerViewController.swift in Sources */,
 				673626F82217225600E55B8D /* Storyboard.swift in Sources */,
 				673626B722171FD700E55B8D /* SharedInstances.swift in Sources */,
+				671A83EC2217E6C2003D7A7E /* APIServiceClient.swift in Sources */,
 				67BB98EA221740A30011AA7D /* UIColor.swift in Sources */,
 				673626FD2217277800E55B8D /* NavigationTitleView.swift in Sources */,
+				671A83EE2217E6FD003D7A7E /* APISessionService.swift in Sources */,
+				67AF1FF92217549B00E78E4B /* Sizes.swift in Sources */,
+				674C2235221743CD00DB7E3C /* LeftNavigationItem.swift in Sources */,
 				673626B422171ECA00E55B8D /* NavigationViewController.swift in Sources */,
 				67041D76221718C100BD9C91 /* Transformers.xcdatamodeld in Sources */,
+				671A83E22217DE35003D7A7E /* TeamTableViewCell.swift in Sources */,
+				671A83DE2217DD0A003D7A7E /* TeamViewModelDataSource.swift in Sources */,
+				671A83F3221818CE003D7A7E /* TransformerCoreData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
