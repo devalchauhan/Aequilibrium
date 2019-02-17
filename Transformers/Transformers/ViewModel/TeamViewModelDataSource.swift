@@ -12,9 +12,7 @@ import SDWebImage
 var autobots = [Transformer]()
 var decepticons = [Transformer]()
 
-class TeamViewModelDataSource: NSObject {
-    
-    
+class TeamViewModelDataSource: NSObject {    
     
     var tableView : UITableView?
     
@@ -57,7 +55,7 @@ class TeamViewModelDataSource: NSObject {
         }
     }
     
-    func getAllTransformerFromWS() {
+    func getAllTransformerFromWS(){
         var transformers : [Transformer] = []
         APIServiceClient.shared.getAllTransformer(path: URLPath.Transformers, success: { (data, response, error) in
             do {
@@ -81,7 +79,8 @@ class TeamViewModelDataSource: NSObject {
                     }
                 }
             } catch { }
-            
+            autobots = []
+            decepticons = []
             autobots = (transformers.filter() { $0.team == "A" }.sorted(by: { $0.rank > $1.rank }))
             decepticons = (transformers.filter() { $0.team == "D" }.sorted(by: { $0.rank > $1.rank }))
             self.reloadTableView(_tableView: self.tableView!)
@@ -103,13 +102,13 @@ extension TeamViewModelDataSource : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: TeamTableViewCell = tableView.dequeueReusableCell(withIdentifier: "TeamTableViewCell", for: indexPath) as! TeamTableViewCell
-        
+
         cell.separatorInset = UIEdgeInsets.zero
         
         if indexPath.row <= autobots.count - 1 {
             cell.autobotName.text = autobots[indexPath.row].name
             let autobotImageURL = autobots[indexPath.row].team_icon
-            cell.autobotImage.sd_setImage(with: URL(string: autobotImageURL!), placeholderImage: UIImage(named: "placeholder.png"))
+            cell.autobotImage.sd_setImage(with: URL(string: autobotImageURL!), placeholderImage: UIImage(named: "no_image.png"))
             cell.autobotButton.tag = indexPath.row
             cell.autobotUpdateConfigure(transformer: autobots[indexPath.row]) {
                 Transformer.shared = autobots[indexPath.row]
@@ -117,13 +116,14 @@ extension TeamViewModelDataSource : UITableViewDataSource {
             }
         }
         else {
+            cell.autobotName.text = ""
             cell.autobotImage.image = UIImage(named: "not_available.png")
         }
         
         if indexPath.row <= decepticons.count - 1 {
             cell.decepticonName.text = decepticons[indexPath.row].name
             let decepticonImageURL = decepticons[indexPath.row].team_icon
-            cell.decepticonImage.sd_setImage(with: URL(string: decepticonImageURL!), placeholderImage: UIImage(named: "placeholder.png"))
+            cell.decepticonImage.sd_setImage(with: URL(string: decepticonImageURL!), placeholderImage: UIImage(named: "no_image.png"))
             cell.decepticonButton.tag = indexPath.row
             cell.decepticonUpdateConfigure(transformer: decepticons[indexPath.row]) {
                 Transformer.shared = decepticons[indexPath.row]
@@ -131,6 +131,7 @@ extension TeamViewModelDataSource : UITableViewDataSource {
             }
         }
         else {
+            cell.decepticonName.text = ""
             cell.decepticonImage.image = UIImage(named: "not_available.png")
         }
         return cell

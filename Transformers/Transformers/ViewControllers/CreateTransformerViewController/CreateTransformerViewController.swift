@@ -10,7 +10,6 @@ import UIKit
 let kCreateTitle = "CREATE TRANSFROMER"
 let kUpdateTitle = "UPDATE TRANSFROMER"
 let kStandardPickerRowHeight = CGFloat(40)
-let transformerCategory : Array = ["Autobots","Decepticons"]
 
 class CreateTransformerViewController: UIViewController {
     
@@ -72,22 +71,32 @@ class CreateTransformerViewController: UIViewController {
     }
     
     @IBAction func createOrUpdateTransformer () {
-        APIServiceClient.shared.createOrUpdateTransformer(path: URLPath.Transformers,isUpdate: isUpdate, tranformerJson: (isUpdate ? configureJsonToUpdateTransformer(_id: tranformer.id!) : configureJsonToCreateTransformer() ), success: { (data, response, error) in
-            do {
-                let transformerJson = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments)
-                Transformer.shared.configure(JSON: transformerJson as! [AnyHashable : Any])
-//                if self.isUpdate {
-//                    TransformerCoreData.updateTransformerFromCoreData(transformer: Transformer.shared)
-//                }
-//                else {
-//                    TransformerCoreData.saveTransformerToCoredata(transformer: Transformer.shared)
-//                }
-                DispatchQueue.main.async {
-                    NavigationViewController.shared.popViewController(animated: true)
-                }
-            } catch  { }
-        }) { (error) -> (Void) in
-            print(error)
+        let textFields : [UITextField] = [nameTextField,strengthTextField,intelligenceTextField,speedTextField,enduranceTextField,rankTextField,courageTextField,firepowerTextField,skillTextField]
+        let (textField,isEmpty,isInvalid) = TextFieldValidator().isContainsIncorrectEntry(textFields: textFields)
+        if isEmpty {
+            let okAction = UIAlertAction(title: kAlertButtonTitle, style: .cancel)
+            Alert.displayAlert(message: "Please enter \(textField)", withTitle: kAlertTitle, withActions: [okAction])
+        } else if isInvalid {
+            let okAction = UIAlertAction(title: kAlertButtonTitle, style: .cancel)
+            Alert.displayAlert(message: "Please enter valid \(textField) between 1 to 10", withTitle: kAlertTitle, withActions: [okAction])
+        } else {
+            APIServiceClient.shared.createOrUpdateTransformer(path: URLPath.Transformers,isUpdate: isUpdate, tranformerJson: (isUpdate ? configureJsonToUpdateTransformer(_id: tranformer.id!) : configureJsonToCreateTransformer() ), success: { (data, response, error) in
+                do {
+                    let transformerJson = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments)
+                    Transformer.shared.configure(JSON: transformerJson as! [AnyHashable : Any])
+                    //                if self.isUpdate {
+                    //                    TransformerCoreData.updateTransformerFromCoreData(transformer: Transformer.shared)
+                    //                }
+                    //                else {
+                    //                    TransformerCoreData.saveTransformerToCoredata(transformer: Transformer.shared)
+                    //                }
+                    DispatchQueue.main.async {
+                        NavigationViewController.shared.popViewController(animated: true)
+                    }
+                } catch  { }
+            }) { (error) -> (Void) in
+                print(error)
+            }
         }
     }
     
@@ -140,5 +149,15 @@ extension CreateTransformerViewController : UITextFieldDelegate {
     }
     func textFieldDidEndEditing(_ textField: UITextField) {
         
+    }
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if textField == nameTextField {
+            return true
+        }
+        let maxLength = 2
+        let currentString: NSString = textField.text! as NSString
+        let newString: NSString =
+            currentString.replacingCharacters(in: range, with: string) as NSString
+        return newString.length <= maxLength
     }
 }
