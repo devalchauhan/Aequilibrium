@@ -27,7 +27,6 @@
 		671A83F3221818CE003D7A7E /* TransformerCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671A83F2221818CE003D7A7E /* TransformerCoreData.swift */; };
 		671A83F622188D50003D7A7E /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671A83F522188D50003D7A7E /* ResultViewController.swift */; };
 		671A83F822189B3E003D7A7E /* ResultDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671A83F722189B3E003D7A7E /* ResultDataSource.swift */; };
-		671A83FA22189C5C003D7A7E /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671A83F922189C5C003D7A7E /* Result.swift */; };
 		673626B022171DBB00E55B8D /* AppDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673626AF22171DBB00E55B8D /* AppDelegateExtension.swift */; };
 		673626B422171ECA00E55B8D /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673626B322171ECA00E55B8D /* NavigationViewController.swift */; };
 		673626B722171FD700E55B8D /* SharedInstances.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673626B622171FD700E55B8D /* SharedInstances.swift */; };
@@ -97,7 +96,6 @@
 		671A83F2221818CE003D7A7E /* TransformerCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerCoreData.swift; sourceTree = "<group>"; };
 		671A83F522188D50003D7A7E /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		671A83F722189B3E003D7A7E /* ResultDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultDataSource.swift; sourceTree = "<group>"; };
-		671A83F922189C5C003D7A7E /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		673626AF22171DBB00E55B8D /* AppDelegateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateExtension.swift; sourceTree = "<group>"; };
 		673626B322171ECA00E55B8D /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		673626B622171FD700E55B8D /* SharedInstances.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedInstances.swift; sourceTree = "<group>"; };
@@ -251,7 +249,6 @@
 			children = (
 				671A83F12218189D003D7A7E /* CoreData */,
 				671A83E72217E241003D7A7E /* Transformer.swift */,
-				671A83F922189C5C003D7A7E /* Result.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -655,7 +652,6 @@
 				671A83F622188D50003D7A7E /* ResultViewController.swift in Sources */,
 				673626B722171FD700E55B8D /* SharedInstances.swift in Sources */,
 				671A83EC2217E6C2003D7A7E /* APIServiceClient.swift in Sources */,
-				671A83FA22189C5C003D7A7E /* Result.swift in Sources */,
 				67BB98EA221740A30011AA7D /* UIColor.swift in Sources */,
 				673626FD2217277800E55B8D /* NavigationTitleView.swift in Sources */,
 				671A83EE2217E6FD003D7A7E /* APISessionService.swift in Sources */,

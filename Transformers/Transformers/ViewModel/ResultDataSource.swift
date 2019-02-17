@@ -110,6 +110,7 @@ class ResultDataSource: NSObject {
                 else { // check name
                     if endGame {
                         // destroy all transformers
+                        
                         break
                     }
                     else { continue }

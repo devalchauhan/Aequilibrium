@@ -55,7 +55,7 @@ class TeamViewModelDataSource: NSObject {
         }
     }
     
-    func getAllTransformerFromWS() {
+    func getAllTransformerFromWS(){
         var transformers : [Transformer] = []
         APIServiceClient.shared.getAllTransformer(path: URLPath.Transformers, success: { (data, response, error) in
             do {

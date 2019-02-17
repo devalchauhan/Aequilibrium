@@ -27,6 +27,11 @@ class TeamViewController: UIViewController {
     }
     
     @IBAction func warClicked () {
+        if autobots.count <= 0 && decepticons.count <= 0 {
+            let okAction = UIAlertAction(title: kAlertButtonTitle, style: .cancel)
+            Alert.displayAlert(message: "Create Transformers to begin WAR", withTitle: kAlertTitle, withActions: [okAction])
+            return
+        }
         let resultViewController = ViewControllerInstence.fromStoryboard(Storyboard.main, identifire: Storyboard.Identifier.ResultViewController) as! ResultViewController
         NavigationViewController.shared.pushViewController(resultViewController, animated: true)
     }
