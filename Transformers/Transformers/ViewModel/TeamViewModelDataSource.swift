@@ -102,7 +102,7 @@ extension TeamViewModelDataSource : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: TeamTableViewCell = tableView.dequeueReusableCell(withIdentifier: "TeamTableViewCell", for: indexPath) as! TeamTableViewCell
-        
+
         cell.separatorInset = UIEdgeInsets.zero
         
         if indexPath.row <= autobots.count - 1 {
@@ -116,6 +116,7 @@ extension TeamViewModelDataSource : UITableViewDataSource {
             }
         }
         else {
+            cell.autobotName.text = ""
             cell.autobotImage.image = UIImage(named: "not_available.png")
         }
         
@@ -130,6 +131,7 @@ extension TeamViewModelDataSource : UITableViewDataSource {
             }
         }
         else {
+            cell.decepticonName.text = ""
             cell.decepticonImage.image = UIImage(named: "not_available.png")
         }
         return cell

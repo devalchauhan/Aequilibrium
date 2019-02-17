@@ -101,9 +101,10 @@ class ResultDataSource: NSObject {
                         }
                     }
                 }
-                else { // check name
+                else {
                     if endGame {
-                        // destroy all transformers
+                        autobots.append(contentsOf: decepticons)
+                        destroyTransformers(allTransformers: autobots, goBack: true)
                         break
                     }
                 }
@@ -133,9 +134,6 @@ class ResultDataSource: NSObject {
     
     func checkCourageAndStrength(sourceTranformer : Transformer, destinationTransformer : Transformer) -> Bool {
         
-        if (sourceTranformer.courage - destinationTransformer.courage >= 4) {
-            
-        }
         if (sourceTranformer.courage - destinationTransformer.courage >= 4) &&
             (sourceTranformer.strength - destinationTransformer.strength) >= 3 {
             winner.append(sourceTranformer)
@@ -181,7 +179,23 @@ class ResultDataSource: NSObject {
             winner.append(destinationTransformer)
         }
         else {
-            // destoy both call delete WS
+            destroyTransformers(allTransformers: [sourceTranformer,destinationTransformer], goBack: false)
+        }
+    }
+    
+    func destroyTransformers(allTransformers : [Transformer], goBack : Bool) {
+        let dispatchGroup = DispatchGroup()
+        for item in allTransformers {
+            dispatchGroup.enter()
+            APIServiceClient.shared.deleteTransformer(path: (URLPath.Transformers + "/" + item.id!), success: { (data, response, error) in
+                dispatchGroup.leave()
+            }) { (error) -> (Void) in
+            }
+        }
+        dispatchGroup.notify(queue: .main) {
+            if goBack {
+                NavigationViewController.shared.popViewController(animated: true)
+            }
         }
     }
 }
