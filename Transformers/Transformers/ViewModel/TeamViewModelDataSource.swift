@@ -12,9 +12,7 @@ import SDWebImage
 var autobots = [Transformer]()
 var decepticons = [Transformer]()
 
-class TeamViewModelDataSource: NSObject {
-    
-    
+class TeamViewModelDataSource: NSObject {    
     
     var tableView : UITableView?
     
