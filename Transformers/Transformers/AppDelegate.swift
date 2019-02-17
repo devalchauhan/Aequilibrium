@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         setWindowProperties()
         initializeFirstViewController()
+        ReachabilityLayer.shared.checkForReachability()
         IQKeyboardManager.shared.enable = true
         let paths = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)
         print(paths[0])

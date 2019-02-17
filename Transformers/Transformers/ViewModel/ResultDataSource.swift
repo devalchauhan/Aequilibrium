@@ -19,6 +19,8 @@ class ResultDataSource: NSObject {
     var survivors : [Transformer] = []
     var winningTeam : [Transformer] = []
     
+    var endGame : Bool = false
+    
     var battleCount : Int = 0
     var winningTeamName : String = ""
     var survivorTeamName : String = ""
@@ -106,7 +108,11 @@ class ResultDataSource: NSObject {
                     }
                 }
                 else { // check name
-                    continue
+                    if endGame {
+                        // destroy all transformers
+                        break
+                    }
+                    else { continue }
                 }
             }
         }
@@ -119,6 +125,7 @@ class ResultDataSource: NSObject {
         
         if (array.contains(sourceTranformerName)) {
             if (array.contains(destinationTransformerName)) {
+                endGame = true
                 return false
             }
             else {
