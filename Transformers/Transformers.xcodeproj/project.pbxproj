@@ -12,7 +12,6 @@
 		67041D6E221718C100BD9C91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67041D6D221718C100BD9C91 /* AppDelegate.swift */; };
 		67041D70221718C100BD9C91 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67041D6F221718C100BD9C91 /* TeamViewController.swift */; };
 		67041D73221718C100BD9C91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67041D71221718C100BD9C91 /* Main.storyboard */; };
-		67041D76221718C100BD9C91 /* Transformers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 67041D74221718C100BD9C91 /* Transformers.xcdatamodeld */; };
 		67041D78221718C100BD9C91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67041D77221718C100BD9C91 /* Assets.xcassets */; };
 		67041D7B221718C100BD9C91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67041D79221718C100BD9C91 /* LaunchScreen.storyboard */; };
 		67041D86221718C100BD9C91 /* TransformersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67041D85221718C100BD9C91 /* TransformersTests.swift */; };
@@ -24,7 +23,6 @@
 		671A83EC2217E6C2003D7A7E /* APIServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671A83EB2217E6C2003D7A7E /* APIServiceClient.swift */; };
 		671A83EE2217E6FD003D7A7E /* APISessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671A83ED2217E6FD003D7A7E /* APISessionService.swift */; };
 		671A83F02217E9DB003D7A7E /* ServerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671A83EF2217E9DB003D7A7E /* ServerConfiguration.swift */; };
-		671A83F3221818CE003D7A7E /* TransformerCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671A83F2221818CE003D7A7E /* TransformerCoreData.swift */; };
 		671A83F622188D50003D7A7E /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671A83F522188D50003D7A7E /* ResultViewController.swift */; };
 		671A83F822189B3E003D7A7E /* ResultDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671A83F722189B3E003D7A7E /* ResultDataSource.swift */; };
 		673626B022171DBB00E55B8D /* AppDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673626AF22171DBB00E55B8D /* AppDelegateExtension.swift */; };
@@ -76,7 +74,6 @@
 		67041D6D221718C100BD9C91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67041D6F221718C100BD9C91 /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
 		67041D72221718C100BD9C91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		67041D75221718C100BD9C91 /* Transformers.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Transformers.xcdatamodel; sourceTree = "<group>"; };
 		67041D77221718C100BD9C91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67041D7A221718C100BD9C91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67041D7C221718C100BD9C91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -93,7 +90,6 @@
 		671A83EB2217E6C2003D7A7E /* APIServiceClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceClient.swift; sourceTree = "<group>"; };
 		671A83ED2217E6FD003D7A7E /* APISessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISessionService.swift; sourceTree = "<group>"; };
 		671A83EF2217E9DB003D7A7E /* ServerConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerConfiguration.swift; sourceTree = "<group>"; };
-		671A83F2221818CE003D7A7E /* TransformerCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerCoreData.swift; sourceTree = "<group>"; };
 		671A83F522188D50003D7A7E /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		671A83F722189B3E003D7A7E /* ResultDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultDataSource.swift; sourceTree = "<group>"; };
 		673626AF22171DBB00E55B8D /* AppDelegateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateExtension.swift; sourceTree = "<group>"; };
@@ -194,7 +190,6 @@
 				67041D77221718C100BD9C91 /* Assets.xcassets */,
 				67041D79221718C100BD9C91 /* LaunchScreen.storyboard */,
 				67041D7C221718C100BD9C91 /* Info.plist */,
-				67041D74221718C100BD9C91 /* Transformers.xcdatamodeld */,
 			);
 			path = Transformers;
 			sourceTree = "<group>";
@@ -247,7 +242,6 @@
 		671A83E62217E231003D7A7E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				671A83F12218189D003D7A7E /* CoreData */,
 				671A83E72217E241003D7A7E /* Transformer.swift */,
 			);
 			path = Model;
@@ -268,14 +262,6 @@
 				671A83ED2217E6FD003D7A7E /* APISessionService.swift */,
 			);
 			path = API;
-			sourceTree = "<group>";
-		};
-		671A83F12218189D003D7A7E /* CoreData */ = {
-			isa = PBXGroup;
-			children = (
-				671A83F2221818CE003D7A7E /* TransformerCoreData.swift */,
-			);
-			path = CoreData;
 			sourceTree = "<group>";
 		};
 		671A83F422188D30003D7A7E /* ResultViewController */ = {
@@ -658,11 +644,9 @@
 				67AF1FF92217549B00E78E4B /* Sizes.swift in Sources */,
 				674C2235221743CD00DB7E3C /* LeftNavigationItem.swift in Sources */,
 				673626B422171ECA00E55B8D /* NavigationViewController.swift in Sources */,
-				67041D76221718C100BD9C91 /* Transformers.xcdatamodeld in Sources */,
 				671A83E22217DE35003D7A7E /* TeamTableViewCell.swift in Sources */,
 				671A83F822189B3E003D7A7E /* ResultDataSource.swift in Sources */,
 				671A83DE2217DD0A003D7A7E /* TeamViewModelDataSource.swift in Sources */,
-				671A83F3221818CE003D7A7E /* TransformerCoreData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -999,19 +983,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		67041D74221718C100BD9C91 /* Transformers.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				67041D75221718C100BD9C91 /* Transformers.xcdatamodel */,
-			);
-			currentVersion = 67041D75221718C100BD9C91 /* Transformers.xcdatamodel */;
-			path = Transformers.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 67041D62221718C100BD9C91 /* Project object */;
 }

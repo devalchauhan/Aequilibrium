@@ -84,12 +84,6 @@ class CreateTransformerViewController: UIViewController {
                 do {
                     let transformerJson = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments)
                     Transformer.shared.configure(JSON: transformerJson as! [AnyHashable : Any])
-                    //                if self.isUpdate {
-                    //                    TransformerCoreData.updateTransformerFromCoreData(transformer: Transformer.shared)
-                    //                }
-                    //                else {
-                    //                    TransformerCoreData.saveTransformerToCoredata(transformer: Transformer.shared)
-                    //                }
                     DispatchQueue.main.async {
                         NavigationViewController.shared.popViewController(animated: true)
                     }
