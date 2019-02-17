@@ -42,6 +42,7 @@
 		67BB98EB221740A30011AA7D /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BB98E8221740A30011AA7D /* UIApplication.swift */; };
 		67BB98EC221740A30011AA7D /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BB98E9221740A30011AA7D /* Int.swift */; };
 		67E8363D2219999200876D60 /* TextFieldValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E8363C2219999200876D60 /* TextFieldValidationTests.swift */; };
+		67E8363F2219A6CD00876D60 /* NavigationViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E8363E2219A6CD00876D60 /* NavigationViewControllerTests.swift */; };
 		67FDE3C022193C940098C759 /* TextFieldValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FDE3BF22193C940098C759 /* TextFieldValidator.swift */; };
 		67FDE3C222193EFB0098C759 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FDE3C122193EFB0098C759 /* Alert.swift */; };
 		67FDE3C4221961E00098C759 /* ReachabilityLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FDE3C3221961E00098C759 /* ReachabilityLayer.swift */; };
@@ -112,6 +113,7 @@
 		67BB98E8221740A30011AA7D /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		67BB98E9221740A30011AA7D /* Int.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
 		67E8363C2219999200876D60 /* TextFieldValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldValidationTests.swift; sourceTree = "<group>"; };
+		67E8363E2219A6CD00876D60 /* NavigationViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewControllerTests.swift; sourceTree = "<group>"; };
 		67FDE3BF22193C940098C759 /* TextFieldValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldValidator.swift; sourceTree = "<group>"; };
 		67FDE3C122193EFB0098C759 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		67FDE3C3221961E00098C759 /* ReachabilityLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityLayer.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 		67041D84221718C100BD9C91 /* TransformersTests */ = {
 			isa = PBXGroup;
 			children = (
+				67E8363E2219A6CD00876D60 /* NavigationViewControllerTests.swift */,
 				67E8363C2219999200876D60 /* TextFieldValidationTests.swift */,
 				6782FF0C221998BB003D775F /* ResultDataSourceTests.swift */,
 				6782FF0822198DA2003D775F /* ReachabilityTests.swift */,
@@ -667,6 +670,7 @@
 				6782FF0922198DA2003D775F /* ReachabilityTests.swift in Sources */,
 				67041D86221718C100BD9C91 /* TransformersTests.swift in Sources */,
 				6782FF0D221998BB003D775F /* ResultDataSourceTests.swift in Sources */,
+				67E8363F2219A6CD00876D60 /* NavigationViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
