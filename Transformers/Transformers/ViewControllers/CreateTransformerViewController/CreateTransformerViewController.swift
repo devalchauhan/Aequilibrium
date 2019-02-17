@@ -78,7 +78,7 @@ class CreateTransformerViewController: UIViewController {
             Alert.displayAlert(message: "Please enter \(textField)", withTitle: kAlertTitle, withActions: [okAction])
         } else if isInvalid {
             let okAction = UIAlertAction(title: kAlertButtonTitle, style: .cancel)
-            Alert.displayAlert(message: "Please enter valid \(textField) between 0 to 10", withTitle: kAlertTitle, withActions: [okAction])
+            Alert.displayAlert(message: "Please enter valid \(textField) between 1 to 10", withTitle: kAlertTitle, withActions: [okAction])
         } else {
             APIServiceClient.shared.createOrUpdateTransformer(path: URLPath.Transformers,isUpdate: isUpdate, tranformerJson: (isUpdate ? configureJsonToUpdateTransformer(_id: tranformer.id!) : configureJsonToCreateTransformer() ), success: { (data, response, error) in
                 do {

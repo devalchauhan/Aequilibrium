@@ -13,7 +13,7 @@ class TextFieldValidator: NSObject {
         for item in textFields {
             if (item.text?.isEmpty)! {
                 return (item.placeholder!, true,false)
-            } else if item.placeholder != "Name", let value = item.text, Int(value)!<0 || Int(value)!>10 {
+            } else if item.placeholder != "Name", let value = item.text, Int(value)!<=0 || Int(value)!>10 {
                 return (item.placeholder!, false,true)
             }
         }
