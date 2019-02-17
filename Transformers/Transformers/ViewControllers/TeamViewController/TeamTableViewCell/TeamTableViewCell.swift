@@ -10,8 +10,6 @@ import UIKit
 
 class TeamTableViewCell: UITableViewCell {
     
-    
-
     @IBOutlet weak var autobotName : UILabel!
     @IBOutlet var autobotImage : UIImageView!
     @IBOutlet weak var autobotButton : UIButton!
@@ -22,7 +20,6 @@ class TeamTableViewCell: UITableViewCell {
     var autobotUpdateClosure: (() -> Void)?
     var decepticonUpdateClosure: (() -> Void)?
     
-    // Configure the cell here
     func autobotUpdateConfigure(transformer:Transformer, autobotUpdateClosure: (() -> Void)?) {
         self.autobotUpdateClosure = autobotUpdateClosure
     }
@@ -33,15 +30,7 @@ class TeamTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }
 extension TeamTableViewCell {
     @IBAction func autobotUpdatePressed(_ sender: Any) {

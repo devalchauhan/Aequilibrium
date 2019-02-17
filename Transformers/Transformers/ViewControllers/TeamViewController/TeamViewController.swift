@@ -35,6 +35,5 @@ class TeamViewController: UIViewController {
         let resultViewController = ViewControllerInstence.fromStoryboard(Storyboard.main, identifire: Storyboard.Identifier.ResultViewController) as! ResultViewController
         NavigationViewController.shared.pushViewController(resultViewController, animated: true)
     }
-
 }
 

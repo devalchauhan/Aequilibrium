@@ -112,7 +112,6 @@ class ResultDataSource: NSObject {
         }
     }
     
-    
     func checkTransformerName(source : Transformer, destination : Transformer) -> Bool {
         let array = [kOptimusPrime,kPredaking]
         let sourceName = source.name?.transformerName() ?? ""

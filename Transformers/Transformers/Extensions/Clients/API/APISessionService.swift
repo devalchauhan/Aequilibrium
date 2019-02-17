@@ -43,10 +43,6 @@ class APISessionService: NSObject {
         headers[key] = value
     }
     
-    func removeHeaderToken(key: String) {
-        headers.removeValue(forKey: key)
-    }
-    
     //MARK: Without Mappable Webcall
     func callWebServiceWithoutMapping(method: HTTPMethod, path: String ,params:[String:AnyObject]?, completion:@escaping SuccessCompletion) -> Void {
         

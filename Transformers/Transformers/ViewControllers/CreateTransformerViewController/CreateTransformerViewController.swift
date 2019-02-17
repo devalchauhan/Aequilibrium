@@ -9,7 +9,6 @@
 import UIKit
 let kCreateTitle = "CREATE TRANSFROMER"
 let kUpdateTitle = "UPDATE TRANSFROMER"
-let kStandardPickerRowHeight = CGFloat(40)
 
 class CreateTransformerViewController: UIViewController {
     
@@ -94,8 +93,6 @@ class CreateTransformerViewController: UIViewController {
         }
     }
     
-    
-    
     func configureJsonToCreateTransformer() -> Dictionary<String, Any> {
         var transformer = Dictionary<String, Any>()
         let strength : Int  = Int(strengthTextField.text!)!
@@ -129,7 +126,6 @@ class CreateTransformerViewController: UIViewController {
             APIServiceClient.shared.deleteTransformer(path: (URLPath.Transformers + "/" + tranformer.id!), success: { (data, response, error) in
                 NavigationViewController.shared.popViewController(animated: true)
             }) { (error) -> (Void) in
-                
             }
         } else {
             nameTextField.text = ""; strengthTextField.text = ""; intelligenceTextField.text = ""; speedTextField.text = ""; enduranceTextField.text = ""; rankTextField.text = ""; courageTextField.text = ""; firepowerTextField.text = ""; skillTextField.text = "";
@@ -138,12 +134,6 @@ class CreateTransformerViewController: UIViewController {
 }
 
 extension CreateTransformerViewController : UITextFieldDelegate {
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        
-    }
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        
-    }
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if textField == nameTextField {
             return true

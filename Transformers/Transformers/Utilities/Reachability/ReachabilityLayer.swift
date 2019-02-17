@@ -10,7 +10,6 @@ class ReachabilityLayer: NSObject {
     
     static let shared = ReachabilityLayer()
     let reachability = Reachability()!
-    var isAlertPresented = false
     
     private override init() {}
     

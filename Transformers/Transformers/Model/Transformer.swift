@@ -41,7 +41,5 @@ class Transformer: NSObject {
         firepower = transformerInfo["firepower"] as! Int
         skill = transformerInfo["skill"] as! Int
         team_icon = transformerInfo["team_icon"] as? String
-        
     }
-    
 }
