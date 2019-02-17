@@ -10,7 +10,6 @@ import UIKit
 let kCreateTitle = "CREATE TRANSFROMER"
 let kUpdateTitle = "UPDATE TRANSFROMER"
 let kStandardPickerRowHeight = CGFloat(40)
-let transformerCategory : Array = ["Autobots","Decepticons"]
 
 class CreateTransformerViewController: UIViewController {
     

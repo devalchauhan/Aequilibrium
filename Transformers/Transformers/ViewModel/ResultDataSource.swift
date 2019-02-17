@@ -11,15 +11,61 @@ import UIKit
 let kOptimusPrime = "OPTIMUSPRIME"
 let kPredaking = "PREDAKING"
 
+let transformerCategory : Array = ["Winning Team","Survivors from loosing team"]
+
 class ResultDataSource: NSObject {
     
     var winner : [Transformer] = []
     var survivors : [Transformer] = []
-    var battleCount : Int = 0
+    var winningTeam : [Transformer] = []
     
-    override init() {
+    var battleCount : Int = 0
+    var winningTeamName : String = ""
+    var survivorTeamName : String = ""
+    
+    var tableView : UITableView?
+    let cellReuseIdentifier = "cell"
+    
+    init(_tableView: UITableView) {
         super.init()
+        configureTableView(_tableview: _tableView)
+    
         self.getResult()
+        calclutaeWinningTeam()
+        reloadTableView(_tableView: tableView!)
+    }
+    
+    func calclutaeWinningTeam() {
+        let autobots : [Transformer] = winner.filter() { $0.team == "A" }
+        let decepticons : [Transformer] = winner.filter() { $0.team == "D" }
+        switch autobots.count - decepticons.count {
+        case Int.min..<0:
+            winningTeam = decepticons
+            break
+        case 0:
+            break
+        default:
+            winningTeam = autobots
+        }
+        if winningTeam.count>0 {
+            winningTeamName = winningTeam[0].team == "A" ? "Autobots" : "Decepticons"
+        }
+        if survivors.count>0 {
+            survivorTeamName = survivors[0].team == "A" ? "Autobots" : "Decepticons"
+        }
+    }
+    func configureTableView(_tableview: UITableView) {
+        tableView = _tableview
+        tableView?.delegate = self
+        tableView?.dataSource = self
+        tableView?.estimatedRowHeight = 60.0
+        tableView?.rowHeight = UITableView.automaticDimension
+        tableView?.separatorColor = UIColor.darkGray
+        tableView?.tableFooterView = UIView()
+    }
+    
+    func reloadTableView(_tableView : UITableView) {
+        _tableView.reloadData()
     }
     
     func getResult()  {
@@ -67,8 +113,8 @@ class ResultDataSource: NSObject {
     }
     
     func checkTransformerName(sourceTranformer : Transformer, destinationTransformer : Transformer) -> Bool {
-        let sourceTranformerName = sourceTranformer.name!.uppercased().trimmingCharacters(in: .whitespacesAndNewlines)
-        let destinationTransformerName = destinationTransformer.name!.uppercased().trimmingCharacters(in: .whitespacesAndNewlines)
+        let sourceTranformerName = sourceTranformer.name!.uppercased().replacingOccurrences(of: " ", with: "")
+        let destinationTransformerName = destinationTransformer.name!.uppercased().replacingOccurrences(of: " ", with: "")
         let array = [kOptimusPrime,kPredaking]
         
         if (array.contains(sourceTranformerName)) {
@@ -132,5 +178,40 @@ class ResultDataSource: NSObject {
             // destoy both call delete WS
         }
         
+    }
+}
+
+extension ResultDataSource : UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return transformerCategory.count
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return section == 0 ? winningTeam.count : survivors.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        var cell : UITableViewCell? = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier)
+        if cell == nil {
+            cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: cellReuseIdentifier)
+        }
+        
+        cell!.separatorInset = UIEdgeInsets.zero
+        cell!.textLabel?.text = indexPath.section == 0 ? winningTeam[indexPath.row].name : survivors[indexPath.row].name
+    
+        return cell!
+    }
+}
+
+extension ResultDataSource : UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return tableView.estimatedRowHeight
+    }
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let teamName : String = section == 0 ? winningTeamName : survivorTeamName
+        return "\(transformerCategory[section]) : \(String(describing: teamName))"
     }
 }
