@@ -1,5 +1,5 @@
 //
-//  testTextFieldValidations.swift
+//  TextFieldValidationTests.swift
 //  TransformersTests
 //
 //  Created by Deval on 17/02/19.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import Transformers
 
-class testTextFieldValidations: XCTestCase {
+class TextFieldValidationTests: XCTestCase {
     
     override func setUp() {
         testEmptyTextValidations()
