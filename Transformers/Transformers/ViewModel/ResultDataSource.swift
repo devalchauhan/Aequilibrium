@@ -31,7 +31,7 @@ class ResultDataSource: NSObject {
     init(_tableView: UITableView) {
         super.init()
         configureTableView(_tableview: _tableView)
-    
+        
         self.getResult()
         calclutaeWinningTeam()
         reloadTableView(_tableView: tableView!)
@@ -94,54 +94,40 @@ class ResultDataSource: NSObject {
             }
             else {
                 battleCount = battleCount+1
-                if checkTransformerName(sourceTranformer: item, destinationTransformer: destination[index]) {
+                if checkTransformerName(source: item, destination: destination[index]) {
                     if checkCourageAndStrength(sourceTranformer: item, destinationTransformer: destination[index]) {
                         if checkSkill(sourceTranformer: item, destinationTransformer: destination[index]) {
                             checkOverAllRating(sourceTranformer: item, destinationTransformer: destination[index])
                         }
-                        else { // skill
-                            continue
-                        }
-                    }
-                    else { // courage
-                        continue
                     }
                 }
                 else { // check name
                     if endGame {
                         // destroy all transformers
-                        
                         break
                     }
-                    else { continue }
                 }
             }
         }
     }
     
-    func checkTransformerName(sourceTranformer : Transformer, destinationTransformer : Transformer) -> Bool {
-        let sourceTranformerName = sourceTranformer.name!.uppercased().replacingOccurrences(of: " ", with: "")
-        let destinationTransformerName = destinationTransformer.name!.uppercased().replacingOccurrences(of: " ", with: "")
+    
+    func checkTransformerName(source : Transformer, destination : Transformer) -> Bool {
         let array = [kOptimusPrime,kPredaking]
+        let sourceName = source.name?.transformerName() ?? ""
+        let destinationName = destination.name?.transformerName() ?? ""
         
-        if (array.contains(sourceTranformerName)) {
-            if (array.contains(destinationTransformerName)) {
-                endGame = true
-                return false
-            }
-            else {
-                winner.append(sourceTranformer)
-                return false
-            }
-        }
-        else {
-            if (array.contains(destinationTransformerName)) {
-                winner.append(destinationTransformer)
-                return false
-            }
-            else {
-                return true
-            }
+        if array.contains(sourceName) && array.contains(destinationName) {
+            endGame = true
+            return false
+        } else if !(array.contains(sourceName)) && !(array.contains(destinationName)) {
+            return true
+        } else if array.contains(sourceName) && !(array.contains(destinationName)) {
+            winner.append(source)
+            return false
+        } else {
+            winner.append(destination)
+            return false
         }
     }
     
@@ -150,11 +136,13 @@ class ResultDataSource: NSObject {
         if (sourceTranformer.courage - destinationTransformer.courage >= 4) {
             
         }
-        if (sourceTranformer.courage - destinationTransformer.courage >= 4) && (sourceTranformer.strength - destinationTransformer.strength) >= 3 {
+        if (sourceTranformer.courage - destinationTransformer.courage >= 4) &&
+            (sourceTranformer.strength - destinationTransformer.strength) >= 3 {
             winner.append(sourceTranformer)
             return false
         }
-        else if (destinationTransformer.courage - sourceTranformer.courage >= 4) && (destinationTransformer.strength - sourceTranformer.strength) >= 3 {
+        else if (destinationTransformer.courage - sourceTranformer.courage >= 4) &&
+            (destinationTransformer.strength - sourceTranformer.strength) >= 3 {
             winner.append(destinationTransformer)
             return false
         }
@@ -174,8 +162,18 @@ class ResultDataSource: NSObject {
     }
     
     func checkOverAllRating(sourceTranformer : Transformer, destinationTransformer : Transformer) {
-        let sourceOverAllRating = sourceTranformer.strength + sourceTranformer.intelligence + sourceTranformer.speed + sourceTranformer.endurance + sourceTranformer.firepower
-        let destinationOverAllRating = destinationTransformer.strength + destinationTransformer.intelligence + destinationTransformer.speed + destinationTransformer.endurance + destinationTransformer.firepower
+        let sourceOverAllRating = sourceTranformer.strength +
+            sourceTranformer.intelligence +
+            sourceTranformer.speed +
+            sourceTranformer.endurance +
+            sourceTranformer.firepower
+        
+        let destinationOverAllRating = destinationTransformer.strength +
+            destinationTransformer.intelligence +
+            destinationTransformer.speed +
+            destinationTransformer.endurance +
+            destinationTransformer.firepower
+        
         if sourceOverAllRating > destinationOverAllRating {
             winner.append(sourceTranformer)
         }
@@ -185,7 +183,6 @@ class ResultDataSource: NSObject {
         else {
             // destoy both call delete WS
         }
-        
     }
 }
 
@@ -208,7 +205,7 @@ extension ResultDataSource : UITableViewDataSource {
         
         cell!.separatorInset = UIEdgeInsets.zero
         cell!.textLabel?.text = indexPath.section == 0 ? winningTeam[indexPath.row].name : survivors[indexPath.row].name
-    
+        
         return cell!
     }
 }
@@ -221,5 +218,11 @@ extension ResultDataSource : UITableViewDelegate {
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         let teamName : String = section == 0 ? winningTeamName : survivorTeamName
         return "\(transformerCategory[section]) : \(String(describing: teamName))"
+    }
+}
+
+extension String {
+    func transformerName() -> String {
+        return self.uppercased().replacingOccurrences(of: " ", with: "")
     }
 }

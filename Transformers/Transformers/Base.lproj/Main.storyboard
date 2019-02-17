@@ -296,7 +296,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="UQj-pW-6RD" firstAttribute="top" secondItem="DCZ-of-k6e" secondAttribute="top" constant="16" id="3x7-ss-9KN"/>
-                            <constraint firstItem="DCZ-of-k6e" firstAttribute="bottom" secondItem="677-RP-rfz" secondAttribute="bottom" id="40T-Rk-aEs"/>
+                            <constraint firstAttribute="bottom" secondItem="677-RP-rfz" secondAttribute="bottom" id="40T-Rk-aEs"/>
                             <constraint firstItem="677-RP-rfz" firstAttribute="top" secondItem="UQj-pW-6RD" secondAttribute="bottom" constant="16" id="NGQ-Zr-eB3"/>
                             <constraint firstItem="UQj-pW-6RD" firstAttribute="leading" secondItem="DCZ-of-k6e" secondAttribute="leading" constant="16" id="Qlm-65-Nsd"/>
                             <constraint firstItem="677-RP-rfz" firstAttribute="leading" secondItem="DCZ-of-k6e" secondAttribute="leading" id="uFU-Tb-FX7"/>

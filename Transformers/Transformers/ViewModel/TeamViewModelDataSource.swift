@@ -79,7 +79,8 @@ class TeamViewModelDataSource: NSObject {
                     }
                 }
             } catch { }
-            
+            autobots = []
+            decepticons = []
             autobots = (transformers.filter() { $0.team == "A" }.sorted(by: { $0.rank > $1.rank }))
             decepticons = (transformers.filter() { $0.team == "D" }.sorted(by: { $0.rank > $1.rank }))
             self.reloadTableView(_tableView: self.tableView!)
