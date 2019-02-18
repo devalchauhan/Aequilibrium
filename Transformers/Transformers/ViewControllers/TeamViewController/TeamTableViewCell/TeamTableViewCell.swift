@@ -7,17 +7,23 @@
 //
 
 import UIKit
-
+/// This is a class created for TeamTableViewCell
 class TeamTableViewCell: UITableViewCell {
-    
+    /// Label to display autobotName
     @IBOutlet weak var autobotName : UILabel!
+    /// UIImageView to display autobotImage
     @IBOutlet var autobotImage : UIImageView!
+    /// Button to handle autobot update event
     @IBOutlet weak var autobotButton : UIButton!
+    /// Label to display decepticonName
     @IBOutlet weak var decepticonName : UILabel!
+    /// UIImageView to display decepticonImage
     @IBOutlet var decepticonImage : UIImageView!
+    /// Button to handle decepticon update event
     @IBOutlet weak var decepticonButton : UIButton!
-    
+    /// autobotUpdate event handler
     var autobotUpdateClosure: (() -> Void)?
+    /// decepticonUpdate event handler
     var decepticonUpdateClosure: (() -> Void)?
     
     func autobotUpdateConfigure(transformer:Transformer, autobotUpdateClosure: (() -> Void)?) {

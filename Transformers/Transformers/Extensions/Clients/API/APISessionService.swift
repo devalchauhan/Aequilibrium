@@ -17,7 +17,7 @@ public enum HTTPMethod: String {
     case put     = "PUT"
     case delete  = "DELETE"
 }
-
+/// This is a class created to manage URLSession
 class APISessionService: NSObject {
     static let shared = APISessionService()
     

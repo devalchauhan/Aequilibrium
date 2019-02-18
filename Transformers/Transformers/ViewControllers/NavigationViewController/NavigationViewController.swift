@@ -8,9 +8,21 @@
 
 import Foundation
 import UIKit
-
+/// This is a class to handle NavigationViewController
 class NavigationViewController: UINavigationController {
+    /// Shared object for NavigationViewController
     static var shared =  NavigationViewController()
+    
+    /**
+     Call this function to set RootViewController of NavigationViewController.
+     - Parameters:
+        - viewController : Pass UIViewController object.
+     
+     ### Usage Example: ###
+     ````
+     NavigationViewController.shared.setRootViewControllerWithDefaultProperties(teamViewController)
+     ````
+     */
     
     func setRootViewControllerWithDefaultProperties(_ viewController: UIViewController) {
         NavigationViewController.shared = NavigationViewController(rootViewController: viewController)

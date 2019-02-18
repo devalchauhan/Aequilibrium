@@ -7,8 +7,22 @@
 //
 
 import UIKit
-
+/// This is a class created for textField validations
 class TextFieldValidator: NSObject {
+    
+    /**
+     Call this function for validating empty and incorrect textfield entries in CreateViewController class.
+     - Parameters:
+        - textFields : Array of textfields which you want to validate.
+     - Returns:
+        - it will return tuple (textField.placeholder, isEmpty, isInvalid) in form of (String,Bool,Bool)
+     
+     ### Usage Example: ###
+     ````
+     let (textField.placeholder,isEmpty,isInvalid) = TextFieldValidator().isContainsIncorrectEntry(textFields: [UITextField])
+     ````
+     */
+    
     func isContainsIncorrectEntry(textFields : [UITextField]) -> (String,Bool,Bool) {
         for item in textFields {
             if (item.text?.isEmpty)! {

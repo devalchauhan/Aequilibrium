@@ -13,21 +13,28 @@ let kPredaking = "PREDAKING"
 
 let transformerCategory : Array = ["Winning Team","Survivors from loosing team"]
 
+/// This class is created for calculating result for winning team, survivors and battle count.
 class ResultDataSource: NSObject {
-    
+    /// winner list of individual battle
     var winner : [Transformer] = []
+    /// survivor list who haven't participated in battle
     var survivors : [Transformer] = []
+    /// winning team list
     var winningTeam : [Transformer] = []
-    
+    /// endGame flag to withdraw game immediately
     var endGame : Bool = false
-    
+    /// battle count
     var battleCount : Int = 0
+    /// winning team name
     var winningTeamName : String = ""
+    /// survivor team name
     var survivorTeamName : String = ""
-    
+    /// UITableView object
     var tableView : UITableView?
+    /// Reusablecell indetifier
     let cellReuseIdentifier = "cell"
     
+    /// ResultDataSource initializer
     init(_tableView: UITableView) {
         super.init()
         configureTableView(_tableview: _tableView)
@@ -37,6 +44,14 @@ class ResultDataSource: NSObject {
         reloadTableView(_tableView: tableView!)
     }
     
+    /**
+     Call this function for calculating result after war.
+     
+     ### Usage Example: ###
+     ````
+     calclutaeWinningTeam()
+     ````
+     */
     func calclutaeWinningTeam() {
         let autobots : [Transformer] = winner.filter() { $0.team == "A" }
         let decepticons : [Transformer] = winner.filter() { $0.team == "D" }
@@ -56,6 +71,16 @@ class ResultDataSource: NSObject {
             survivorTeamName = survivors[0].team == "A" ? "Autobots" : "Decepticons"
         }
     }
+    /**
+     Call this function for UITableView setup by providing delegate,datasource, few basic properties.
+     - Parameters:
+        - _tableview : Pass UITableView object.
+     
+     ### Usage Example: ###
+     ````
+     configureTableView(_tableview: _tableView)
+     ````
+     */
     func configureTableView(_tableview: UITableView) {
         tableView = _tableview
         tableView?.delegate = self
@@ -65,11 +90,27 @@ class ResultDataSource: NSObject {
         tableView?.separatorColor = UIColor.darkGray
         tableView?.tableFooterView = UIView()
     }
-    
+    /**
+     Call this function for reloading UITableView.
+     - Parameters:
+        - _tableview : Pass UITableView object.
+     
+     ### Usage Example: ###
+     ````
+     reloadTableView(_tableView: tableView!)
+     ````
+     */
     func reloadTableView(_tableView : UITableView) {
         _tableView.reloadData()
     }
-    
+    /**
+     Call this function to initiate war between transformers.
+     
+     ### Usage Example: ###
+     ````
+     self.getResult()
+     ````
+     */
     func getResult()  {
         var source : [Transformer] = decepticons // 1
         var destination : [Transformer] = autobots // 2
@@ -111,7 +152,18 @@ class ResultDataSource: NSObject {
             }
         }
     }
-    
+    /**
+     Call this function to check winner by TranformerName.
+     - Parameters:
+        - source : Transfer model of one team.
+        - destination : Transfer model of another(opponent) team.
+     - Returns:
+        - Bool : it will return Bool
+     ### Usage Example: ###
+     ````
+     checkTransformerName(source: Transformer, destination: Transformer)
+     ````
+     */
     func checkTransformerName(source : Transformer, destination : Transformer) -> Bool {
         let array = [kOptimusPrime,kPredaking]
         let sourceName = source.name?.transformerName() ?? ""
@@ -131,6 +183,18 @@ class ResultDataSource: NSObject {
         }
     }
     
+    /**
+     Call this function to check winner by Transformer courage and strength.
+     - Parameters:
+        - sourceTranformer : Transfer model of one team.
+        - destinationTransformer : Transfer model of another(opponent) team.
+     - Returns:
+        - Bool : it will return Bool
+     ### Usage Example: ###
+     ````
+     checkCourageAndStrength(sourceTranformer: Transformer, destinationTransformer: Transformer)
+     ````
+     */
     func checkCourageAndStrength(sourceTranformer : Transformer, destinationTransformer : Transformer) -> Bool {
         
         if (sourceTranformer.courage - destinationTransformer.courage >= 4) &&
@@ -146,6 +210,18 @@ class ResultDataSource: NSObject {
         return true
     }
     
+    /**
+     Call this function to check winner by Transformer skill.
+     - Parameters:
+        - sourceTranformer : Transfer model of one team.
+        - destinationTransformer : Transfer model of another(opponent) team.
+     - Returns:
+        - Bool : it will return Bool
+     ### Usage Example: ###
+     ````
+     checkSkill(sourceTranformer: Transformer, destinationTransformer: Transformer)
+     ````
+     */
     func checkSkill(sourceTranformer : Transformer, destinationTransformer : Transformer) -> Bool {
         if sourceTranformer.skill - destinationTransformer.skill >= 3 {
             winner.append(sourceTranformer)
@@ -158,6 +234,18 @@ class ResultDataSource: NSObject {
         return true
     }
     
+    /**
+     Call this function to check winner by Transformer overall rating.
+     - Parameters:
+        - sourceTranformer : Transfer model of one team.
+        - destinationTransformer : Transfer model of another(opponent) team.
+     - Returns:
+        - Bool : it will return Bool
+     ### Usage Example: ###
+     ````
+     checkOverAllRating(sourceTranformer: Transformer, destinationTransformer: Transformer)
+     ````
+     */
     func checkOverAllRating(sourceTranformer : Transformer, destinationTransformer : Transformer) {
         let sourceOverAllRating = sourceTranformer.strength +
             sourceTranformer.intelligence +
@@ -182,6 +270,16 @@ class ResultDataSource: NSObject {
         }
     }
     
+    /**
+     Call this function to destroy all Transformers by calling API.
+     - Parameters:
+        - allTransformers : Array of Transformer model
+        - goBack : Bool to decide pop operation after completion
+     ### Usage Example: ###
+     ````
+     destroyTransformers(allTransformers: autobots, goBack: true)
+     ````
+     */
     func destroyTransformers(allTransformers : [Transformer], goBack : Bool) {
         let dispatchGroup = DispatchGroup()
         for item in allTransformers {
@@ -240,6 +338,15 @@ extension ResultDataSource : UITableViewDelegate {
 }
 
 extension String {
+    /**
+     Call this string extension to covert string into uppercase and remove " ".
+     - Returns:
+        - String : converted string
+     ### Usage Example: ###
+     ````
+     transformerName()
+     ````
+     */
     func transformerName() -> String {
         return self.uppercased().replacingOccurrences(of: " ", with: "")
     }

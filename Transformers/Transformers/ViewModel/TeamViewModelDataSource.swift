@@ -12,10 +12,12 @@ import SDWebImage
 var autobots = [Transformer]()
 var decepticons = [Transformer]()
 
+/// This class is created for getting data for Transformer by calling API, and provide that to UITableView dataSource
 class TeamViewModelDataSource: NSObject {    
-    
+    /// UITableView instance
     var tableView : UITableView?
     
+    /// TeamViewModelDataSource initializer
     init(_tableView: UITableView) {
         super.init()
         configureTableView(_tableview: _tableView)
@@ -28,6 +30,16 @@ class TeamViewModelDataSource: NSObject {
         getAllTransformerFromWS()
     }
     
+    /**
+     Call this function for UITableView setup by providing delegate,datasource, few basic properties and UITableViewCell nib registration.
+     - Parameters:
+        - _tableview : Pass UITableView object.
+     
+     ### Usage Example: ###
+     ````
+     configureTableView(_tableview: _tableView)
+     ````
+     */
     func configureTableView(_tableview: UITableView) {
         tableView = _tableview
         tableView?.delegate = self
@@ -39,10 +51,28 @@ class TeamViewModelDataSource: NSObject {
         tableView?.register(UINib(nibName: "TeamTableViewCell", bundle: Bundle.main), forCellReuseIdentifier: "TeamTableViewCell")
     }
     
+    /**
+     Call this function for reloading UITableView.
+     - Parameters:
+        - _tableview : Pass UITableView object.
+     
+     ### Usage Example: ###
+     ````
+     reloadTableView(_tableView: tableView!)
+     ````
+     */
     func reloadTableView(_tableView : UITableView) {
         _tableView.reloadData()
     }
     
+    /**
+     Call this function for getting Authorization Bearer token by calling allspark API call.
+     
+     ### Usage Example: ###
+     ````
+     getAllSpark()
+     ````
+     */
     func getAllSpark() {
         APIServiceClient.shared.getAllSpark(path: URLPath.AllSpark, success: { (data, response, error) in
             let bearerToken : String = String(data: data!, encoding: String.Encoding.utf8) ?? ""
@@ -56,6 +86,14 @@ class TeamViewModelDataSource: NSObject {
         }
     }
     
+    /**
+     Call this function for getting All Transformers by calling transformers API call.
+     
+     ### Usage Example: ###
+     ````
+     getAllTransformerFromWS()
+     ````
+     */
     func getAllTransformerFromWS(){
         var transformers : [Transformer] = []
         APIServiceClient.shared.getAllTransformer(path: URLPath.Transformers, success: { (data, response, error) in

@@ -9,23 +9,24 @@
 import UIKit
 
 let kNavigationTitle = "TRANFORMERS"
-
+/// This is a class created for TeamViewController
 class TeamViewController: UIViewController {
-    
+    /// TeamViewModelDataSource instance
     var teamDataSource : TeamViewModelDataSource?
+    /// UITableView instance to display Transformers
     @IBOutlet weak var tableView : UITableView!
-    
+    /// TeamViewController lifecycle method
     override func viewDidLoad() {
         super.viewDidLoad()
         NavigationViewController.shared.setTitle(title: kNavigationTitle)
         NavigationViewController.shared.addPlusButton()
         teamDataSource = TeamViewModelDataSource(_tableView: tableView)
     }
-    
+    /// TeamViewController lifecycle method
     override func viewWillAppear(_ animated: Bool) {
         teamDataSource?.getAllTransformerFromWS()
     }
-    
+    /// begin war by calling this function
     @IBAction func warClicked () {
         if autobots.count <= 0 && decepticons.count <= 0 {
             let okAction = UIAlertAction(title: kAlertButtonTitle, style: .cancel)
