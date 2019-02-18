@@ -1,0 +1,1265 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/AppDelegate.swift",
+      "line": null,
+      "symbol": "AppDelegate",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/AppDelegate.swift",
+      "line": 14,
+      "symbol": "AppDelegate",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/AppDelegate.swift",
+      "line": 16,
+      "symbol": "AppDelegate.window",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/AppDelegate.swift",
+      "line": 18,
+      "symbol": "AppDelegate.application(_:didFinishLaunchingWithOptions:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/AppDelegate.swift",
+      "line": 26,
+      "symbol": "AppDelegate.applicationWillResignActive(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/AppDelegate.swift",
+      "line": 31,
+      "symbol": "AppDelegate.applicationDidEnterBackground(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/AppDelegate.swift",
+      "line": 36,
+      "symbol": "AppDelegate.applicationWillEnterForeground(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/AppDelegate.swift",
+      "line": 40,
+      "symbol": "AppDelegate.applicationDidBecomeActive(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/AppDelegate.swift",
+      "line": 44,
+      "symbol": "AppDelegate.applicationWillTerminate(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Constants/FontName.swift",
+      "line": 10,
+      "symbol": "FontsNames",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Constants/FontName.swift",
+      "line": 11,
+      "symbol": "FontsNames.fontAwesome",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Constants/ServerConfiguration.swift",
+      "line": 11,
+      "symbol": "ServerURL",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Constants/ServerConfiguration.swift",
+      "line": 12,
+      "symbol": "ServerURL.BaseURL",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Constants/ServerConfiguration.swift",
+      "line": 15,
+      "symbol": "URLPath",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Constants/ServerConfiguration.swift",
+      "line": 16,
+      "symbol": "URLPath.AllSpark",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Constants/ServerConfiguration.swift",
+      "line": 17,
+      "symbol": "URLPath.Transformers",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Constants/Sizes.swift",
+      "line": 15,
+      "symbol": "ScreenSize",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Constants/Sizes.swift",
+      "line": 16,
+      "symbol": "ScreenSize.SCREEN_WIDTH",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Constants/Sizes.swift",
+      "line": 17,
+      "symbol": "ScreenSize.SCREEN_CENTER_X",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Constants/Sizes.swift",
+      "line": 18,
+      "symbol": "ScreenSize.SCREEN_HEIGHT",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Constants/Sizes.swift",
+      "line": 19,
+      "symbol": "ScreenSize.STANDARD_SCREEN_HEIGHT",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Constants/Sizes.swift",
+      "line": 20,
+      "symbol": "ScreenSize.STANDARD_SCREEN_WIDTH",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Constants/Sizes.swift",
+      "line": 21,
+      "symbol": "ScreenSize.SCREEN_MAX_LENGTH",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Constants/Sizes.swift",
+      "line": 22,
+      "symbol": "ScreenSize.SCREEM_MIN_LENGTH",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Constants/Storyboard.swift",
+      "line": 12,
+      "symbol": "Storyboard",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Constants/Storyboard.swift",
+      "line": 14,
+      "symbol": "Storyboard.main",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Constants/Storyboard.swift",
+      "line": 17,
+      "symbol": "Storyboard.Identifier",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Constants/Storyboard.swift",
+      "line": 18,
+      "symbol": "Storyboard.Identifier.TeamViewController",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Constants/Storyboard.swift",
+      "line": 19,
+      "symbol": "Storyboard.Identifier.CreateTransformerViewController",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Constants/Storyboard.swift",
+      "line": 20,
+      "symbol": "Storyboard.Identifier.ResultViewController",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Constants/Storyboard.swift",
+      "line": 25,
+      "symbol": "ViewControllerInstence",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Constants/Storyboard.swift",
+      "line": 26,
+      "symbol": "ViewControllerInstence.fromStoryboard(_:identifire:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Extensions/AppDelegateExtension.swift",
+      "line": 13,
+      "symbol": "AppDelegate.setWindowProperties()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Extensions/AppDelegateExtension.swift",
+      "line": 19,
+      "symbol": "AppDelegate.setRootViewController(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Extensions/AppDelegateExtension.swift",
+      "line": 23,
+      "symbol": "AppDelegate.initializeFirstViewController()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Extensions/Clients/API/APIServiceClient.swift",
+      "line": 11,
+      "symbol": "APIServiceClient",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Extensions/Clients/API/APIServiceClient.swift",
+      "line": 12,
+      "symbol": "APIServiceClient.shared",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Extensions/Clients/API/APIServiceClient.swift",
+      "line": 14,
+      "symbol": "APIServiceClient.handleError(error:failure:responseCode:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Extensions/Clients/API/APIServiceClient.swift",
+      "line": 24,
+      "symbol": "APIServiceClient.getAllSpark(path:success:failure:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Extensions/Clients/API/APIServiceClient.swift",
+      "line": 38,
+      "symbol": "APIServiceClient.getAllTransformer(path:success:failure:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Extensions/Clients/API/APIServiceClient.swift",
+      "line": 52,
+      "symbol": "APIServiceClient.createOrUpdateTransformer(path:isUpdate:tranformerJson:success:failure:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Extensions/Clients/API/APIServiceClient.swift",
+      "line": 66,
+      "symbol": "APIServiceClient.deleteTransformer(path:success:failure:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Extensions/Clients/API/APISessionService.swift",
+      "line": 11,
+      "symbol": "SuccessCompletion",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Extensions/Clients/API/APISessionService.swift",
+      "line": 12,
+      "symbol": "FailureCompletion",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Extensions/Clients/API/APISessionService.swift",
+      "line": 14,
+      "symbol": "HTTPMethod",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Extensions/Clients/API/APISessionService.swift",
+      "line": 15,
+      "symbol": "HTTPMethod.get",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Extensions/Clients/API/APISessionService.swift",
+      "line": 16,
+      "symbol": "HTTPMethod.post",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Extensions/Clients/API/APISessionService.swift",
+      "line": 17,
+      "symbol": "HTTPMethod.put",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Extensions/Clients/API/APISessionService.swift",
+      "line": 18,
+      "symbol": "HTTPMethod.delete",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Extensions/Clients/API/APISessionService.swift",
+      "line": 21,
+      "symbol": "APISessionService",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Extensions/Clients/API/APISessionService.swift",
+      "line": 22,
+      "symbol": "APISessionService.shared",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Extensions/Clients/API/APISessionService.swift",
+      "line": 24,
+      "symbol": "APISessionService.headers",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Extensions/Clients/API/APISessionService.swift",
+      "line": 25,
+      "symbol": "APISessionService.configuration",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Extensions/Clients/API/APISessionService.swift",
+      "line": 26,
+      "symbol": "APISessionService.session",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Extensions/Clients/API/APISessionService.swift",
+      "line": 38,
+      "symbol": "APISessionService.setBasicRequestHeaders()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Extensions/Clients/API/APISessionService.swift",
+      "line": 42,
+      "symbol": "APISessionService.setAdditionalRequestHeaders(key:value:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Extensions/Clients/API/APISessionService.swift",
+      "line": 47,
+      "symbol": "APISessionService.callWebServiceWithoutMapping(method:path:params:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Extensions/CommonExtensions/Int.swift",
+      "line": 10,
+      "symbol": "UInt32.init(hexString:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Extensions/CommonExtensions/UIApplication.swift",
+      "line": 12,
+      "symbol": "UIApplication.topViewController(controller:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Extensions/CommonExtensions/UIColor.swift",
+      "line": 12,
+      "symbol": "UIColor.cancelButton",
+      "symbol_kind": "source.lang.swift.decl.var.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Utilities/Alert.swift",
+      "line": 10,
+      "symbol": "kAlertTitle",
+      "symbol_kind": "source.lang.swift.decl.var.global",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Utilities/Alert.swift",
+      "line": 11,
+      "symbol": "kAlertButtonTitle",
+      "symbol_kind": "source.lang.swift.decl.var.global",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Utilities/Reachability/Reachability.swift",
+      "line": null,
+      "symbol": "Reachability",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Utilities/Reachability/Reachability.swift",
+      "line": null,
+      "symbol": "Reachability",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Utilities/Reachability/Reachability.swift",
+      "line": 31,
+      "symbol": "ReachabilityError",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Utilities/Reachability/Reachability.swift",
+      "line": 32,
+      "symbol": "ReachabilityError.FailedToCreateWithAddress(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Utilities/Reachability/Reachability.swift",
+      "line": 33,
+      "symbol": "ReachabilityError.FailedToCreateWithHostname(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Utilities/Reachability/Reachability.swift",
+      "line": 34,
+      "symbol": "ReachabilityError.UnableToSetCallback",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Utilities/Reachability/Reachability.swift",
+      "line": 35,
+      "symbol": "ReachabilityError.UnableToSetDispatchQueue",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Utilities/Reachability/Reachability.swift",
+      "line": 42,
+      "symbol": "Notification.Name.reachabilityChanged",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Utilities/Reachability/Reachability.swift",
+      "line": 45,
+      "symbol": "callback(reachability:flags:info:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Utilities/Reachability/Reachability.swift",
+      "line": 53,
+      "symbol": "Reachability",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Utilities/Reachability/Reachability.swift",
+      "line": 55,
+      "symbol": "Reachability.NetworkReachable",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Utilities/Reachability/Reachability.swift",
+      "line": 56,
+      "symbol": "Reachability.NetworkUnreachable",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Utilities/Reachability/Reachability.swift",
+      "line": 70,
+      "symbol": "Reachability.Connection",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Utilities/Reachability/Reachability.swift",
+      "line": 71,
+      "symbol": "Reachability.Connection.cellular",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Utilities/Reachability/Reachability.swift",
+      "line": 71,
+      "symbol": "Reachability.Connection.none",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Utilities/Reachability/Reachability.swift",
+      "line": 71,
+      "symbol": "Reachability.Connection.wifi",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Utilities/Reachability/Reachability.swift",
+      "line": 81,
+      "symbol": "Reachability.whenReachable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Utilities/Reachability/Reachability.swift",
+      "line": 82,
+      "symbol": "Reachability.whenUnreachable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Utilities/Reachability/Reachability.swift",
+      "line": 85,
+      "symbol": "Reachability.reachableOnWWAN",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Utilities/Reachability/Reachability.swift",
+      "line": 91,
+      "symbol": "Reachability.notificationCenter",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Utilities/Reachability/Reachability.swift",
+      "line": 94,
+      "symbol": "Reachability.currentReachabilityString",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Utilities/Reachability/Reachability.swift",
+      "line": 103,
+      "symbol": "Reachability.connection",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Utilities/Reachability/Reachability.swift",
+      "line": 148,
+      "symbol": "Reachability.init(reachabilityRef:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Utilities/Reachability/Reachability.swift",
+      "line": 153,
+      "symbol": "Reachability.init(hostname:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Utilities/Reachability/Reachability.swift",
+      "line": 160,
+      "symbol": "Reachability.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Utilities/Reachability/Reachability.swift",
+      "line": 171,
+      "symbol": "Reachability.deinit",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Utilities/Reachability/Reachability.swift",
+      "line": 179,
+      "symbol": "Reachability.startNotifier()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Utilities/Reachability/Reachability.swift",
+      "line": 203,
+      "symbol": "Reachability.stopNotifier()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Utilities/Reachability/Reachability.swift",
+      "line": 212,
+      "symbol": "Reachability.isReachable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Utilities/Reachability/Reachability.swift",
+      "line": 231,
+      "symbol": "Reachability.isReachableViaWWAN",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Utilities/Reachability/Reachability.swift",
+      "line": 237,
+      "symbol": "Reachability.isReachableViaWiFi",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/Utilities/Reachability/Reachability.swift",
+      "line": 249,
+      "symbol": "Reachability.description",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/CreateTransformerViewController/CreateTransformerViewController.swift",
+      "line": null,
+      "symbol": "CreateTransformerViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/CreateTransformerViewController/CreateTransformerViewController.swift",
+      "line": 10,
+      "symbol": "kCreateTitle",
+      "symbol_kind": "source.lang.swift.decl.var.global",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/CreateTransformerViewController/CreateTransformerViewController.swift",
+      "line": 11,
+      "symbol": "kUpdateTitle",
+      "symbol_kind": "source.lang.swift.decl.var.global",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/CreateTransformerViewController/CreateTransformerViewController.swift",
+      "line": 13,
+      "symbol": "CreateTransformerViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/CreateTransformerViewController/CreateTransformerViewController.swift",
+      "line": 15,
+      "symbol": "CreateTransformerViewController.nameTextField",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/CreateTransformerViewController/CreateTransformerViewController.swift",
+      "line": 16,
+      "symbol": "CreateTransformerViewController.teamSegment",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/CreateTransformerViewController/CreateTransformerViewController.swift",
+      "line": 17,
+      "symbol": "CreateTransformerViewController.strengthTextField",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/CreateTransformerViewController/CreateTransformerViewController.swift",
+      "line": 18,
+      "symbol": "CreateTransformerViewController.intelligenceTextField",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/CreateTransformerViewController/CreateTransformerViewController.swift",
+      "line": 19,
+      "symbol": "CreateTransformerViewController.speedTextField",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/CreateTransformerViewController/CreateTransformerViewController.swift",
+      "line": 20,
+      "symbol": "CreateTransformerViewController.enduranceTextField",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/CreateTransformerViewController/CreateTransformerViewController.swift",
+      "line": 21,
+      "symbol": "CreateTransformerViewController.rankTextField",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/CreateTransformerViewController/CreateTransformerViewController.swift",
+      "line": 22,
+      "symbol": "CreateTransformerViewController.courageTextField",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/CreateTransformerViewController/CreateTransformerViewController.swift",
+      "line": 23,
+      "symbol": "CreateTransformerViewController.firepowerTextField",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/CreateTransformerViewController/CreateTransformerViewController.swift",
+      "line": 24,
+      "symbol": "CreateTransformerViewController.skillTextField",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/CreateTransformerViewController/CreateTransformerViewController.swift",
+      "line": 25,
+      "symbol": "CreateTransformerViewController.createButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/CreateTransformerViewController/CreateTransformerViewController.swift",
+      "line": 26,
+      "symbol": "CreateTransformerViewController.clearButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/CreateTransformerViewController/CreateTransformerViewController.swift",
+      "line": 28,
+      "symbol": "CreateTransformerViewController.isUpdate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/CreateTransformerViewController/CreateTransformerViewController.swift",
+      "line": 30,
+      "symbol": "CreateTransformerViewController.tranformer",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/CreateTransformerViewController/CreateTransformerViewController.swift",
+      "line": 32,
+      "symbol": "CreateTransformerViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/CreateTransformerViewController/CreateTransformerViewController.swift",
+      "line": 37,
+      "symbol": "CreateTransformerViewController.viewWillAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/CreateTransformerViewController/CreateTransformerViewController.swift",
+      "line": 41,
+      "symbol": "CreateTransformerViewController.configureNavigationBar()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/CreateTransformerViewController/CreateTransformerViewController.swift",
+      "line": 47,
+      "symbol": "CreateTransformerViewController.configureUI()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/CreateTransformerViewController/CreateTransformerViewController.swift",
+      "line": 72,
+      "symbol": "CreateTransformerViewController.createOrUpdateTransformer()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/CreateTransformerViewController/CreateTransformerViewController.swift",
+      "line": 99,
+      "symbol": "CreateTransformerViewController.configureJsonToCreateTransformer()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/CreateTransformerViewController/CreateTransformerViewController.swift",
+      "line": 113,
+      "symbol": "CreateTransformerViewController.configureJsonToUpdateTransformer(_id:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/CreateTransformerViewController/CreateTransformerViewController.swift",
+      "line": 127,
+      "symbol": "CreateTransformerViewController.clearFields()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/CreateTransformerViewController/CreateTransformerViewController.swift",
+      "line": 143,
+      "symbol": "CreateTransformerViewController.textField(_:shouldChangeCharactersIn:replacementString:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/NavigationViewController/NavigationViewController.swift",
+      "line": null,
+      "symbol": "NavigationViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/NavigationViewController/NavigationViewController.swift",
+      "line": null,
+      "symbol": "NavigationViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/NavigationViewController/NavigationViewController.swift",
+      "line": null,
+      "symbol": "NavigationViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/NavigationViewController/NavigationViewController.swift",
+      "line": 12,
+      "symbol": "NavigationViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/NavigationViewController/NavigationViewController.swift",
+      "line": 13,
+      "symbol": "NavigationViewController.shared",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/NavigationViewController/NavigationViewController.swift",
+      "line": 15,
+      "symbol": "NavigationViewController.setRootViewControllerWithDefaultProperties(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/NavigationViewController/NavigationViewItems/LeftNavigationItem.swift",
+      "line": 13,
+      "symbol": "NavigationViewController.removeBackButton()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/NavigationViewController/NavigationViewItems/NavigationTitleView.swift",
+      "line": 12,
+      "symbol": "NavigationViewController.setTitle(title:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/NavigationViewController/NavigationViewItems/RightNavigationItem.swift",
+      "line": 12,
+      "symbol": "cancelButtonFontAwesome",
+      "symbol_kind": "source.lang.swift.decl.var.global",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/NavigationViewController/NavigationViewItems/RightNavigationItem.swift",
+      "line": 13,
+      "symbol": "addButtonFontAwesome",
+      "symbol_kind": "source.lang.swift.decl.var.global",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/NavigationViewController/NavigationViewItems/RightNavigationItem.swift",
+      "line": 17,
+      "symbol": "NavigationViewController.addPlusButton()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/NavigationViewController/NavigationViewItems/RightNavigationItem.swift",
+      "line": 27,
+      "symbol": "NavigationViewController.addCancelButton()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/NavigationViewController/NavigationViewItems/RightNavigationItem.swift",
+      "line": 38,
+      "symbol": "NavigationViewController.gotoCreateTransformer(isUpdate:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/NavigationViewController/NavigationViewItems/RightNavigationItem.swift",
+      "line": 44,
+      "symbol": "NavigationViewController.onPlusButtonClick(sender:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/NavigationViewController/NavigationViewItems/RightNavigationItem.swift",
+      "line": 48,
+      "symbol": "NavigationViewController.onCancelButtonClick(sender:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/ResultViewController/ResultViewController.swift",
+      "line": 11,
+      "symbol": "ResultViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/ResultViewController/ResultViewController.swift",
+      "line": 12,
+      "symbol": "ResultViewController.resultDataSource",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/ResultViewController/ResultViewController.swift",
+      "line": 14,
+      "symbol": "ResultViewController.battleCount",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/ResultViewController/ResultViewController.swift",
+      "line": 15,
+      "symbol": "ResultViewController.tableView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/ResultViewController/ResultViewController.swift",
+      "line": 17,
+      "symbol": "ResultViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/ResultViewController/ResultViewController.swift",
+      "line": 24,
+      "symbol": "ResultViewController.configureNavigationBar()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/TeamViewController/TeamTableViewCell/TeamTableViewCell.swift",
+      "line": null,
+      "symbol": "TeamTableViewCell",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/TeamViewController/TeamTableViewCell/TeamTableViewCell.swift",
+      "line": 11,
+      "symbol": "TeamTableViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/TeamViewController/TeamTableViewCell/TeamTableViewCell.swift",
+      "line": 13,
+      "symbol": "TeamTableViewCell.autobotName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/TeamViewController/TeamTableViewCell/TeamTableViewCell.swift",
+      "line": 14,
+      "symbol": "TeamTableViewCell.autobotImage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/TeamViewController/TeamTableViewCell/TeamTableViewCell.swift",
+      "line": 15,
+      "symbol": "TeamTableViewCell.autobotButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/TeamViewController/TeamTableViewCell/TeamTableViewCell.swift",
+      "line": 16,
+      "symbol": "TeamTableViewCell.decepticonName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/TeamViewController/TeamTableViewCell/TeamTableViewCell.swift",
+      "line": 17,
+      "symbol": "TeamTableViewCell.decepticonImage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/TeamViewController/TeamTableViewCell/TeamTableViewCell.swift",
+      "line": 18,
+      "symbol": "TeamTableViewCell.decepticonButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/TeamViewController/TeamTableViewCell/TeamTableViewCell.swift",
+      "line": 20,
+      "symbol": "TeamTableViewCell.autobotUpdateClosure",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/TeamViewController/TeamTableViewCell/TeamTableViewCell.swift",
+      "line": 21,
+      "symbol": "TeamTableViewCell.decepticonUpdateClosure",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/TeamViewController/TeamTableViewCell/TeamTableViewCell.swift",
+      "line": 23,
+      "symbol": "TeamTableViewCell.autobotUpdateConfigure(transformer:autobotUpdateClosure:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/TeamViewController/TeamTableViewCell/TeamTableViewCell.swift",
+      "line": 27,
+      "symbol": "TeamTableViewCell.decepticonUpdateConfigure(transformer:decepticonUpdateClosure:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/TeamViewController/TeamTableViewCell/TeamTableViewCell.swift",
+      "line": 31,
+      "symbol": "TeamTableViewCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/TeamViewController/TeamTableViewCell/TeamTableViewCell.swift",
+      "line": 36,
+      "symbol": "TeamTableViewCell.autobotUpdatePressed(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/TeamViewController/TeamTableViewCell/TeamTableViewCell.swift",
+      "line": 41,
+      "symbol": "TeamTableViewCell.decepticonUpdatePressed(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/TeamViewController/TeamViewController.swift",
+      "line": 11,
+      "symbol": "kNavigationTitle",
+      "symbol_kind": "source.lang.swift.decl.var.global",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/TeamViewController/TeamViewController.swift",
+      "line": 13,
+      "symbol": "TeamViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/TeamViewController/TeamViewController.swift",
+      "line": 15,
+      "symbol": "TeamViewController.teamDataSource",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/TeamViewController/TeamViewController.swift",
+      "line": 16,
+      "symbol": "TeamViewController.tableView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/TeamViewController/TeamViewController.swift",
+      "line": 18,
+      "symbol": "TeamViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/TeamViewController/TeamViewController.swift",
+      "line": 25,
+      "symbol": "TeamViewController.viewWillAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewControllers/TeamViewController/TeamViewController.swift",
+      "line": 29,
+      "symbol": "TeamViewController.warClicked()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewModel/ResultDataSource.swift",
+      "line": 11,
+      "symbol": "kOptimusPrime",
+      "symbol_kind": "source.lang.swift.decl.var.global",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewModel/ResultDataSource.swift",
+      "line": 12,
+      "symbol": "kPredaking",
+      "symbol_kind": "source.lang.swift.decl.var.global",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewModel/ResultDataSource.swift",
+      "line": 14,
+      "symbol": "transformerCategory",
+      "symbol_kind": "source.lang.swift.decl.var.global",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewModel/ResultDataSource.swift",
+      "line": 95,
+      "symbol": "ResultDataSource.reloadTableView(_tableView:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewModel/ResultDataSource.swift",
+      "line": 305,
+      "symbol": "ResultDataSource.numberOfSections(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewModel/ResultDataSource.swift",
+      "line": 309,
+      "symbol": "ResultDataSource.tableView(_:numberOfRowsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewModel/ResultDataSource.swift",
+      "line": 313,
+      "symbol": "ResultDataSource.tableView(_:cellForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewModel/ResultDataSource.swift",
+      "line": 329,
+      "symbol": "ResultDataSource.tableView(_:heightForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewModel/ResultDataSource.swift",
+      "line": 332,
+      "symbol": "ResultDataSource.tableView(_:titleForHeaderInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewModel/ResultDataSource.swift",
+      "line": 339,
+      "symbol": "String.transformerName()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewModel/TeamViewModelDataSource.swift",
+      "line": 12,
+      "symbol": "autobots",
+      "symbol_kind": "source.lang.swift.decl.var.global",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewModel/TeamViewModelDataSource.swift",
+      "line": 13,
+      "symbol": "decepticons",
+      "symbol_kind": "source.lang.swift.decl.var.global",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewModel/TeamViewModelDataSource.swift",
+      "line": 134,
+      "symbol": "TeamViewModelDataSource.numberOfSections(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewModel/TeamViewModelDataSource.swift",
+      "line": 138,
+      "symbol": "TeamViewModelDataSource.tableView(_:numberOfRowsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewModel/TeamViewModelDataSource.swift",
+      "line": 142,
+      "symbol": "TeamViewModelDataSource.tableView(_:cellForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers/Transformers/ViewModel/TeamViewModelDataSource.swift",
+      "line": 182,
+      "symbol": "TeamViewModelDataSource.tableView(_:heightForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/deval/Documents/Aequilibrium/iOS-Test/Transformer/Transformers"
+}

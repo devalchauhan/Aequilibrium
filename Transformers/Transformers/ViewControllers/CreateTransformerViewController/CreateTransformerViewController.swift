@@ -9,7 +9,7 @@
 import UIKit
 let kCreateTitle = "CREATE TRANSFROMER"
 let kUpdateTitle = "UPDATE TRANSFROMER"
-
+/// This is a class created for CreateUpdateTransformerViewController
 class CreateTransformerViewController: UIViewController {
     
     @IBOutlet weak var nameTextField : UITextField!
@@ -28,22 +28,22 @@ class CreateTransformerViewController: UIViewController {
     var isUpdate : Bool = false
     
     var tranformer = Transformer()
-    
+    /// CreateTransformerViewController lifecycle method
     override func viewDidLoad() {
         super.viewDidLoad()
         configureNavigationBar()
     }
-    
+    /// CreateTransformerViewController lifecycle method
     override func viewWillAppear(_ animated: Bool) {
         configureUI()
     }
-    
+    /** Call this function to configure navigationbar */
     func configureNavigationBar() {
         NavigationViewController.shared.removeBackButton()
         NavigationViewController.shared.setTitle(title: (isUpdate ? kUpdateTitle : kCreateTitle))
         NavigationViewController.shared.addCancelButton()
     }
-    
+    /** Call this function to configure UI according to create/update */
     func configureUI() {
         createButton.setTitle((isUpdate ? "UPDATE" : "CREATE"), for: .normal)
         clearButton.setTitle((isUpdate ? "DELETE" : "CLEAR"), for: .normal)
@@ -68,7 +68,7 @@ class CreateTransformerViewController: UIViewController {
             skillTextField.text = String(describing: tranformer.skill)
         }
     }
-    
+    /// This IBAction function is used to create or update transformer
     @IBAction func createOrUpdateTransformer () {
         let textFields : [UITextField] = [nameTextField,strengthTextField,intelligenceTextField,speedTextField,enduranceTextField,rankTextField,courageTextField,firepowerTextField,skillTextField]
         let (textField,isEmpty,isInvalid) = TextFieldValidator().isContainsIncorrectEntry(textFields: textFields)
@@ -95,7 +95,7 @@ class CreateTransformerViewController: UIViewController {
             }
         }
     }
-    
+    /// This fuction is used to create dictionary which needs to be pass in CreateTransformer API Call
     func configureJsonToCreateTransformer() -> Dictionary<String, Any> {
         var transformer = Dictionary<String, Any>()
         let strength : Int  = Int(strengthTextField.text!)!
@@ -109,7 +109,7 @@ class CreateTransformerViewController: UIViewController {
         transformer = ["name" :nameTextField.text! , "team" : (teamSegment.selectedSegmentIndex == 0 ? "A" : "D"), "strength" :strength,"intelligence" : intelligence, "speed" :speed, "endurance" :endurance, "rank" : rank, "courage" : courage, "firepower" : firepower, "skill" : skill]
         return transformer
     }
-    
+    /// This fuction is used to create dictionary which needs to be pass in UpdateTransformer API Call
     func configureJsonToUpdateTransformer(_id : String) -> Dictionary<String, Any> {
         var transformer = Dictionary<String, Any>()
         let strength : Int  = Int(strengthTextField.text!)!
@@ -123,7 +123,7 @@ class CreateTransformerViewController: UIViewController {
         transformer = ["id" : _id,"name" :nameTextField.text! , "team" :(teamSegment.selectedSegmentIndex == 0 ? "A" : "D"), "strength" :strength,"intelligence" : intelligence, "speed" :speed, "endurance" :endurance, "rank" : rank, "courage" : courage, "firepower" : firepower, "skill" : skill]
         return transformer
     }
-    
+    /// This IBAction function is used to clear all textfield or delete transformer based on condition
     @IBAction func clearFields () {
         if isUpdate {
             APIServiceClient.shared.deleteTransformer(path: (URLPath.Transformers + "/" + tranformer.id!), success: { (data, response, error) in
@@ -140,6 +140,7 @@ class CreateTransformerViewController: UIViewController {
 }
 
 extension CreateTransformerViewController : UITextFieldDelegate {
+    /// UITextField delegate to restrict user entry
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if textField == nameTextField {
             return true

@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>APIServiceClient Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/APIServiceClient" class="dashAnchor"></a>
+    <a title="APIServiceClient Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (46% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        APIServiceClient Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/APIServiceClient.html">APIServiceClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/APISessionService.html">APISessionService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Alert.html">Alert</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AppDelegate.html">AppDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CreateTransformerViewController.html">CreateTransformerViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NavigationViewController.html">NavigationViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Reachability.html">Reachability</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Reachability/Connection.html">– Connection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ReachabilityLayer.html">ReachabilityLayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ResultDataSource.html">ResultDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ResultViewController.html">ResultViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TeamTableViewCell.html">TeamTableViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TeamViewController.html">TeamViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TeamViewModelDataSource.html">TeamViewModelDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TextFieldValidator.html">TextFieldValidator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Transformer.html">Transformer</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Global Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:12Transformers20addButtonFontAwesomeSSvp">addButtonFontAwesome</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:12Transformers11appDelegateAA03AppC0Cvp">appDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:12Transformers8autobotsSayAA11TransformerCGvp">autobots</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:12Transformers23cancelButtonFontAwesomeSSvp">cancelButtonFontAwesome</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:12Transformers11decepticonsSayAA11TransformerCGvp">decepticons</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:12Transformers17kAlertButtonTitleSSvp">kAlertButtonTitle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:12Transformers11kAlertTitleSSvp">kAlertTitle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:12Transformers12kCreateTitleSSvp">kCreateTitle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:12Transformers16kNavigationTitleSSvp">kNavigationTitle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:12Transformers13kOptimusPrimeSSvp">kOptimusPrime</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:12Transformers10kPredakingSSvp">kPredaking</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:12Transformers12kUpdateTitleSSvp">kUpdateTitle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:12Transformers10mainWindowSo8UIWindowCvp">mainWindow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:12Transformers19transformerCategorySaySSGvp">transformerCategory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:12Transformers11userDefaultSo14NSUserDefaultsCvp">userDefault</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/FontsNames.html">FontsNames</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/HTTPMethod.html">HTTPMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ReachabilityError.html">ReachabilityError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Notification.html">Notification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Notification/Name.html">– Name</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIApplication.html">UIApplication</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIColor.html">UIColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UInt32.html">UInt32</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:12Transformers8callback12reachability5flags4infoySo24SCNetworkReachabilityRefa_So0fG5FlagsVSvSgtF">callback(reachability:flags:info:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/ScreenSize.html">ScreenSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ServerURL.html">ServerURL</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Storyboard.html">Storyboard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Storyboard/Identifier.html">– Identifier</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/URLPath.html">URLPath</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ViewControllerInstence.html">ViewControllerInstence</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:12Transformers17FailureCompletiona">FailureCompletion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:12Transformers17SuccessCompletiona">SuccessCompletion</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>APIServiceClient</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">APIServiceClient</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>This is class created to handle All API calls</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Transformers16APIServiceClientC6sharedACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/shared" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Transformers16APIServiceClientC6sharedACvpZ">shared</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Shared object of APIServiceClient</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">let</span> <span class="nv">shared</span><span class="p">:</span> <span class="kt">APIServiceClient</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Transformers16APIServiceClientC11handleError5error7failure12responseCodeSbSo7NSErrorCSg_ySSXESiSgtF"></a>
+                    <a name="//apple_ref/swift/Method/handleError(error:failure:responseCode:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Transformers16APIServiceClientC11handleError5error7failure12responseCodeSbSo7NSErrorCSg_ySSXESiSgtF">handleError(error:failure:responseCode:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This function is used to handle error</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">handleError</span><span class="p">(</span><span class="nv">error</span><span class="p">:</span> <span class="kt">NSError</span><span class="p">?,</span> <span class="nv">failure</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:12Transformers17FailureCompletiona">FailureCompletion</a></span><span class="p">,</span> <span class="nv">responseCode</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Transformers16APIServiceClientC11getAllSpark4path7success7failureySS_y10Foundation4DataVSg_So17NSHTTPURLResponseCSgs5Error_pSgtcySSctF"></a>
+                    <a name="//apple_ref/swift/Method/getAllSpark(path:success:failure:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Transformers16APIServiceClientC11getAllSpark4path7success7failureySS_y10Foundation4DataVSg_So17NSHTTPURLResponseCSgs5Error_pSgtcySSctF">getAllSpark(path:success:failure:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Call this function to make an API call to get Authorization token .</p>
+<h3 id='usage-example' class='heading'>Usage Example:</h3>
+<pre class="highlight swift"><code><span class="kt">APIServiceClient</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">getAllSpark</span><span class="p">(</span><span class="nv">path</span><span class="p">:</span> <span class="kt">URLPath</span><span class="o">.</span><span class="kt">AllSpark</span><span class="p">,</span> <span class="nv">success</span><span class="p">:</span> <span class="p">{</span> <span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">response</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getAllSpark</span><span class="p">(</span><span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:12Transformers17SuccessCompletiona">SuccessCompletion</a></span><span class="p">,</span> <span class="nv">failure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:12Transformers17FailureCompletiona">FailureCompletion</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>path</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>URL path</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>success</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>SuccessCompletion to receive success response</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>failure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>FailureCompletion to receive error afrer API call if any</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Transformers16APIServiceClientC17getAllTransformer4path7success7failureySS_y10Foundation4DataVSg_So17NSHTTPURLResponseCSgs5Error_pSgtcySSctF"></a>
+                    <a name="//apple_ref/swift/Method/getAllTransformer(path:success:failure:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Transformers16APIServiceClientC17getAllTransformer4path7success7failureySS_y10Foundation4DataVSg_So17NSHTTPURLResponseCSgs5Error_pSgtcySSctF">getAllTransformer(path:success:failure:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Call this function to make an API call to get AllTransformer .</p>
+<h3 id='usage-example' class='heading'>Usage Example:</h3>
+<pre class="highlight swift"><code><span class="kt">APIServiceClient</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">getAllTransformer</span><span class="p">(</span><span class="nv">path</span><span class="p">:</span> <span class="kt">URLPath</span><span class="o">.</span><span class="kt">Transformers</span><span class="p">,</span> <span class="nv">success</span><span class="p">:</span> <span class="p">{</span> <span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">response</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getAllTransformer</span><span class="p">(</span><span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:12Transformers17SuccessCompletiona">SuccessCompletion</a></span><span class="p">,</span> <span class="nv">failure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:12Transformers17FailureCompletiona">FailureCompletion</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>path</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>URL path</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>success</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>SuccessCompletion to receive success response</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>failure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>FailureCompletion to receive error afrer API call if any</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Transformers16APIServiceClientC25createOrUpdateTransformer4path02isF014tranformerJson7success7failureySS_SbSDySSypGy10Foundation4DataVSg_So17NSHTTPURLResponseCSgs5Error_pSgtcySSctF"></a>
+                    <a name="//apple_ref/swift/Method/createOrUpdateTransformer(path:isUpdate:tranformerJson:success:failure:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Transformers16APIServiceClientC25createOrUpdateTransformer4path02isF014tranformerJson7success7failureySS_SbSDySSypGy10Foundation4DataVSg_So17NSHTTPURLResponseCSgs5Error_pSgtcySSctF">createOrUpdateTransformer(path:isUpdate:tranformerJson:success:failure:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Call this function to make an API call to create or update Transformer .</p>
+<h3 id='usage-example' class='heading'>Usage Example:</h3>
+<pre class="highlight swift"><code><span class="kt">APIServiceClient</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">createOrUpdateTransformer</span><span class="p">(</span><span class="nv">path</span><span class="p">:</span> <span class="kt">URLPath</span><span class="o">.</span><span class="kt">Transformers</span><span class="p">,</span><span class="nv">isUpdate</span><span class="p">:</span> <span class="n">isUpdate</span><span class="p">,</span> <span class="nv">tranformerJson</span><span class="p">:</span> <span class="p">(</span><span class="n">isUpdate</span> <span class="p">?</span> <span class="nf">configureJsonToUpdateTransformer</span><span class="p">(</span><span class="nv">_id</span><span class="p">:</span> <span class="n">tranformer</span><span class="o">.</span><span class="n">id</span><span class="o">!</span><span class="p">)</span> <span class="p">:</span> <span class="nf">configureJsonToCreateTransformer</span><span class="p">()</span> <span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createOrUpdateTransformer</span><span class="p">(</span><span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span><span class="nv">isUpdate</span> <span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">tranformerJson</span><span class="p">:</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt">String</span><span class="p">,</span> <span class="kt">Any</span><span class="o">&gt;</span><span class="p">,</span> <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:12Transformers17SuccessCompletiona">SuccessCompletion</a></span><span class="p">,</span> <span class="nv">failure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:12Transformers17FailureCompletiona">FailureCompletion</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>path</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>URL path</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isUpdate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Bool to differentiate between create and update</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tranformerJson</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>json dictionary for create and update transformer</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>success</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>SuccessCompletion to receive success response</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>failure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>FailureCompletion to receive error afrer API call if any</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Transformers16APIServiceClientC17deleteTransformer4path7success7failureySS_y10Foundation4DataVSg_So17NSHTTPURLResponseCSgs5Error_pSgtcySSctF"></a>
+                    <a name="//apple_ref/swift/Method/deleteTransformer(path:success:failure:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Transformers16APIServiceClientC17deleteTransformer4path7success7failureySS_y10Foundation4DataVSg_So17NSHTTPURLResponseCSgs5Error_pSgtcySSctF">deleteTransformer(path:success:failure:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Call this function to make an API call to delete AllTransformer .</p>
+
+<p>### Usage Example: ###</p>
+<pre class="highlight swift"><code><span class="kt">APIServiceClient</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">deleteTransformer</span><span class="p">(</span><span class="nv">path</span><span class="p">:</span> <span class="p">(</span><span class="kt">URLPath</span><span class="o">.</span><span class="kt">Transformers</span> <span class="o">+</span> <span class="s">"/"</span> <span class="o">+</span> <span class="s">"tranformer.id"</span><span class="p">),</span> <span class="nv">success</span><span class="p">:</span> <span class="p">{</span> <span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">response</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">deleteTransformer</span><span class="p">(</span><span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:12Transformers17SuccessCompletiona">SuccessCompletion</a></span><span class="p">,</span> <span class="nv">failure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:12Transformers17FailureCompletiona">FailureCompletion</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>path</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>URL path</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>success</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>SuccessCompletion to receive success response</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>failure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>FailureCompletion to receive error afrer API call if any</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-02-18)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

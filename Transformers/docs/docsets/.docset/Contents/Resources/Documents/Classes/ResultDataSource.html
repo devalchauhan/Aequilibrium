@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ResultDataSource Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/ResultDataSource" class="dashAnchor"></a>
+    <a title="ResultDataSource Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (46% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        ResultDataSource Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/APIServiceClient.html">APIServiceClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/APISessionService.html">APISessionService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Alert.html">Alert</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AppDelegate.html">AppDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CreateTransformerViewController.html">CreateTransformerViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NavigationViewController.html">NavigationViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Reachability.html">Reachability</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Reachability/Connection.html">– Connection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ReachabilityLayer.html">ReachabilityLayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ResultDataSource.html">ResultDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ResultViewController.html">ResultViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TeamTableViewCell.html">TeamTableViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TeamViewController.html">TeamViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TeamViewModelDataSource.html">TeamViewModelDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TextFieldValidator.html">TextFieldValidator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Transformer.html">Transformer</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Global Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:12Transformers20addButtonFontAwesomeSSvp">addButtonFontAwesome</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:12Transformers11appDelegateAA03AppC0Cvp">appDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:12Transformers8autobotsSayAA11TransformerCGvp">autobots</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:12Transformers23cancelButtonFontAwesomeSSvp">cancelButtonFontAwesome</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:12Transformers11decepticonsSayAA11TransformerCGvp">decepticons</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:12Transformers17kAlertButtonTitleSSvp">kAlertButtonTitle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:12Transformers11kAlertTitleSSvp">kAlertTitle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:12Transformers12kCreateTitleSSvp">kCreateTitle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:12Transformers16kNavigationTitleSSvp">kNavigationTitle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:12Transformers13kOptimusPrimeSSvp">kOptimusPrime</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:12Transformers10kPredakingSSvp">kPredaking</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:12Transformers12kUpdateTitleSSvp">kUpdateTitle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:12Transformers10mainWindowSo8UIWindowCvp">mainWindow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:12Transformers19transformerCategorySaySSGvp">transformerCategory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:12Transformers11userDefaultSo14NSUserDefaultsCvp">userDefault</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/FontsNames.html">FontsNames</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/HTTPMethod.html">HTTPMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ReachabilityError.html">ReachabilityError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Notification.html">Notification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Notification/Name.html">– Name</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIApplication.html">UIApplication</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIColor.html">UIColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UInt32.html">UInt32</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:12Transformers8callback12reachability5flags4infoySo24SCNetworkReachabilityRefa_So0fG5FlagsVSvSgtF">callback(reachability:flags:info:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/ScreenSize.html">ScreenSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ServerURL.html">ServerURL</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Storyboard.html">Storyboard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Storyboard/Identifier.html">– Identifier</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/URLPath.html">URLPath</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ViewControllerInstence.html">ViewControllerInstence</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:12Transformers17FailureCompletiona">FailureCompletion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:12Transformers17SuccessCompletiona">SuccessCompletion</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>ResultDataSource</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">ResultDataSource</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>This class is created for calculating result for winning team, survivors and battle count.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Transformers16ResultDataSourceC6winnerSayAA11TransformerCGvp"></a>
+                    <a name="//apple_ref/swift/Property/winner" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Transformers16ResultDataSourceC6winnerSayAA11TransformerCGvp">winner</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>winner list of individual battle</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">winner</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/Transformer.html">Transformer</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Transformers16ResultDataSourceC9survivorsSayAA11TransformerCGvp"></a>
+                    <a name="//apple_ref/swift/Property/survivors" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Transformers16ResultDataSourceC9survivorsSayAA11TransformerCGvp">survivors</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>survivor list who haven&rsquo;t participated in battle</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">survivors</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/Transformer.html">Transformer</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Transformers16ResultDataSourceC11winningTeamSayAA11TransformerCGvp"></a>
+                    <a name="//apple_ref/swift/Property/winningTeam" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Transformers16ResultDataSourceC11winningTeamSayAA11TransformerCGvp">winningTeam</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>winning team list</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">winningTeam</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/Transformer.html">Transformer</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Transformers16ResultDataSourceC7endGameSbvp"></a>
+                    <a name="//apple_ref/swift/Property/endGame" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Transformers16ResultDataSourceC7endGameSbvp">endGame</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>endGame flag to withdraw game immediately</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">endGame</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Transformers16ResultDataSourceC11battleCountSivp"></a>
+                    <a name="//apple_ref/swift/Property/battleCount" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Transformers16ResultDataSourceC11battleCountSivp">battleCount</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>battle count</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">battleCount</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Transformers16ResultDataSourceC15winningTeamNameSSvp"></a>
+                    <a name="//apple_ref/swift/Property/winningTeamName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Transformers16ResultDataSourceC15winningTeamNameSSvp">winningTeamName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>winning team name</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">winningTeamName</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Transformers16ResultDataSourceC16survivorTeamNameSSvp"></a>
+                    <a name="//apple_ref/swift/Property/survivorTeamName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Transformers16ResultDataSourceC16survivorTeamNameSSvp">survivorTeamName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>survivor team name</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">survivorTeamName</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Transformers16ResultDataSourceC9tableViewSo07UITableF0CSgvp"></a>
+                    <a name="//apple_ref/swift/Property/tableView" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Transformers16ResultDataSourceC9tableViewSo07UITableF0CSgvp">tableView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>UITableView object</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Transformers16ResultDataSourceC19cellReuseIdentifierSSvp"></a>
+                    <a name="//apple_ref/swift/Property/cellReuseIdentifier" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Transformers16ResultDataSourceC19cellReuseIdentifierSSvp">cellReuseIdentifier</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reusablecell indetifier</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">cellReuseIdentifier</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Transformers16ResultDataSourceC10_tableViewACSo07UITableF0C_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_tableView:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Transformers16ResultDataSourceC10_tableViewACSo07UITableF0C_tcfc">init(_tableView:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>ResultDataSource initializer</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">_tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Transformers16ResultDataSourceC20calclutaeWinningTeamyyF"></a>
+                    <a name="//apple_ref/swift/Method/calclutaeWinningTeam()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Transformers16ResultDataSourceC20calclutaeWinningTeamyyF">calclutaeWinningTeam()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Call this function for calculating result after war.</p>
+<h3 id='usage-example' class='heading'>Usage Example:</h3>
+<pre class="highlight swift"><code><span class="nf">calclutaeWinningTeam</span><span class="p">()</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">calclutaeWinningTeam</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Transformers16ResultDataSourceC18configureTableView10_tableviewySo07UITableG0C_tF"></a>
+                    <a name="//apple_ref/swift/Method/configureTableView(_tableview:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Transformers16ResultDataSourceC18configureTableView10_tableviewySo07UITableG0C_tF">configureTableView(_tableview:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Call this function for UITableView setup by providing delegate,datasource, few basic properties.</p>
+<h3 id='usage-example' class='heading'>Usage Example:</h3>
+<pre class="highlight swift"><code><span class="nf">configureTableView</span><span class="p">(</span><span class="nv">_tableview</span><span class="p">:</span> <span class="n">_tableView</span><span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">configureTableView</span><span class="p">(</span><span class="nv">_tableview</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Transformers16ResultDataSourceC15reloadTableView06_tableG0ySo07UITableG0C_tF"></a>
+                    <a name="//apple_ref/swift/Method/reloadTableView(_tableView:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Transformers16ResultDataSourceC15reloadTableView06_tableG0ySo07UITableG0C_tF">reloadTableView(_tableView:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Call this function for reloading UITableView.</p>
+<h3 id='usage-example' class='heading'>Usage Example:</h3>
+<pre class="highlight swift"><code><span class="nf">reloadTableView</span><span class="p">(</span><span class="nv">_tableView</span><span class="p">:</span> <span class="n">tableView</span><span class="o">!</span><span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">reloadTableView</span><span class="p">(</span><span class="nv">_tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Transformers16ResultDataSourceC03getB0yyF"></a>
+                    <a name="//apple_ref/swift/Method/getResult()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Transformers16ResultDataSourceC03getB0yyF">getResult()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Call this function to initiate war between transformers.</p>
+<h3 id='usage-example' class='heading'>Usage Example:</h3>
+<pre class="highlight swift"><code><span class="k">self</span><span class="o">.</span><span class="nf">getResult</span><span class="p">()</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getResult</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Transformers16ResultDataSourceC20checkTransformerName6source11destinationSbAA0F0C_AHtF"></a>
+                    <a name="//apple_ref/swift/Method/checkTransformerName(source:destination:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Transformers16ResultDataSourceC20checkTransformerName6source11destinationSbAA0F0C_AHtF">checkTransformerName(source:destination:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Call this function to check winner by TranformerName.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkTransformerName</span><span class="p">(</span><span class="nv">source</span><span class="p">:</span> <span class="kt"><a href="../Classes/Transformer.html">Transformer</a></span><span class="p">,</span> <span class="nv">destination</span><span class="p">:</span> <span class="kt"><a href="../Classes/Transformer.html">Transformer</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>source</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Transfer model of one team.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>destination</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Transfer model of another(opponent) team.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><ul>
+<li>Bool : it will return Bool
+### Usage Example: ###
+<code>
+checkTransformerName(source: Transformer, destination: Transformer)
+</code></li>
+</ul></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Transformers16ResultDataSourceC23checkCourageAndStrength16sourceTranformer22destinationTransformerSbAA0L0C_AHtF"></a>
+                    <a name="//apple_ref/swift/Method/checkCourageAndStrength(sourceTranformer:destinationTransformer:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Transformers16ResultDataSourceC23checkCourageAndStrength16sourceTranformer22destinationTransformerSbAA0L0C_AHtF">checkCourageAndStrength(sourceTranformer:destinationTransformer:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Call this function to check winner by Transformer courage and strength.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkCourageAndStrength</span><span class="p">(</span><span class="nv">sourceTranformer</span><span class="p">:</span> <span class="kt"><a href="../Classes/Transformer.html">Transformer</a></span><span class="p">,</span> <span class="nv">destinationTransformer</span><span class="p">:</span> <span class="kt"><a href="../Classes/Transformer.html">Transformer</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sourceTranformer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Transfer model of one team.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>destinationTransformer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Transfer model of another(opponent) team.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><ul>
+<li>Bool : it will return Bool
+### Usage Example: ###
+<code>
+checkCourageAndStrength(sourceTranformer: Transformer, destinationTransformer: Transformer)
+</code></li>
+</ul></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Transformers16ResultDataSourceC10checkSkill16sourceTranformer22destinationTransformerSbAA0J0C_AHtF"></a>
+                    <a name="//apple_ref/swift/Method/checkSkill(sourceTranformer:destinationTransformer:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Transformers16ResultDataSourceC10checkSkill16sourceTranformer22destinationTransformerSbAA0J0C_AHtF">checkSkill(sourceTranformer:destinationTransformer:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Call this function to check winner by Transformer skill.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkSkill</span><span class="p">(</span><span class="nv">sourceTranformer</span><span class="p">:</span> <span class="kt"><a href="../Classes/Transformer.html">Transformer</a></span><span class="p">,</span> <span class="nv">destinationTransformer</span><span class="p">:</span> <span class="kt"><a href="../Classes/Transformer.html">Transformer</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sourceTranformer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Transfer model of one team.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>destinationTransformer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Transfer model of another(opponent) team.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><ul>
+<li>Bool : it will return Bool
+### Usage Example: ###
+<code>
+checkSkill(sourceTranformer: Transformer, destinationTransformer: Transformer)
+</code></li>
+</ul></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Transformers16ResultDataSourceC18checkOverAllRating16sourceTranformer22destinationTransformeryAA0L0C_AHtF"></a>
+                    <a name="//apple_ref/swift/Method/checkOverAllRating(sourceTranformer:destinationTransformer:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Transformers16ResultDataSourceC18checkOverAllRating16sourceTranformer22destinationTransformeryAA0L0C_AHtF">checkOverAllRating(sourceTranformer:destinationTransformer:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Call this function to check winner by Transformer overall rating.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkOverAllRating</span><span class="p">(</span><span class="nv">sourceTranformer</span><span class="p">:</span> <span class="kt"><a href="../Classes/Transformer.html">Transformer</a></span><span class="p">,</span> <span class="nv">destinationTransformer</span><span class="p">:</span> <span class="kt"><a href="../Classes/Transformer.html">Transformer</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sourceTranformer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Transfer model of one team.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>destinationTransformer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Transfer model of another(opponent) team.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><ul>
+<li>Bool : it will return Bool
+### Usage Example: ###
+<code>
+checkOverAllRating(sourceTranformer: Transformer, destinationTransformer: Transformer)
+</code></li>
+</ul></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Transformers16ResultDataSourceC07destroyA003allA06goBackySayAA11TransformerCG_SbtF"></a>
+                    <a name="//apple_ref/swift/Method/destroyTransformers(allTransformers:goBack:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Transformers16ResultDataSourceC07destroyA003allA06goBackySayAA11TransformerCG_SbtF">destroyTransformers(allTransformers:goBack:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Call this function to destroy all Transformers by calling API.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">destroyTransformers</span><span class="p">(</span><span class="nv">allTransformers</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/Transformer.html">Transformer</a></span><span class="p">],</span> <span class="nv">goBack</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>allTransformers</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Array of Transformer model</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>goBack</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Bool to decide pop operation after completion
+### Usage Example: ###
+<code>
+destroyTransformers(allTransformers: autobots, goBack: true)
+</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@Transformers@objc(cs)ResultDataSource(im)numberOfSectionsInTableView:"></a>
+                    <a name="//apple_ref/swift/Method/numberOfSections(in:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@Transformers@objc(cs)ResultDataSource(im)numberOfSectionsInTableView:">numberOfSections(in:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">numberOfSections</span><span class="p">(</span><span class="k">in</span> <span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@Transformers@objc(cs)ResultDataSource(im)tableView:numberOfRowsInSection:"></a>
+                    <a name="//apple_ref/swift/Method/tableView(_:numberOfRowsInSection:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@Transformers@objc(cs)ResultDataSource(im)tableView:numberOfRowsInSection:">tableView(_:numberOfRowsInSection:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="n">_</span> <span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">,</span> <span class="n">numberOfRowsInSection</span> <span class="nv">section</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@Transformers@objc(cs)ResultDataSource(im)tableView:cellForRowAtIndexPath:"></a>
+                    <a name="//apple_ref/swift/Method/tableView(_:cellForRowAt:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@Transformers@objc(cs)ResultDataSource(im)tableView:cellForRowAtIndexPath:">tableView(_:cellForRowAt:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="n">_</span> <span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">,</span> <span class="n">cellForRowAt</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UITableViewCell</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@Transformers@objc(cs)ResultDataSource(im)tableView:heightForRowAtIndexPath:"></a>
+                    <a name="//apple_ref/swift/Method/tableView(_:heightForRowAt:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@Transformers@objc(cs)ResultDataSource(im)tableView:heightForRowAtIndexPath:">tableView(_:heightForRowAt:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="n">_</span> <span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">,</span> <span class="n">heightForRowAt</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CGFloat</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@Transformers@objc(cs)ResultDataSource(im)tableView:titleForHeaderInSection:"></a>
+                    <a name="//apple_ref/swift/Method/tableView(_:titleForHeaderInSection:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@Transformers@objc(cs)ResultDataSource(im)tableView:titleForHeaderInSection:">tableView(_:titleForHeaderInSection:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="n">_</span> <span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">,</span> <span class="n">titleForHeaderInSection</span> <span class="nv">section</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-02-18)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

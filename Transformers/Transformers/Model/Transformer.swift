@@ -7,25 +7,49 @@
 //
 
 import Foundation
-
+/// This class is created as a model of Transformer
 class Transformer: NSObject {
     
+    /// Shared instance of Transformer model
     static var shared =  Transformer()
-    
+    /// Transformer model initializer
     override init() {}
+    /// Uniquely generated ID
+    var id: String?
+    /// Transformer name.
+    var name: String?
+    /// Transformer team, either “A” or “D” (Autobot or Decepticon).
+    var team: String?
+    /// Strength value, must be between 1 and 10.
+    var strength: Int = 0
+    /// Intelligence value, must be between 1 and 10.
+    var intelligence: Int = 0
+    /// Speed value, must be between 1 and 10.
+    var speed : Int = 0
+    /// Endurance value, must be between 1 and 10.
+    var endurance : Int = 0
+    /// Rank value, must be between 1 and 10.
+    var rank : Int = 0
+    /// Courage value, must be between 1 and 10.
+    var courage : Int = 0
+    /// Firepower value, must be between 1 and 10.
+    var firepower : Int = 0
+    /// Skill value, must be between 1 and 10.
+    var skill : Int = 0
+    /// An image URL that represents what team the Transformer is on.
+    var team_icon : String?
     
-    var id: String?   // Uniquely generated ID
-    var name: String?   // Transformer name.
-    var team: String?   // Transformer team, either “A” or “D” (Autobot or Decepticon).
-    var strength: Int = 0 // Strength value, must be between 1 and 10.
-    var intelligence: Int = 0 // Intelligence value, must be between 1 and 10.
-    var speed : Int = 0 // Speed value, must be between 1 and 10.
-    var endurance : Int = 0 // Endurance value, must be between 1 and 10.
-    var rank : Int = 0 // Rank value, must be between 1 and 10.
-    var courage : Int = 0 // Courage value, must be between 1 and 10.
-    var firepower : Int = 0 // Firepower value, must be between 1 and 10.
-    var skill : Int = 0 // Skill value, must be between 1 and 10.
-    var team_icon : String? // An image URL that represents what team the Transformer is on.
+    
+    /**
+     Call this function to create Transformer model from JSON Dictionary.
+     - Parameters:
+        - JSON : JSON Dictionary if form of [AnyHashable : Any].
+     
+     ### Usage Example: ###
+     ````
+     Transformer.shared.configure(JSON: transformerJson as! [AnyHashable : Any])
+     ````
+     */
     
     func configure(JSON: [AnyHashable : Any]) {
         let transformerInfo: Dictionary = JSON

@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CreateTransformerViewController Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/CreateTransformerViewController" class="dashAnchor"></a>
+    <a title="CreateTransformerViewController Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (46% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        CreateTransformerViewController Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/APIServiceClient.html">APIServiceClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/APISessionService.html">APISessionService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Alert.html">Alert</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AppDelegate.html">AppDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CreateTransformerViewController.html">CreateTransformerViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NavigationViewController.html">NavigationViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Reachability.html">Reachability</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Reachability/Connection.html">– Connection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ReachabilityLayer.html">ReachabilityLayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ResultDataSource.html">ResultDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ResultViewController.html">ResultViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TeamTableViewCell.html">TeamTableViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TeamViewController.html">TeamViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TeamViewModelDataSource.html">TeamViewModelDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TextFieldValidator.html">TextFieldValidator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Transformer.html">Transformer</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Global Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:12Transformers20addButtonFontAwesomeSSvp">addButtonFontAwesome</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:12Transformers11appDelegateAA03AppC0Cvp">appDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:12Transformers8autobotsSayAA11TransformerCGvp">autobots</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:12Transformers23cancelButtonFontAwesomeSSvp">cancelButtonFontAwesome</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:12Transformers11decepticonsSayAA11TransformerCGvp">decepticons</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:12Transformers17kAlertButtonTitleSSvp">kAlertButtonTitle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:12Transformers11kAlertTitleSSvp">kAlertTitle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:12Transformers12kCreateTitleSSvp">kCreateTitle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:12Transformers16kNavigationTitleSSvp">kNavigationTitle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:12Transformers13kOptimusPrimeSSvp">kOptimusPrime</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:12Transformers10kPredakingSSvp">kPredaking</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:12Transformers12kUpdateTitleSSvp">kUpdateTitle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:12Transformers10mainWindowSo8UIWindowCvp">mainWindow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:12Transformers19transformerCategorySaySSGvp">transformerCategory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:12Transformers11userDefaultSo14NSUserDefaultsCvp">userDefault</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/FontsNames.html">FontsNames</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/HTTPMethod.html">HTTPMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ReachabilityError.html">ReachabilityError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Notification.html">Notification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Notification/Name.html">– Name</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIApplication.html">UIApplication</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIColor.html">UIColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UInt32.html">UInt32</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:12Transformers8callback12reachability5flags4infoySo24SCNetworkReachabilityRefa_So0fG5FlagsVSvSgtF">callback(reachability:flags:info:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/ScreenSize.html">ScreenSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ServerURL.html">ServerURL</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Storyboard.html">Storyboard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Storyboard/Identifier.html">– Identifier</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/URLPath.html">URLPath</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ViewControllerInstence.html">ViewControllerInstence</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:12Transformers17FailureCompletiona">FailureCompletion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:12Transformers17SuccessCompletiona">SuccessCompletion</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>CreateTransformerViewController</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">CreateTransformerViewController</span> <span class="p">:</span> <span class="kt">UIViewController</span></code></pre>
+
+                </div>
+              </div>
+            <p>This is a class created for CreateUpdateTransformerViewController</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Transformers@objc(cs)CreateTransformerViewController(py)nameTextField"></a>
+                    <a name="//apple_ref/swift/Property/nameTextField" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Transformers@objc(cs)CreateTransformerViewController(py)nameTextField">nameTextField</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">nameTextField</span><span class="p">:</span> <span class="kt">UITextField</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Transformers@objc(cs)CreateTransformerViewController(py)teamSegment"></a>
+                    <a name="//apple_ref/swift/Property/teamSegment" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Transformers@objc(cs)CreateTransformerViewController(py)teamSegment">teamSegment</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">teamSegment</span><span class="p">:</span> <span class="kt">UISegmentedControl</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Transformers@objc(cs)CreateTransformerViewController(py)strengthTextField"></a>
+                    <a name="//apple_ref/swift/Property/strengthTextField" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Transformers@objc(cs)CreateTransformerViewController(py)strengthTextField">strengthTextField</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">strengthTextField</span><span class="p">:</span> <span class="kt">UITextField</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Transformers@objc(cs)CreateTransformerViewController(py)intelligenceTextField"></a>
+                    <a name="//apple_ref/swift/Property/intelligenceTextField" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Transformers@objc(cs)CreateTransformerViewController(py)intelligenceTextField">intelligenceTextField</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">intelligenceTextField</span><span class="p">:</span> <span class="kt">UITextField</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Transformers@objc(cs)CreateTransformerViewController(py)speedTextField"></a>
+                    <a name="//apple_ref/swift/Property/speedTextField" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Transformers@objc(cs)CreateTransformerViewController(py)speedTextField">speedTextField</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">speedTextField</span><span class="p">:</span> <span class="kt">UITextField</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Transformers@objc(cs)CreateTransformerViewController(py)enduranceTextField"></a>
+                    <a name="//apple_ref/swift/Property/enduranceTextField" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Transformers@objc(cs)CreateTransformerViewController(py)enduranceTextField">enduranceTextField</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">enduranceTextField</span><span class="p">:</span> <span class="kt">UITextField</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Transformers@objc(cs)CreateTransformerViewController(py)rankTextField"></a>
+                    <a name="//apple_ref/swift/Property/rankTextField" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Transformers@objc(cs)CreateTransformerViewController(py)rankTextField">rankTextField</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">rankTextField</span><span class="p">:</span> <span class="kt">UITextField</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Transformers@objc(cs)CreateTransformerViewController(py)courageTextField"></a>
+                    <a name="//apple_ref/swift/Property/courageTextField" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Transformers@objc(cs)CreateTransformerViewController(py)courageTextField">courageTextField</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">courageTextField</span><span class="p">:</span> <span class="kt">UITextField</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Transformers@objc(cs)CreateTransformerViewController(py)firepowerTextField"></a>
+                    <a name="//apple_ref/swift/Property/firepowerTextField" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Transformers@objc(cs)CreateTransformerViewController(py)firepowerTextField">firepowerTextField</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">firepowerTextField</span><span class="p">:</span> <span class="kt">UITextField</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Transformers@objc(cs)CreateTransformerViewController(py)skillTextField"></a>
+                    <a name="//apple_ref/swift/Property/skillTextField" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Transformers@objc(cs)CreateTransformerViewController(py)skillTextField">skillTextField</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">skillTextField</span><span class="p">:</span> <span class="kt">UITextField</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Transformers@objc(cs)CreateTransformerViewController(py)createButton"></a>
+                    <a name="//apple_ref/swift/Property/createButton" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Transformers@objc(cs)CreateTransformerViewController(py)createButton">createButton</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">createButton</span><span class="p">:</span> <span class="kt">UIButton</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Transformers@objc(cs)CreateTransformerViewController(py)clearButton"></a>
+                    <a name="//apple_ref/swift/Property/clearButton" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Transformers@objc(cs)CreateTransformerViewController(py)clearButton">clearButton</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">clearButton</span><span class="p">:</span> <span class="kt">UIButton</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Transformers31CreateTransformerViewControllerC8isUpdateSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isUpdate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Transformers31CreateTransformerViewControllerC8isUpdateSbvp">isUpdate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isUpdate</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Transformers31CreateTransformerViewControllerC10tranformerAA0C0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/tranformer" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Transformers31CreateTransformerViewControllerC10tranformerAA0C0Cvp">tranformer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">tranformer</span><span class="p">:</span> <span class="kt"><a href="../Classes/Transformer.html">Transformer</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Transformers@objc(cs)CreateTransformerViewController(im)viewDidLoad"></a>
+                    <a name="//apple_ref/swift/Method/viewDidLoad()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Transformers@objc(cs)CreateTransformerViewController(im)viewDidLoad">viewDidLoad()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>CreateTransformerViewController lifecycle method</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">viewDidLoad</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Transformers@objc(cs)CreateTransformerViewController(im)viewWillAppear:"></a>
+                    <a name="//apple_ref/swift/Method/viewWillAppear(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Transformers@objc(cs)CreateTransformerViewController(im)viewWillAppear:">viewWillAppear(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>CreateTransformerViewController lifecycle method</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">viewWillAppear</span><span class="p">(</span><span class="n">_</span> <span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Transformers31CreateTransformerViewControllerC22configureNavigationBaryyF"></a>
+                    <a name="//apple_ref/swift/Method/configureNavigationBar()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Transformers31CreateTransformerViewControllerC22configureNavigationBaryyF">configureNavigationBar()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Call this function to configure navigationbar</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">configureNavigationBar</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Transformers31CreateTransformerViewControllerC11configureUIyyF"></a>
+                    <a name="//apple_ref/swift/Method/configureUI()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Transformers31CreateTransformerViewControllerC11configureUIyyF">configureUI()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Call this function to configure UI according to create/update</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">configureUI</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Transformers@objc(cs)CreateTransformerViewController(im)createOrUpdateTransformer"></a>
+                    <a name="//apple_ref/swift/Method/createOrUpdateTransformer()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Transformers@objc(cs)CreateTransformerViewController(im)createOrUpdateTransformer">createOrUpdateTransformer()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This IBAction function is used to create or update transformer</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBAction</span>
+<span class="kd">func</span> <span class="nf">createOrUpdateTransformer</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Transformers31CreateTransformerViewControllerC015configureJsonTobC0SDySSypGyF"></a>
+                    <a name="//apple_ref/swift/Method/configureJsonToCreateTransformer()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Transformers31CreateTransformerViewControllerC015configureJsonTobC0SDySSypGyF">configureJsonToCreateTransformer()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This fuction is used to create dictionary which needs to be pass in CreateTransformer API Call</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">configureJsonToCreateTransformer</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt">String</span><span class="p">,</span> <span class="kt">Any</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Transformers31CreateTransformerViewControllerC021configureJsonToUpdateC03_idSDySSypGSS_tF"></a>
+                    <a name="//apple_ref/swift/Method/configureJsonToUpdateTransformer(_id:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Transformers31CreateTransformerViewControllerC021configureJsonToUpdateC03_idSDySSypGSS_tF">configureJsonToUpdateTransformer(_id:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This fuction is used to create dictionary which needs to be pass in UpdateTransformer API Call</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">configureJsonToUpdateTransformer</span><span class="p">(</span><span class="nv">_id</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt">String</span><span class="p">,</span> <span class="kt">Any</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Transformers@objc(cs)CreateTransformerViewController(im)clearFields"></a>
+                    <a name="//apple_ref/swift/Method/clearFields()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Transformers@objc(cs)CreateTransformerViewController(im)clearFields">clearFields()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This IBAction function is used to clear all textfield or delete transformer based on condition</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBAction</span>
+<span class="kd">func</span> <span class="nf">clearFields</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@Transformers@objc(cs)CreateTransformerViewController(im)textField:shouldChangeCharactersInRange:replacementString:"></a>
+                    <a name="//apple_ref/swift/Method/textField(_:shouldChangeCharactersIn:replacementString:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@Transformers@objc(cs)CreateTransformerViewController(im)textField:shouldChangeCharactersInRange:replacementString:">textField(_:shouldChangeCharactersIn:replacementString:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>UITextField delegate to restrict user entry</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">textField</span><span class="p">(</span><span class="n">_</span> <span class="nv">textField</span><span class="p">:</span> <span class="kt">UITextField</span><span class="p">,</span> <span class="n">shouldChangeCharactersIn</span> <span class="nv">range</span><span class="p">:</span> <span class="kt">NSRange</span><span class="p">,</span> <span class="n">replacementString</span> <span class="nv">string</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-02-18)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

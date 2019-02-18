@@ -6,13 +6,15 @@
 import Foundation
 import UIKit
 
+/// This is a class created for handling Network reachability in Project
 class ReachabilityLayer: NSObject {
-    
+    /// Shared instance of ReachabilityLayer
     static let shared = ReachabilityLayer()
+    /// Instance of Reachability
     let reachability = Reachability()!
-    
+    /// ReachabilityLayer object initializer
     private override init() {}
-    
+/** Call this function to check network reachability */
     func checkForReachability() {
         reachability.whenReachable = { reachability in
             print("app reachable to network")
@@ -27,7 +29,15 @@ class ReachabilityLayer: NSObject {
             print("Unable to start Reachability notifier")
         }
     }
-    
+    /**
+     ### Usage Example: ###
+     ````
+     ReachabilityLayer.shared.checkForReachability()
+     ````
+     */
+    /**
+    Call this function to check network reachability related error
+    */
     func displayNetworkErrorAlert()  {
         let closeAction = UIAlertAction(title: kAlertButtonTitle, style: .cancel){ action -> Void in
             exit(0)
