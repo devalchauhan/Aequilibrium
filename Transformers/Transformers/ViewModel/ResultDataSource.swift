@@ -189,11 +189,16 @@ class ResultDataSource: NSObject {
             APIServiceClient.shared.deleteTransformer(path: (URLPath.Transformers + "/" + item.id!), success: { (data, response, error) in
                 dispatchGroup.leave()
             }) { (error) -> (Void) in
+                let okAction = UIAlertAction(title: kAlertButtonTitle, style: .cancel)
+                Alert.displayAlert(message: "Something went wrong, while destroying tranformer.", withTitle: kAlertTitle, withActions: [okAction])
+                return
             }
         }
         dispatchGroup.notify(queue: .main) {
             if goBack {
                 NavigationViewController.shared.popViewController(animated: true)
+                let okAction = UIAlertAction(title: kAlertButtonTitle, style: .cancel)
+                Alert.displayAlert(message: "Game over.", withTitle: kAlertTitle, withActions: [okAction])
             }
         }
     }

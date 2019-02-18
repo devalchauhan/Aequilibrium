@@ -88,7 +88,10 @@ class CreateTransformerViewController: UIViewController {
                     }
                 } catch  { }
             }) { (error) -> (Void) in
-                print(error)
+                let okAction = UIAlertAction(title: kAlertButtonTitle, style: .cancel)
+                let type : String = self.isUpdate ? "updating" : "creating"
+                Alert.displayAlert(message: "Something went wrong, while \(type) tranformer.", withTitle: kAlertTitle, withActions: [okAction])
+                return
             }
         }
     }
@@ -126,6 +129,9 @@ class CreateTransformerViewController: UIViewController {
             APIServiceClient.shared.deleteTransformer(path: (URLPath.Transformers + "/" + tranformer.id!), success: { (data, response, error) in
                 NavigationViewController.shared.popViewController(animated: true)
             }) { (error) -> (Void) in
+                let okAction = UIAlertAction(title: kAlertButtonTitle, style: .cancel)
+                Alert.displayAlert(message: "Something went wrong, while destroying tranformer.", withTitle: kAlertTitle, withActions: [okAction])
+                return
             }
         } else {
             nameTextField.text = ""; strengthTextField.text = ""; intelligenceTextField.text = ""; speedTextField.text = ""; enduranceTextField.text = ""; rankTextField.text = ""; courageTextField.text = ""; firepowerTextField.text = ""; skillTextField.text = "";
