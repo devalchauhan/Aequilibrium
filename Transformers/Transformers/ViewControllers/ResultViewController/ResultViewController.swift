@@ -21,14 +21,9 @@ class ResultViewController: UIViewController {
         battleCount.text = "No. of battle : \(String(describing: resultDataSource!.battleCount))"
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        
-    }
-    
     func configureNavigationBar() {
         NavigationViewController.shared.removeBackButton()
         NavigationViewController.shared.setTitle(title: "RESULT")
         NavigationViewController.shared.addCancelButton()
     }
-
 }

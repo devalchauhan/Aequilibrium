@@ -28,7 +28,6 @@ class TeamViewModelDataSource: NSObject {
         getAllTransformerFromWS()
     }
     
-    
     func configureTableView(_tableview: UITableView) {
         tableView = _tableview
         tableView?.delegate = self
@@ -51,7 +50,9 @@ class TeamViewModelDataSource: NSObject {
             userDefault.set(bearerToken, forKey: "BearerToken")
             userDefault.synchronize()
         }) { (error) -> (Void) in
-            print(error)
+            let okAction = UIAlertAction(title: kAlertButtonTitle, style: .cancel)
+            Alert.displayAlert(message: "Something went wrong, while authorization.", withTitle: kAlertTitle, withActions: [okAction])
+            return
         }
     }
     
@@ -79,13 +80,13 @@ class TeamViewModelDataSource: NSObject {
                     }
                 }
             } catch { }
-            autobots = []
-            decepticons = []
             autobots = (transformers.filter() { $0.team == "A" }.sorted(by: { $0.rank > $1.rank }))
             decepticons = (transformers.filter() { $0.team == "D" }.sorted(by: { $0.rank > $1.rank }))
             self.reloadTableView(_tableView: self.tableView!)
         }) { (error) -> (Void) in
-            print(error)
+            let okAction = UIAlertAction(title: kAlertButtonTitle, style: .cancel)
+            Alert.displayAlert(message: "Something went wrong, while getting all the transformers.", withTitle: kAlertTitle, withActions: [okAction])
+            return
         }
     }
 }

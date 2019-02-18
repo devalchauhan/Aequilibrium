@@ -9,7 +9,6 @@
 import UIKit
 let kCreateTitle = "CREATE TRANSFROMER"
 let kUpdateTitle = "UPDATE TRANSFROMER"
-let kStandardPickerRowHeight = CGFloat(40)
 
 class CreateTransformerViewController: UIViewController {
     
@@ -84,23 +83,18 @@ class CreateTransformerViewController: UIViewController {
                 do {
                     let transformerJson = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments)
                     Transformer.shared.configure(JSON: transformerJson as! [AnyHashable : Any])
-                    //                if self.isUpdate {
-                    //                    TransformerCoreData.updateTransformerFromCoreData(transformer: Transformer.shared)
-                    //                }
-                    //                else {
-                    //                    TransformerCoreData.saveTransformerToCoredata(transformer: Transformer.shared)
-                    //                }
                     DispatchQueue.main.async {
                         NavigationViewController.shared.popViewController(animated: true)
                     }
                 } catch  { }
             }) { (error) -> (Void) in
-                print(error)
+                let okAction = UIAlertAction(title: kAlertButtonTitle, style: .cancel)
+                let type : String = self.isUpdate ? "updating" : "creating"
+                Alert.displayAlert(message: "Something went wrong, while \(type) tranformer.", withTitle: kAlertTitle, withActions: [okAction])
+                return
             }
         }
     }
-    
-    
     
     func configureJsonToCreateTransformer() -> Dictionary<String, Any> {
         var transformer = Dictionary<String, Any>()
@@ -135,7 +129,9 @@ class CreateTransformerViewController: UIViewController {
             APIServiceClient.shared.deleteTransformer(path: (URLPath.Transformers + "/" + tranformer.id!), success: { (data, response, error) in
                 NavigationViewController.shared.popViewController(animated: true)
             }) { (error) -> (Void) in
-                
+                let okAction = UIAlertAction(title: kAlertButtonTitle, style: .cancel)
+                Alert.displayAlert(message: "Something went wrong, while destroying tranformer.", withTitle: kAlertTitle, withActions: [okAction])
+                return
             }
         } else {
             nameTextField.text = ""; strengthTextField.text = ""; intelligenceTextField.text = ""; speedTextField.text = ""; enduranceTextField.text = ""; rankTextField.text = ""; courageTextField.text = ""; firepowerTextField.text = ""; skillTextField.text = "";
@@ -144,12 +140,6 @@ class CreateTransformerViewController: UIViewController {
 }
 
 extension CreateTransformerViewController : UITextFieldDelegate {
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        
-    }
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        
-    }
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if textField == nameTextField {
             return true
