@@ -9,6 +9,8 @@
 import UIKit
 import SDWebImage
 
+typealias Completion = () -> Void
+
 var autobots = [Transformer]()
 var decepticons = [Transformer]()
 
@@ -25,7 +27,9 @@ class TeamViewModelDataSource: NSObject {
             APISessionService.shared.setAdditionalRequestHeaders(key: "Authorization", value: "Bearer \(token)")
         }
         else {
-            getAllSpark()
+            getAllSpark {
+                self.getAllTransformerFromWS()
+            }
         }
         getAllTransformerFromWS()
     }
@@ -44,11 +48,13 @@ class TeamViewModelDataSource: NSObject {
         tableView = _tableview
         tableView?.delegate = self
         tableView?.dataSource = self
-        tableView?.estimatedRowHeight = 120.0
-        tableView?.rowHeight = UITableView.automaticDimension
+        //tableView?.rowHeight = UITableView.automaticDimension
         tableView?.separatorColor = UIColor.darkGray
         tableView?.tableFooterView = UIView()
-        tableView?.register(UINib(nibName: "TeamTableViewCell", bundle: Bundle.main), forCellReuseIdentifier: "TeamTableViewCell")
+        tableView?.register(UINib(nibName: "AutobotTableViewCell", bundle: Bundle.main), forCellReuseIdentifier: "AutobotTableViewCell")
+        tableView?.register(UINib(nibName: "DecepticonTableViewCell", bundle: Bundle.main), forCellReuseIdentifier: "DecepticonTableViewCell")
+        tableView?.register(UINib(nibName: "VsTableViewCell", bundle: Bundle.main), forCellReuseIdentifier: "VsTableViewCell")
+        
     }
     
     /**
@@ -73,12 +79,13 @@ class TeamViewModelDataSource: NSObject {
      getAllSpark()
      ````
      */
-    func getAllSpark() {
+    func getAllSpark(success: @escaping Completion) {
         APIServiceClient.shared.getAllSpark(path: URLPath.AllSpark, success: { (data, response, error) in
             let bearerToken : String = String(data: data!, encoding: String.Encoding.utf8) ?? ""
             APISessionService.shared.setAdditionalRequestHeaders(key: "Authorization", value: "Bearer \(bearerToken)")
             userDefault.set(bearerToken, forKey: "BearerToken")
             userDefault.synchronize()
+            success()
         }) { (error) -> (Void) in
             let okAction = UIAlertAction(title: kAlertButtonTitle, style: .cancel)
             Alert.displayAlert(message: "Something went wrong, while authorization.", withTitle: kAlertTitle, withActions: [okAction])
@@ -132,54 +139,98 @@ class TeamViewModelDataSource: NSObject {
 extension TeamViewModelDataSource : UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return autobots.count > decepticons.count ? autobots.count : decepticons.count
     }
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if (section <= autobots.count && section <= decepticons.count) {
+            return 3
+        } else {
+            return 1
+        }
+        //return section <= autobots.count && section <= decepticons.count ? 3 : 1
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: TeamTableViewCell = tableView.dequeueReusableCell(withIdentifier: "TeamTableViewCell", for: indexPath) as! TeamTableViewCell
+        
+        switch indexPath.row {
+        case 0:
+            let cell: AutobotTableViewCell = tableView.dequeueReusableCell(withIdentifier: "AutobotTableViewCell", for: indexPath) as! AutobotTableViewCell
+            cell.separatorInset = UIEdgeInsets.zero
+            cell.selectionStyle = .none
+            if indexPath.section <= autobots.count - 1 {
+                if autobots.count > decepticons.count && autobots.count-1 == indexPath.section {
+                    cell.contentView.roundedAllCorner()
+                }
+                cell.autobotItem = autobots[indexPath.section]
+                cell.autobotButton.tag = indexPath.section
+            }
+            return cell
+        case 2:
+            let cell: DecepticonTableViewCell = tableView.dequeueReusableCell(withIdentifier: "DecepticonTableViewCell", for: indexPath) as! DecepticonTableViewCell
+            cell.separatorInset = UIEdgeInsets.zero
+            cell.selectionStyle = .none
+            if indexPath.section <= decepticons.count - 1 {
+                if autobots.count < decepticons.count && decepticons.count-1 == indexPath.section {
+                    cell.contentView.roundedAllCorner()
+                }
+                cell.decepticonItem = decepticons[indexPath.section]
+                cell.decepticonButton.tag = indexPath.section
+            }
+            return cell
+        default:
+            let cell: VsTableViewCell = tableView.dequeueReusableCell(withIdentifier: "VsTableViewCell", for: indexPath) as! VsTableViewCell
+            cell.separatorInset = UIEdgeInsets.zero
+            cell.selectionStyle = .none
+            return cell
+        }
+        
+//
+//        if indexPath.section <= autobots.count - 1 {
+//            cell.autobotItem = autobots[indexPath.row]
+//            cell.autobotButton.tag = indexPath.row
+//        } else {
+//            /*cell.autobotViewHeightContraint.constant = 0
+//            cell.vsImageViewHeightContraint.constant = 0
+//            UIView.animate(withDuration: 0.5) {
+//                cell.setNeedsLayout()
+//            }*/
+//        }
+//
+//        if indexPath.section <= decepticons.count - 1 {
+//            cell.decepticonItem = decepticons[indexPath.row]
+//            cell.decepticonButton.tag = indexPath.row
+//        } else {
+//            /*cell.decepticonViewHeightContraint.constant = 0
+//            cell.vsImageViewHeightContraint.constant = 0
+//            UIView.animate(withDuration: 0.5) {
+//                cell.setNeedsLayout()
+//            }*/
+//        }
 
-        cell.separatorInset = UIEdgeInsets.zero
-        
-        if indexPath.row <= autobots.count - 1 {
-            cell.autobotName.text = autobots[indexPath.row].name
-            let autobotImageURL = autobots[indexPath.row].team_icon
-            cell.autobotImage.sd_setImage(with: URL(string: autobotImageURL!), placeholderImage: UIImage(named: "no_image.png"))
-            cell.autobotButton.tag = indexPath.row
-            cell.autobotUpdateConfigure(transformer: autobots[indexPath.row]) {
-                Transformer.shared = autobots[indexPath.row]
-                NavigationViewController.shared.gotoCreateTransformer(isUpdate: true)
-            }
-        }
-        else {
-            cell.autobotName.text = ""
-            cell.autobotImage.image = UIImage(named: "not_available.png")
-        }
-        
-        if indexPath.row <= decepticons.count - 1 {
-            cell.decepticonName.text = decepticons[indexPath.row].name
-            let decepticonImageURL = decepticons[indexPath.row].team_icon
-            cell.decepticonImage.sd_setImage(with: URL(string: decepticonImageURL!), placeholderImage: UIImage(named: "no_image.png"))
-            cell.decepticonButton.tag = indexPath.row
-            cell.decepticonUpdateConfigure(transformer: decepticons[indexPath.row]) {
-                Transformer.shared = decepticons[indexPath.row]
-                NavigationViewController.shared.gotoCreateTransformer(isUpdate: true)
-            }
-        }
-        else {
-            cell.decepticonName.text = ""
-            cell.decepticonImage.image = UIImage(named: "not_available.png")
-        }
-        return cell
     }
 }
 
 extension TeamViewModelDataSource : UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return tableView.estimatedRowHeight
+        
+        if (indexPath.section <= autobots.count-1 && indexPath.section <= decepticons.count-1) {
+            return UITableView.automaticDimension
+        } else {
+            switch indexPath.row {
+            case 0:
+                if indexPath.section >= autobots.count {
+                   return 0
+                }
+            case 2:
+                if indexPath.section >= decepticons.count {
+                   return 0
+                }
+            default:
+                return 0
+            }
+            return UITableView.automaticDimension
+        }
     }
 }

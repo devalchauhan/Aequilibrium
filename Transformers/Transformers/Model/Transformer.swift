@@ -38,6 +38,8 @@ class Transformer: NSObject {
     var skill : Int = 0
     /// An image URL that represents what team the Transformer is on.
     var team_icon : String?
+
+    var overAllRatings: Int = 0
     
     
     /**
@@ -65,5 +67,6 @@ class Transformer: NSObject {
         firepower = transformerInfo["firepower"] as! Int
         skill = transformerInfo["skill"] as! Int
         team_icon = transformerInfo["team_icon"] as? String
+        overAllRatings = strength + intelligence + speed + endurance + firepower
     }
 }

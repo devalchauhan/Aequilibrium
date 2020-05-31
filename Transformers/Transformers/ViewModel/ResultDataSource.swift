@@ -247,22 +247,10 @@ class ResultDataSource: NSObject {
      ````
      */
     func checkOverAllRating(sourceTranformer : Transformer, destinationTransformer : Transformer) {
-        let sourceOverAllRating = sourceTranformer.strength +
-            sourceTranformer.intelligence +
-            sourceTranformer.speed +
-            sourceTranformer.endurance +
-            sourceTranformer.firepower
-        
-        let destinationOverAllRating = destinationTransformer.strength +
-            destinationTransformer.intelligence +
-            destinationTransformer.speed +
-            destinationTransformer.endurance +
-            destinationTransformer.firepower
-        
-        if sourceOverAllRating > destinationOverAllRating {
+        if sourceTranformer.overAllRatings > destinationTransformer.overAllRatings {
             winner.append(sourceTranformer)
         }
-        else if destinationOverAllRating > sourceOverAllRating {
+        else if destinationTransformer.overAllRatings > sourceTranformer.overAllRatings {
             winner.append(destinationTransformer)
         }
         else {

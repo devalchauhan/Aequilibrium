@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_0" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,9 +16,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" estimatedRowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rSg-ZX-L3E">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="490"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="300" estimatedRowHeight="300" sectionHeaderHeight="5" sectionFooterHeight="5" translatesAutoresizingMaskIntoConstraints="NO" id="rSg-ZX-L3E">
+                                <rect key="frame" x="10" y="0.0" width="300" height="490"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LoA-UL-Yya">
                                 <rect key="frame" x="110" y="498" width="100" height="50"/>
@@ -37,11 +35,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="LoA-UL-Yya" firstAttribute="centerX" secondItem="exR-Wa-bXw" secondAttribute="centerX" id="P9a-Cz-M2z"/>
-                            <constraint firstItem="rSg-ZX-L3E" firstAttribute="leading" secondItem="exR-Wa-bXw" secondAttribute="leading" id="SaD-U7-Kyu"/>
+                            <constraint firstItem="rSg-ZX-L3E" firstAttribute="leading" secondItem="exR-Wa-bXw" secondAttribute="leading" constant="10" id="SaD-U7-Kyu"/>
                             <constraint firstItem="rSg-ZX-L3E" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Z2G-oI-TTC"/>
                             <constraint firstAttribute="bottom" secondItem="LoA-UL-Yya" secondAttribute="bottom" constant="20" id="fWV-cG-Gfm"/>
                             <constraint firstItem="LoA-UL-Yya" firstAttribute="top" secondItem="rSg-ZX-L3E" secondAttribute="bottom" constant="8" id="siJ-71-Uj3"/>
-                            <constraint firstItem="exR-Wa-bXw" firstAttribute="trailing" secondItem="rSg-ZX-L3E" secondAttribute="trailing" id="tqB-hw-bQB"/>
+                            <constraint firstItem="exR-Wa-bXw" firstAttribute="trailing" secondItem="rSg-ZX-L3E" secondAttribute="trailing" constant="10" id="tqB-hw-bQB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="exR-Wa-bXw"/>
                     </view>
@@ -62,21 +60,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vac-6t-RX1">
-                                <rect key="frame" x="0.0" y="20" width="320" height="468"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="488"/>
                                 <subviews>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="b5s-45-go4">
-                                        <rect key="frame" x="16" y="15" width="288" height="29"/>
+                                        <rect key="frame" x="16" y="15" width="288" height="32"/>
                                         <segments>
                                             <segment title="Autobots"/>
                                             <segment title="Decepticons"/>
                                         </segments>
                                     </segmentedControl>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Strength" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jTb-Uw-Rmx">
-                                        <rect key="frame" x="16" y="92" width="288" height="30"/>
+                                        <rect key="frame" x="16" y="95" width="288" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="PN9-ZB-t4T"/>
                                         </constraints>
-                                        <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                         <connections>
@@ -84,11 +81,10 @@
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Intelligence" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FgZ-jP-8Jr">
-                                        <rect key="frame" x="16" y="132" width="288" height="30"/>
+                                        <rect key="frame" x="16" y="135" width="288" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="KXp-oe-i1f"/>
                                         </constraints>
-                                        <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                         <connections>
@@ -96,11 +92,10 @@
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Speed" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GKm-cy-Wiu">
-                                        <rect key="frame" x="16" y="172" width="288" height="30"/>
+                                        <rect key="frame" x="16" y="175" width="288" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Xcw-ZX-H7X"/>
                                         </constraints>
-                                        <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                         <connections>
@@ -108,11 +103,10 @@
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Endurance" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8HR-8t-e7k">
-                                        <rect key="frame" x="16" y="212" width="288" height="30"/>
+                                        <rect key="frame" x="16" y="215" width="288" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="llX-XO-05G"/>
                                         </constraints>
-                                        <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                         <connections>
@@ -120,11 +114,10 @@
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Rank" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E83-69-erd">
-                                        <rect key="frame" x="16" y="252" width="288" height="30"/>
+                                        <rect key="frame" x="16" y="255" width="288" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="zsI-oS-ZAW"/>
                                         </constraints>
-                                        <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                         <connections>
@@ -132,11 +125,10 @@
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Courage" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n1Z-kf-B74">
-                                        <rect key="frame" x="16" y="292" width="288" height="30"/>
+                                        <rect key="frame" x="16" y="295" width="288" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="FiA-f0-hmu"/>
                                         </constraints>
-                                        <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                         <connections>
@@ -144,11 +136,10 @@
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Firepower" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xEx-zJ-209">
-                                        <rect key="frame" x="16" y="332" width="288" height="30"/>
+                                        <rect key="frame" x="16" y="335" width="288" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Cfm-xO-rF1"/>
                                         </constraints>
-                                        <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                         <connections>
@@ -156,11 +147,10 @@
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skill" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bIf-KN-YqF">
-                                        <rect key="frame" x="16" y="372" width="288" height="30"/>
+                                        <rect key="frame" x="16" y="375" width="288" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="5JI-Na-6cD"/>
                                         </constraints>
-                                        <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                         <connections>
@@ -168,7 +158,7 @@
                                         </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhu-4s-RWs">
-                                        <rect key="frame" x="16" y="418" width="139" height="30"/>
+                                        <rect key="frame" x="16" y="421" width="139" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="KdP-bi-Pqh"/>
                                         </constraints>
@@ -178,7 +168,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T6P-P1-9sV">
-                                        <rect key="frame" x="165" y="418" width="139" height="30"/>
+                                        <rect key="frame" x="165" y="421" width="139" height="30"/>
                                         <state key="normal" title="CLEAR">
                                             <color key="titleColor" red="1" green="0.066088948472914355" blue="0.044886316084486011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -191,7 +181,6 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="QYE-GH-6mC"/>
                                         </constraints>
-                                        <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                                         <connections>
@@ -280,7 +269,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQj-pW-6RD">
-                                <rect key="frame" x="16" y="36" width="288" height="21"/>
+                                <rect key="frame" x="16" y="16" width="288" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="B5m-As-zdD"/>
                                 </constraints>
@@ -289,7 +278,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="677-RP-rfz">
-                                <rect key="frame" x="0.0" y="73" width="320" height="495"/>
+                                <rect key="frame" x="0.0" y="53" width="320" height="515"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             </tableView>
                         </subviews>

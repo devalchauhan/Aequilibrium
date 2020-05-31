@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,8 +17,6 @@
 		67041D86221718C100BD9C91 /* TransformersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67041D85221718C100BD9C91 /* TransformersTests.swift */; };
 		67041D91221718C100BD9C91 /* TransformersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67041D90221718C100BD9C91 /* TransformersUITests.swift */; };
 		671A83DE2217DD0A003D7A7E /* TeamViewModelDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671A83DD2217DD0A003D7A7E /* TeamViewModelDataSource.swift */; };
-		671A83E22217DE35003D7A7E /* TeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671A83E02217DE35003D7A7E /* TeamTableViewCell.swift */; };
-		671A83E32217DE35003D7A7E /* TeamTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 671A83E12217DE35003D7A7E /* TeamTableViewCell.xib */; };
 		671A83E82217E241003D7A7E /* Transformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671A83E72217E241003D7A7E /* Transformer.swift */; };
 		671A83EC2217E6C2003D7A7E /* APIServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671A83EB2217E6C2003D7A7E /* APIServiceClient.swift */; };
 		671A83EE2217E6FD003D7A7E /* APISessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671A83ED2217E6FD003D7A7E /* APISessionService.swift */; };
@@ -48,6 +46,13 @@
 		67FDE3C222193EFB0098C759 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FDE3C122193EFB0098C759 /* Alert.swift */; };
 		67FDE3C4221961E00098C759 /* ReachabilityLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FDE3C3221961E00098C759 /* ReachabilityLayer.swift */; };
 		67FDE3C7221962920098C759 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FDE3C6221962920098C759 /* Reachability.swift */; };
+		D02AC3C32483AC5100C5D8BA /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02AC3C22483AC5100C5D8BA /* UIViewExtension.swift */; };
+		D02AC3C62483C28000C5D8BA /* AutobotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02AC3C42483C27F00C5D8BA /* AutobotTableViewCell.swift */; };
+		D02AC3C72483C28000C5D8BA /* AutobotTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D02AC3C52483C28000C5D8BA /* AutobotTableViewCell.xib */; };
+		D02AC3CA2483C29000C5D8BA /* DecepticonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02AC3C82483C29000C5D8BA /* DecepticonTableViewCell.swift */; };
+		D02AC3CB2483C29000C5D8BA /* DecepticonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D02AC3C92483C29000C5D8BA /* DecepticonTableViewCell.xib */; };
+		D02AC3CE2483C29B00C5D8BA /* VsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02AC3CC2483C29B00C5D8BA /* VsTableViewCell.swift */; };
+		D02AC3CF2483C29B00C5D8BA /* VsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D02AC3CD2483C29B00C5D8BA /* VsTableViewCell.xib */; };
 		DC68710E46FDE949EE5B6811 /* Pods_TransformersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E334CE754C7ABA4F12046F9 /* Pods_TransformersTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -89,8 +94,6 @@
 		67041D90221718C100BD9C91 /* TransformersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformersUITests.swift; sourceTree = "<group>"; };
 		67041D92221718C100BD9C91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		671A83DD2217DD0A003D7A7E /* TeamViewModelDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewModelDataSource.swift; sourceTree = "<group>"; };
-		671A83E02217DE35003D7A7E /* TeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTableViewCell.swift; sourceTree = "<group>"; };
-		671A83E12217DE35003D7A7E /* TeamTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamTableViewCell.xib; sourceTree = "<group>"; };
 		671A83E72217E241003D7A7E /* Transformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transformer.swift; sourceTree = "<group>"; };
 		671A83EB2217E6C2003D7A7E /* APIServiceClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceClient.swift; sourceTree = "<group>"; };
 		671A83ED2217E6FD003D7A7E /* APISessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISessionService.swift; sourceTree = "<group>"; };
@@ -122,6 +125,13 @@
 		67FDE3C6221962920098C759 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		814D78B3851195A73CA23241 /* Pods-TransformersUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransformersUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TransformersUITests/Pods-TransformersUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9CEC778652FDD018406A3F18 /* Pods-Transformers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transformers.release.xcconfig"; path = "Pods/Target Support Files/Pods-Transformers/Pods-Transformers.release.xcconfig"; sourceTree = "<group>"; };
+		D02AC3C22483AC5100C5D8BA /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		D02AC3C42483C27F00C5D8BA /* AutobotTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutobotTableViewCell.swift; sourceTree = "<group>"; };
+		D02AC3C52483C28000C5D8BA /* AutobotTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutobotTableViewCell.xib; sourceTree = "<group>"; };
+		D02AC3C82483C29000C5D8BA /* DecepticonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecepticonTableViewCell.swift; sourceTree = "<group>"; };
+		D02AC3C92483C29000C5D8BA /* DecepticonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DecepticonTableViewCell.xib; sourceTree = "<group>"; };
+		D02AC3CC2483C29B00C5D8BA /* VsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VsTableViewCell.swift; sourceTree = "<group>"; };
+		D02AC3CD2483C29B00C5D8BA /* VsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VsTableViewCell.xib; sourceTree = "<group>"; };
 		D1CEB5CAD0A6F8270C561235 /* Pods-Transformers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transformers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Transformers/Pods-Transformers.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -248,8 +258,12 @@
 		671A83DF2217DE1C003D7A7E /* TeamTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				671A83E02217DE35003D7A7E /* TeamTableViewCell.swift */,
-				671A83E12217DE35003D7A7E /* TeamTableViewCell.xib */,
+				D02AC3C42483C27F00C5D8BA /* AutobotTableViewCell.swift */,
+				D02AC3C52483C28000C5D8BA /* AutobotTableViewCell.xib */,
+				D02AC3C82483C29000C5D8BA /* DecepticonTableViewCell.swift */,
+				D02AC3C92483C29000C5D8BA /* DecepticonTableViewCell.xib */,
+				D02AC3CC2483C29B00C5D8BA /* VsTableViewCell.swift */,
+				D02AC3CD2483C29B00C5D8BA /* VsTableViewCell.xib */,
 			);
 			path = TeamTableViewCell;
 			sourceTree = "<group>";
@@ -379,6 +393,7 @@
 				67FDE3C52219627D0098C759 /* Reachability */,
 				67FDE3BF22193C940098C759 /* TextFieldValidator.swift */,
 				67FDE3C122193EFB0098C759 /* Alert.swift */,
+				D02AC3C22483AC5100C5D8BA /* UIViewExtension.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -513,10 +528,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D02AC3CF2483C29B00C5D8BA /* VsTableViewCell.xib in Resources */,
 				67041D7B221718C100BD9C91 /* LaunchScreen.storyboard in Resources */,
-				671A83E32217DE35003D7A7E /* TeamTableViewCell.xib in Resources */,
 				67041D78221718C100BD9C91 /* Assets.xcassets in Resources */,
+				D02AC3CB2483C29000C5D8BA /* DecepticonTableViewCell.xib in Resources */,
 				674C223B2217441700DB7E3C /* FontAwesome.otf in Resources */,
+				D02AC3C72483C28000C5D8BA /* AutobotTableViewCell.xib in Resources */,
 				67041D73221718C100BD9C91 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -566,22 +583,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Transformers/Pods-Transformers-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Transformers/Pods-Transformers-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Transformers/Pods-Transformers-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Transformers/Pods-Transformers-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Transformers/Pods-Transformers-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C8EB8F1CF85C1B2B5F52B342 /* [CP] Check Pods Manifest.lock */ = {
@@ -636,6 +646,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				674C2237221743D300DB7E3C /* FontName.swift in Sources */,
+				D02AC3CE2483C29B00C5D8BA /* VsTableViewCell.swift in Sources */,
 				67BB98EB221740A30011AA7D /* UIApplication.swift in Sources */,
 				671A83E82217E241003D7A7E /* Transformer.swift in Sources */,
 				67BB98EC221740A30011AA7D /* Int.swift in Sources */,
@@ -653,15 +664,17 @@
 				671A83F622188D50003D7A7E /* ResultViewController.swift in Sources */,
 				673626B722171FD700E55B8D /* SharedInstances.swift in Sources */,
 				671A83EC2217E6C2003D7A7E /* APIServiceClient.swift in Sources */,
+				D02AC3C32483AC5100C5D8BA /* UIViewExtension.swift in Sources */,
 				67BB98EA221740A30011AA7D /* UIColor.swift in Sources */,
 				673626FD2217277800E55B8D /* NavigationTitleView.swift in Sources */,
 				671A83EE2217E6FD003D7A7E /* APISessionService.swift in Sources */,
 				67AF1FF92217549B00E78E4B /* Sizes.swift in Sources */,
 				674C2235221743CD00DB7E3C /* LeftNavigationItem.swift in Sources */,
 				673626B422171ECA00E55B8D /* NavigationViewController.swift in Sources */,
-				671A83E22217DE35003D7A7E /* TeamTableViewCell.swift in Sources */,
 				671A83F822189B3E003D7A7E /* ResultDataSource.swift in Sources */,
+				D02AC3C62483C28000C5D8BA /* AutobotTableViewCell.swift in Sources */,
 				671A83DE2217DD0A003D7A7E /* TeamViewModelDataSource.swift in Sources */,
+				D02AC3CA2483C29000C5D8BA /* DecepticonTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
