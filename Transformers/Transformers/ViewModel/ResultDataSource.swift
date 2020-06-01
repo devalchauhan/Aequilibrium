@@ -145,7 +145,7 @@ class ResultDataSource: NSObject {
                 else {
                     if endGame {
                         autobots.append(contentsOf: decepticons)
-                        destroyTransformers(allTransformers: autobots, goBack: true)
+                        destroyTransformers(transformers: autobots, goBack: true)
                         break
                     }
                 }
@@ -176,9 +176,11 @@ class ResultDataSource: NSObject {
             return true
         } else if array.contains(sourceName) && !(array.contains(destinationName)) {
             winner.append(source)
+            destroyTransformers(transformers: [destination], goBack: false)
             return false
         } else {
             winner.append(destination)
+            destroyTransformers(transformers: [source], goBack: false)
             return false
         }
     }
@@ -200,11 +202,13 @@ class ResultDataSource: NSObject {
         if (sourceTranformer.courage - destinationTransformer.courage >= 4) &&
             (sourceTranformer.strength - destinationTransformer.strength) >= 3 {
             winner.append(sourceTranformer)
+            destroyTransformers(transformers: [destinationTransformer], goBack: false)
             return false
         }
         else if (destinationTransformer.courage - sourceTranformer.courage >= 4) &&
             (destinationTransformer.strength - sourceTranformer.strength) >= 3 {
             winner.append(destinationTransformer)
+            destroyTransformers(transformers: [sourceTranformer], goBack: false)
             return false
         }
         return true
@@ -225,10 +229,12 @@ class ResultDataSource: NSObject {
     func checkSkill(sourceTranformer : Transformer, destinationTransformer : Transformer) -> Bool {
         if sourceTranformer.skill - destinationTransformer.skill >= 3 {
             winner.append(sourceTranformer)
+            destroyTransformers(transformers: [destinationTransformer], goBack: false)
             return false
         }
         else if destinationTransformer.skill - sourceTranformer.skill >= 3 {
             winner.append(destinationTransformer)
+            destroyTransformers(transformers: [sourceTranformer], goBack: false)
             return false
         }
         return true
@@ -249,12 +255,14 @@ class ResultDataSource: NSObject {
     func checkOverAllRating(sourceTranformer : Transformer, destinationTransformer : Transformer) {
         if sourceTranformer.overAllRatings > destinationTransformer.overAllRatings {
             winner.append(sourceTranformer)
+            destroyTransformers(transformers: [destinationTransformer], goBack: false)
         }
         else if destinationTransformer.overAllRatings > sourceTranformer.overAllRatings {
             winner.append(destinationTransformer)
+            destroyTransformers(transformers: [sourceTranformer], goBack: false)
         }
         else {
-            destroyTransformers(allTransformers: [sourceTranformer,destinationTransformer], goBack: false)
+            destroyTransformers(transformers: [sourceTranformer,destinationTransformer], goBack: false)
         }
     }
     
@@ -268,9 +276,9 @@ class ResultDataSource: NSObject {
      destroyTransformers(allTransformers: autobots, goBack: true)
      ````
      */
-    func destroyTransformers(allTransformers : [Transformer], goBack : Bool) {
+    func destroyTransformers(transformers : [Transformer], goBack : Bool) {
         let dispatchGroup = DispatchGroup()
-        for item in allTransformers {
+        for item in transformers {
             dispatchGroup.enter()
             APIServiceClient.shared.deleteTransformer(path: (URLPath.Transformers + "/" + item.id!), success: { (data, response, error) in
                 NotificationCenter.default.post(name: Notification.Name(Strings.kFeatchTranformersNotification), object: nil)
