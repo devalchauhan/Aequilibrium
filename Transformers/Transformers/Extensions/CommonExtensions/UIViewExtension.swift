@@ -9,6 +9,7 @@
 import UIKit
 
 extension UIView {
+    
     func roundedBottomCorner() {
         let rectShape = CAShapeLayer()
         rectShape.path = UIBezierPath(roundedRect: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width - 20, height: self.bounds.size.height), byRoundingCorners:[.bottomLeft, .bottomRight], cornerRadii: CGSize(width: 15, height: 15)).cgPath
@@ -22,6 +23,11 @@ extension UIView {
     func roundedAllCorner() {
         let rectShape = CAShapeLayer()
         rectShape.path = UIBezierPath(roundedRect: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width - 20, height: self.bounds.size.height), byRoundingCorners:[.topLeft, .topRight,.bottomRight,.bottomLeft], cornerRadii: CGSize(width: 15, height: 15)).cgPath
+        self.layer.mask = rectShape
+    }
+    func roundedButtonAllCorner() {
+        let rectShape = CAShapeLayer()
+        rectShape.path = UIBezierPath(roundedRect: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width/2 - 20, height: self.bounds.size.height), byRoundingCorners:[.topLeft, .topRight,.bottomRight,.bottomLeft], cornerRadii: CGSize(width: 15, height: 15)).cgPath
         self.layer.mask = rectShape
     }
 }

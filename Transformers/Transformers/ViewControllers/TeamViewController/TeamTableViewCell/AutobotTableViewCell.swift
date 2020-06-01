@@ -24,7 +24,7 @@ class AutobotTableViewCell: UITableViewCell {
     }
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.contentView.backgroundColor = .lightGray
+        self.contentView.backgroundColor = .cellBackground
         self.contentView.roundedTopCorner()
     }
 

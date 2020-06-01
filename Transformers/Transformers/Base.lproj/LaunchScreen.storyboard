@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="ipad9_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,22 +16,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRANSFORMERS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mkM-TT-QJF">
-                                <rect key="frame" x="22.5" y="498" width="723" height="48"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="hOa-Pe-sIC"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="dvr-2R-ZGT">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="mkM-TT-QJF" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="5cb-UK-68I"/>
-                            <constraint firstItem="mkM-TT-QJF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="22.5" id="F0H-mz-uIV"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mkM-TT-QJF" secondAttribute="trailing" constant="22.5" id="Zmn-3G-DFx"/>
-                            <constraint firstItem="mkM-TT-QJF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="wlK-8H-5gS"/>
+                            <constraint firstAttribute="bottom" secondItem="dvr-2R-ZGT" secondAttribute="bottom" id="2r0-EN-neS"/>
+                            <constraint firstItem="dvr-2R-ZGT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KVB-wP-6zz"/>
+                            <constraint firstItem="dvr-2R-ZGT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="QdQ-CK-Xcl"/>
+                            <constraint firstItem="dvr-2R-ZGT" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Zgn-FY-xGw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -43,4 +35,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="splash" width="375" height="812"/>
+    </resources>
 </document>

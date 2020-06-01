@@ -18,7 +18,7 @@ extension NavigationViewController {
         
         let unicodeIcon = Character(UnicodeScalar(UInt32(hexString: addButtonFontAwesome)!)!)
         self.topViewController!.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "\(unicodeIcon)", style: .plain, target: self, action: #selector(onPlusButtonClick(sender:)))
-        let fontSize = 25
+        let fontSize = 30
         self.topViewController!.navigationItem.rightBarButtonItem?.setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: FontsNames.fontAwesome.rawValue, size: CGFloat(fontSize))!,NSAttributedString.Key.foregroundColor: UIColor.cancelButton], for: .normal)
         self.topViewController!.navigationItem.rightBarButtonItem?.setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: FontsNames.fontAwesome.rawValue, size: CGFloat(fontSize))!,NSAttributedString.Key.foregroundColor: UIColor.cancelButton], for: .highlighted)
         self.topViewController!.navigationItem.rightBarButtonItem?.isEnabled = true
@@ -28,7 +28,7 @@ extension NavigationViewController {
         
         let unicodeIcon = Character(UnicodeScalar(UInt32(hexString: cancelButtonFontAwesome)!)!)
         self.topViewController!.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "\(unicodeIcon)", style: .plain, target: self, action: #selector(onCancelButtonClick(sender:)))
-        let fontSize = 25
+        let fontSize = 30
         self.topViewController!.navigationItem.rightBarButtonItem?.setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: FontsNames.fontAwesome.rawValue, size: CGFloat(fontSize))!,NSAttributedString.Key.foregroundColor: UIColor.cancelButton], for: .normal)
         self.topViewController!.navigationItem.rightBarButtonItem?.setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: FontsNames.fontAwesome.rawValue, size: CGFloat(fontSize))!,NSAttributedString.Key.foregroundColor: UIColor.cancelButton], for: .highlighted)
         self.topViewController!.navigationItem.rightBarButtonItem?.isEnabled = true

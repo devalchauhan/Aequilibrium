@@ -12,7 +12,7 @@ class VsTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.contentView.backgroundColor = .lightGray
+        self.contentView.backgroundColor = .cellBackground
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

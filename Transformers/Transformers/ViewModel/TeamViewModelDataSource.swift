@@ -134,6 +134,16 @@ class TeamViewModelDataSource: NSObject {
             return
         }
     }
+    
+    func deleteTransformer(transformer: Transformer) {
+        APIServiceClient.shared.deleteTransformer(path: (URLPath.Transformers + "/" + transformer.id!), success: { (data, response, error) in
+            NotificationCenter.default.post(name: Notification.Name(Strings.kFeatchTranformersNotification), object: nil)
+        }) { (error) -> (Void) in
+            let okAction = UIAlertAction(title: kAlertButtonTitle, style: .cancel)
+            Alert.displayAlert(message: "Something went wrong, while destroying tranformer.", withTitle: kAlertTitle, withActions: [okAction])
+            return
+        }
+    }
 }
 
 extension TeamViewModelDataSource : UITableViewDataSource {
@@ -214,7 +224,14 @@ extension TeamViewModelDataSource : UITableViewDelegate {
         }
         let deleteAction = UITableViewRowAction(style: .default, title: "Delete", handler: {
             (action, indexPath) in
+            if indexPath.row == 0 {
+                self.deleteTransformer(transformer: autobots[indexPath.section])
+            }
+            else if indexPath.row == 2 {
+                self.deleteTransformer(transformer: decepticons[indexPath.section])
+            }
         })
+        deleteAction.backgroundColor = UIColor.textFieldColor4
         let editAction = UITableViewRowAction(style: .default, title: "Edit", handler: {
             (action, indexPath) in
             if indexPath.row == 0 {
@@ -225,7 +242,7 @@ extension TeamViewModelDataSource : UITableViewDelegate {
             }
             NavigationViewController.shared.gotoCreateTransformer(isUpdate: true)
         })
-        editAction.backgroundColor = UIColor.lightGray
+        editAction.backgroundColor = UIColor.textFieldColor5
         return [deleteAction, editAction]
     }
 }

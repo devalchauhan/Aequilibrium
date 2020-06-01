@@ -32,7 +32,7 @@ class DecepticonTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         self.contentView.roundedBottomCorner()
-        self.contentView.backgroundColor = .lightGray
+        self.contentView.backgroundColor = .cellBackground
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

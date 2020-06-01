@@ -46,8 +46,10 @@ class CreateTransformerViewController: UIViewController {
     }
     /** Call this function to configure UI according to create/update */
     func configureUI() {
-        createButton.setTitle((isUpdate ? "UPDATE" : "CREATE"), for: .normal)
-        clearButton.setTitle((isUpdate ? "DELETE" : "CLEAR"), for: .normal)
+        createButton.setTitle((isUpdate ? "Update" : "Create"), for: .normal)
+        createButton.roundedButtonAllCorner()
+        clearButton.setTitle("Clear", for: .normal)
+        clearButton.roundedButtonAllCorner()
         if isUpdate {
             tranformer = Transformer.shared
             nameTextField.text = tranformer.name
@@ -73,22 +75,22 @@ class CreateTransformerViewController: UIViewController {
     func configureTextFields() {
         self.nameTextField.underlineColor = .white
         self.nameTextField.underlineEditingColor = .white
-        self.strengthTextField.underlineColor = .gray
-        self.strengthTextField.underlineEditingColor = .gray
-        self.intelligenceTextField.underlineColor = .orange
-        self.intelligenceTextField.underlineEditingColor = .orange
-        self.speedTextField.underlineColor = .cyan
-        self.speedTextField.underlineEditingColor = .cyan
-        self.enduranceTextField.underlineColor = .purple
-        self.enduranceTextField.underlineEditingColor = .purple
-        self.rankTextField.underlineColor = .green
-        self.rankTextField.underlineEditingColor = .green
-        self.courageTextField.underlineColor = .blue
-        self.courageTextField.underlineEditingColor = .blue
-        self.firepowerTextField.underlineColor = .red
-        self.firepowerTextField.underlineEditingColor = .red
-        self.skillTextField.underlineColor = .yellow
-        self.skillTextField.underlineEditingColor = .yellow
+        self.strengthTextField.underlineColor = .textFieldColor1
+        self.strengthTextField.underlineEditingColor = .textFieldColor1
+        self.intelligenceTextField.underlineColor = .textFieldColor2
+        self.intelligenceTextField.underlineEditingColor = .textFieldColor2
+        self.speedTextField.underlineColor = .textFieldColor3
+        self.speedTextField.underlineEditingColor = .textFieldColor3
+        self.enduranceTextField.underlineColor = .textFieldColor4
+        self.enduranceTextField.underlineEditingColor = .textFieldColor4
+        self.rankTextField.underlineColor = .textFieldColor5
+        self.rankTextField.underlineEditingColor = .textFieldColor5
+        self.courageTextField.underlineColor = .textFieldColor6
+        self.courageTextField.underlineEditingColor = .textFieldColor6
+        self.firepowerTextField.underlineColor = .textFieldColor7
+        self.firepowerTextField.underlineEditingColor = .textFieldColor7
+        self.skillTextField.underlineColor = .textFieldColor8
+        self.skillTextField.underlineEditingColor = .textFieldColor8
     }
     
     /// This IBAction function is used to create or update transformer
@@ -107,6 +109,7 @@ class CreateTransformerViewController: UIViewController {
                     let transformerJson = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments)
                     Transformer.shared.configure(JSON: transformerJson as! [AnyHashable : Any])
                     DispatchQueue.main.async {
+                        NotificationCenter.default.post(name: Notification.Name(Strings.kFeatchTranformersNotification), object: nil)
                         NavigationViewController.shared.popViewController(animated: true)
                     }
                 } catch  { }
@@ -148,17 +151,7 @@ class CreateTransformerViewController: UIViewController {
     }
     /// This IBAction function is used to clear all textfield or delete transformer based on condition
     @IBAction func clearFields () {
-        if isUpdate {
-            APIServiceClient.shared.deleteTransformer(path: (URLPath.Transformers + "/" + tranformer.id!), success: { (data, response, error) in
-                NavigationViewController.shared.popViewController(animated: true)
-            }) { (error) -> (Void) in
-                let okAction = UIAlertAction(title: kAlertButtonTitle, style: .cancel)
-                Alert.displayAlert(message: "Something went wrong, while destroying tranformer.", withTitle: kAlertTitle, withActions: [okAction])
-                return
-            }
-        } else {
-            nameTextField.text = ""; strengthTextField.text = ""; intelligenceTextField.text = ""; speedTextField.text = ""; enduranceTextField.text = ""; rankTextField.text = ""; courageTextField.text = ""; firepowerTextField.text = ""; skillTextField.text = "";
-        }
+        nameTextField.text = ""; strengthTextField.text = ""; intelligenceTextField.text = ""; speedTextField.text = ""; enduranceTextField.text = ""; rankTextField.text = ""; courageTextField.text = ""; firepowerTextField.text = ""; skillTextField.text = "";
     }
 }
 
@@ -166,7 +159,7 @@ extension CreateTransformerViewController : UITextFieldDelegate {
     /// UITextField delegate to restrict user entry
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-    
+        
         if textField == nameTextField {
             return true
         }
