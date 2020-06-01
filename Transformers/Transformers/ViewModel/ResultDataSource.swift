@@ -8,10 +8,10 @@
 
 import UIKit
 
-let kOptimusPrime = "OPTIMUSPRIME"
-let kPredaking = "PREDAKING"
+let kOptimusPrime = "Optimus Prime"
+let kPredaking = "Predaking"
 
-let transformerCategory : Array = ["Winning Team","Survivors from loosing team"]
+let transformerCategory : Array = ["Winning Team","Survivors from"]
 
 /// This class is created for calculating result for winning team, survivors and battle count.
 class ResultDataSource: NSObject {
@@ -166,12 +166,9 @@ class ResultDataSource: NSObject {
      */
     func checkTransformerName(source : Transformer, destination : Transformer) -> Bool {
         let array = [kOptimusPrime,kPredaking]
-        var sourceName: String = source.name?.transformerName() ?? ""
-        var destinationName: String = destination.name?.transformerName() ?? ""
-        sourceName = sourceName.uppercased()
-        sourceName = sourceName.trimmingCharacters(in: .whitespaces)
-        destinationName = destinationName.uppercased()
-        destinationName = destinationName.trimmingCharacters(in: .whitespaces)
+        let sourceName: String = source.name ?? ""
+        let destinationName: String = destination.name ?? ""
+    
         if array.contains(sourceName) && array.contains(destinationName) {
             endGame = true
             return false
@@ -276,6 +273,7 @@ class ResultDataSource: NSObject {
         for item in allTransformers {
             dispatchGroup.enter()
             APIServiceClient.shared.deleteTransformer(path: (URLPath.Transformers + "/" + item.id!), success: { (data, response, error) in
+                NotificationCenter.default.post(name: Notification.Name(Strings.kFeatchTranformersNotification), object: nil)
                 dispatchGroup.leave()
             }) { (error) -> (Void) in
                 let okAction = UIAlertAction(title: AlertMessages.kAlertButtonTitle, style: .cancel)
@@ -328,20 +326,5 @@ extension ResultDataSource : UITableViewDelegate {
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         let teamName : String = section == 0 ? winningTeamName : survivorTeamName
         return "\(transformerCategory[section]) : \(String(describing: teamName))"
-    }
-}
-
-extension String {
-    /**
-     Call this string extension to covert string into uppercase and remove " ".
-     - Returns:
-     - String : converted string
-     ### Usage Example: ###
-     ````
-     transformerName()
-     ````
-     */
-    func transformerName() -> String {
-        return self.uppercased().replacingOccurrences(of: " ", with: "")
     }
 }
