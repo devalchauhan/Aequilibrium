@@ -33,18 +33,29 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jTZ-wG-ABt">
+                        <rect key="frame" x="8" y="31" width="224" height="59"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="xfx-OQ-F2v" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="3Wf-ti-PJ8"/>
                     <constraint firstItem="xfx-OQ-F2v" firstAttribute="leading" secondItem="yyV-Pj-9nz" secondAttribute="trailing" constant="8" id="8Sl-7u-LtZ"/>
+                    <constraint firstItem="xfx-OQ-F2v" firstAttribute="leading" secondItem="jTZ-wG-ABt" secondAttribute="trailing" constant="8" id="BYG-NX-94R"/>
                     <constraint firstAttribute="trailing" secondItem="xfx-OQ-F2v" secondAttribute="trailing" constant="10" id="K6s-Kq-Tjq"/>
+                    <constraint firstItem="jTZ-wG-ABt" firstAttribute="top" secondItem="yyV-Pj-9nz" secondAttribute="bottom" id="Vgd-Di-pnx"/>
+                    <constraint firstItem="jTZ-wG-ABt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="bXH-2r-bcX"/>
                     <constraint firstAttribute="bottom" secondItem="xfx-OQ-F2v" secondAttribute="bottom" constant="10" id="gXe-qb-B9m"/>
                     <constraint firstItem="yyV-Pj-9nz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="gri-F5-mii"/>
+                    <constraint firstAttribute="bottom" secondItem="jTZ-wG-ABt" secondAttribute="bottom" id="hpQ-Ob-fdd"/>
                     <constraint firstItem="yyV-Pj-9nz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ib8-xy-zMK"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="decepticonDetail" destination="jTZ-wG-ABt" id="x97-GC-run"/>
                 <outlet property="decepticonImage" destination="xfx-OQ-F2v" id="lEa-vm-qqf"/>
                 <outlet property="decepticonName" destination="yyV-Pj-9nz" id="fbn-6d-ALr"/>
             </connections>

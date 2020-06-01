@@ -19,3 +19,12 @@ extension UInt32 {
         }
     }
 }
+
+extension Int
+{
+    func toString() -> String
+    {
+        let string = String(self)
+        return string
+    }
+}

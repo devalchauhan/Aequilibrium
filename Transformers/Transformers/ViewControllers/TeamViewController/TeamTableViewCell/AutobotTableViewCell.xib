@@ -33,18 +33,29 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqW-1o-kmK">
+                        <rect key="frame" x="88" y="31" width="224" height="59"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="jrj-rh-wya" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="8l4-2Z-a8f"/>
+                    <constraint firstAttribute="trailing" secondItem="wqW-1o-kmK" secondAttribute="trailing" constant="8" id="K6f-5A-j8G"/>
+                    <constraint firstAttribute="bottom" secondItem="wqW-1o-kmK" secondAttribute="bottom" id="KHR-1X-6uP"/>
                     <constraint firstItem="S5a-L8-ovN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="LRa-in-Mad"/>
                     <constraint firstItem="jrj-rh-wya" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Or3-x0-uw7"/>
                     <constraint firstAttribute="trailing" secondItem="S5a-L8-ovN" secondAttribute="trailing" constant="8" id="T7w-kI-0au"/>
                     <constraint firstAttribute="bottom" secondItem="jrj-rh-wya" secondAttribute="bottom" constant="10" id="UhC-ue-ZnG"/>
+                    <constraint firstItem="wqW-1o-kmK" firstAttribute="top" secondItem="S5a-L8-ovN" secondAttribute="bottom" id="jF5-P3-gqw"/>
+                    <constraint firstItem="wqW-1o-kmK" firstAttribute="leading" secondItem="jrj-rh-wya" secondAttribute="trailing" constant="8" id="uAy-Hf-y7m"/>
                     <constraint firstItem="S5a-L8-ovN" firstAttribute="leading" secondItem="jrj-rh-wya" secondAttribute="trailing" constant="8" id="uNU-QI-WQc"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="autobotDetail" destination="wqW-1o-kmK" id="J9q-TK-LIV"/>
                 <outlet property="autobotImage" destination="jrj-rh-wya" id="DsN-XN-5vi"/>
                 <outlet property="autobotName" destination="S5a-L8-ovN" id="Bjn-77-1bV"/>
             </connections>
