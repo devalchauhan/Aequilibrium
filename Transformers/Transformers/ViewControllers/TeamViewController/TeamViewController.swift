@@ -22,8 +22,11 @@ class TeamViewController: UIViewController {
         NavigationViewController.shared.addPlusButton()
         teamDataSource = TeamViewModelDataSource(_tableView: tableView)
         NotificationCenter.default.addObserver(self, selector: #selector(self.fetchTransformers(notification:)), name: Notification.Name(Strings.kFeatchTranformersNotification), object: nil)
-
+        if userDefault.value(forKey: "BearerToken") == nil {
+            appGuide()
+        }
     }
+
     @objc func fetchTransformers(notification: Notification) {
         teamDataSource?.getAllTransformerFromWS()
     }

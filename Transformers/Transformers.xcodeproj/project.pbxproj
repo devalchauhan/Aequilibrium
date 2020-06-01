@@ -55,6 +55,7 @@
 		D02AC3CB2483C29000C5D8BA /* DecepticonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D02AC3C92483C29000C5D8BA /* DecepticonTableViewCell.xib */; };
 		D02AC3CE2483C29B00C5D8BA /* VsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02AC3CC2483C29B00C5D8BA /* VsTableViewCell.swift */; };
 		D02AC3CF2483C29B00C5D8BA /* VsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D02AC3CD2483C29B00C5D8BA /* VsTableViewCell.xib */; };
+		D045A2862485455300A83DDD /* TeamViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D045A2852485455300A83DDD /* TeamViewControllerExtension.swift */; };
 		D0A92E9E24853365002505A0 /* UtilsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A92E9D24853365002505A0 /* UtilsManager.swift */; };
 		DC68710E46FDE949EE5B6811 /* Pods_TransformersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E334CE754C7ABA4F12046F9 /* Pods_TransformersTests.framework */; };
 /* End PBXBuildFile section */
@@ -137,6 +138,7 @@
 		D02AC3C92483C29000C5D8BA /* DecepticonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DecepticonTableViewCell.xib; sourceTree = "<group>"; };
 		D02AC3CC2483C29B00C5D8BA /* VsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VsTableViewCell.swift; sourceTree = "<group>"; };
 		D02AC3CD2483C29B00C5D8BA /* VsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VsTableViewCell.xib; sourceTree = "<group>"; };
+		D045A2852485455300A83DDD /* TeamViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewControllerExtension.swift; sourceTree = "<group>"; };
 		D0A92E9D24853365002505A0 /* UtilsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsManager.swift; sourceTree = "<group>"; };
 		D1CEB5CAD0A6F8270C561235 /* Pods-Transformers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transformers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Transformers/Pods-Transformers.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -248,6 +250,7 @@
 			children = (
 				671A83DF2217DE1C003D7A7E /* TeamTableViewCell */,
 				67041D6F221718C100BD9C91 /* TeamViewController.swift */,
+				D045A2852485455300A83DDD /* TeamViewControllerExtension.swift */,
 			);
 			path = TeamViewController;
 			sourceTree = "<group>";
@@ -669,6 +672,7 @@
 				D01ADDB124850AE300E7ABA3 /* Constants.swift in Sources */,
 				67FDE3C7221962920098C759 /* Reachability.swift in Sources */,
 				671A83F02217E9DB003D7A7E /* ServerConfiguration.swift in Sources */,
+				D045A2862485455300A83DDD /* TeamViewControllerExtension.swift in Sources */,
 				673626FB221725A200E55B8D /* RightNavigationItem.swift in Sources */,
 				67041D6E221718C100BD9C91 /* AppDelegate.swift in Sources */,
 				673626B022171DBB00E55B8D /* AppDelegateExtension.swift in Sources */,
