@@ -15,9 +15,7 @@ class DecepticonTableViewCell: UITableViewCell {
     /// UIImageView to display decepticonImage
     @IBOutlet var decepticonImage : UIImageView!
     /// Button to handle decepticon update event
-    @IBOutlet weak var decepticonButton : UIButton!
-    /// decepticonUpdate event handler
-    var decepticonUpdateClosure: (() -> Void)?
+
     var decepticonItem : Transformer? {
         didSet {
             UIView.animate(withDuration: 0.5) {
@@ -27,19 +25,10 @@ class DecepticonTableViewCell: UITableViewCell {
             self.decepticonName.text = self.decepticonItem?.name
             let decepticonImageURL = self.decepticonItem?.team_icon
             self.decepticonImage.sd_setImage(with: URL(string: decepticonImageURL!), placeholderImage: UIImage(named: "no_image.png"))
-            self.decepticonUpdateConfigure(transformer: self.decepticonItem ?? Transformer()) {
-                Transformer.shared = self.decepticonItem ?? Transformer()
-                NavigationViewController.shared.gotoCreateTransformer(isUpdate: true)
-            }
+    
         }
     }
-    func decepticonUpdateConfigure(transformer:Transformer, decepticonUpdateClosure: (() -> Void)?) {
-        self.decepticonUpdateClosure = decepticonUpdateClosure
-    }
-    @IBAction func decepticonUpdatePressed(_ sender: Any) {
-        guard let closure = decepticonUpdateClosure else { return }
-        closure()
-    }
+
     override func awakeFromNib() {
         super.awakeFromNib()
         self.contentView.roundedBottomCorner()

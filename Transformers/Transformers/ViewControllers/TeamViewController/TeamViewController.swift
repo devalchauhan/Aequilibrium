@@ -21,9 +21,10 @@ class TeamViewController: UIViewController {
         NavigationViewController.shared.setTitle(title: kNavigationTitle)
         NavigationViewController.shared.addPlusButton()
         teamDataSource = TeamViewModelDataSource(_tableView: tableView)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.fetchTransformers(notification:)), name: Notification.Name(Strings.kFeatchTranformersNotification), object: nil)
+
     }
-    /// TeamViewController lifecycle method
-    override func viewWillAppear(_ animated: Bool) {
+    @objc func fetchTransformers(notification: Notification) {
         teamDataSource?.getAllTransformerFromWS()
     }
     /// begin war by calling this function

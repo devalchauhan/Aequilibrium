@@ -15,26 +15,12 @@ class AutobotTableViewCell: UITableViewCell {
     /// UIImageView to display autobotImage
     @IBOutlet var autobotImage : UIImageView!
     /// Button to handle autobot update event
-    @IBOutlet weak var autobotButton : UIButton!
-    /// autobotUpdate event handler
-    var autobotUpdateClosure: (() -> Void)?
     var autobotItem : Transformer? {
         didSet {
             self.autobotName.text = self.autobotItem?.name
             let autobotImageURL = self.autobotItem?.team_icon
             self.autobotImage.sd_setImage(with: URL(string: autobotImageURL!), placeholderImage: UIImage(named: "no_image.png"))
-            self.autobotUpdateConfigure(transformer: self.autobotItem ?? Transformer()) {
-                Transformer.shared = self.autobotItem ?? Transformer()
-                NavigationViewController.shared.gotoCreateTransformer(isUpdate: true)
-            }
         }
-    }
-    func autobotUpdateConfigure(transformer:Transformer, autobotUpdateClosure: (() -> Void)?) {
-           self.autobotUpdateClosure = autobotUpdateClosure
-    }
-    @IBAction func autobotUpdatePressed(_ sender: Any) {
-        guard let closure = autobotUpdateClosure else { return }
-        closure()
     }
     override func awakeFromNib() {
         super.awakeFromNib()

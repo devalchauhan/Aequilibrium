@@ -33,29 +33,18 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1u-kh-IAp">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
-                        <connections>
-                            <action selector="autobotUpdatePressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="MXa-Yf-g3P"/>
-                        </connections>
-                    </button>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="V1u-kh-IAp" secondAttribute="trailing" id="7tf-2Z-5eN"/>
                     <constraint firstItem="jrj-rh-wya" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="8l4-2Z-a8f"/>
-                    <constraint firstItem="V1u-kh-IAp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="BsT-d3-CEX"/>
                     <constraint firstItem="S5a-L8-ovN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="LRa-in-Mad"/>
                     <constraint firstItem="jrj-rh-wya" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Or3-x0-uw7"/>
                     <constraint firstAttribute="trailing" secondItem="S5a-L8-ovN" secondAttribute="trailing" constant="8" id="T7w-kI-0au"/>
-                    <constraint firstAttribute="bottom" secondItem="V1u-kh-IAp" secondAttribute="bottom" id="U1P-5h-rTl"/>
                     <constraint firstAttribute="bottom" secondItem="jrj-rh-wya" secondAttribute="bottom" constant="10" id="UhC-ue-ZnG"/>
                     <constraint firstItem="S5a-L8-ovN" firstAttribute="leading" secondItem="jrj-rh-wya" secondAttribute="trailing" constant="8" id="uNU-QI-WQc"/>
-                    <constraint firstItem="V1u-kh-IAp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ubP-uK-hvH"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="autobotButton" destination="V1u-kh-IAp" id="rmj-XP-Bp5"/>
                 <outlet property="autobotImage" destination="jrj-rh-wya" id="DsN-XN-5vi"/>
                 <outlet property="autobotName" destination="S5a-L8-ovN" id="Bjn-77-1bV"/>
             </connections>

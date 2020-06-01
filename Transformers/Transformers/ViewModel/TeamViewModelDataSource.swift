@@ -25,19 +25,19 @@ class TeamViewModelDataSource: NSObject {
         configureTableView(_tableview: _tableView)
         if let token = userDefault.value(forKey: "BearerToken") {
             APISessionService.shared.setAdditionalRequestHeaders(key: "Authorization", value: "Bearer \(token)")
+            getAllTransformerFromWS()
         }
         else {
             getAllSpark {
                 self.getAllTransformerFromWS()
             }
         }
-        getAllTransformerFromWS()
     }
     
     /**
      Call this function for UITableView setup by providing delegate,datasource, few basic properties and UITableViewCell nib registration.
      - Parameters:
-        - _tableview : Pass UITableView object.
+     - _tableview : Pass UITableView object.
      
      ### Usage Example: ###
      ````
@@ -60,7 +60,7 @@ class TeamViewModelDataSource: NSObject {
     /**
      Call this function for reloading UITableView.
      - Parameters:
-        - _tableview : Pass UITableView object.
+     - _tableview : Pass UITableView object.
      
      ### Usage Example: ###
      ````
@@ -163,7 +163,6 @@ extension TeamViewModelDataSource : UITableViewDataSource {
                     cell.contentView.roundedAllCorner()
                 }
                 cell.autobotItem = autobots[indexPath.section]
-                cell.autobotButton.tag = indexPath.section
             }
             return cell
         case 2:
@@ -175,7 +174,6 @@ extension TeamViewModelDataSource : UITableViewDataSource {
                     cell.contentView.roundedAllCorner()
                 }
                 cell.decepticonItem = decepticons[indexPath.section]
-                cell.decepticonButton.tag = indexPath.section
             }
             return cell
         default:
@@ -184,30 +182,6 @@ extension TeamViewModelDataSource : UITableViewDataSource {
             cell.selectionStyle = .none
             return cell
         }
-        
-//
-//        if indexPath.section <= autobots.count - 1 {
-//            cell.autobotItem = autobots[indexPath.row]
-//            cell.autobotButton.tag = indexPath.row
-//        } else {
-//            /*cell.autobotViewHeightContraint.constant = 0
-//            cell.vsImageViewHeightContraint.constant = 0
-//            UIView.animate(withDuration: 0.5) {
-//                cell.setNeedsLayout()
-//            }*/
-//        }
-//
-//        if indexPath.section <= decepticons.count - 1 {
-//            cell.decepticonItem = decepticons[indexPath.row]
-//            cell.decepticonButton.tag = indexPath.row
-//        } else {
-//            /*cell.decepticonViewHeightContraint.constant = 0
-//            cell.vsImageViewHeightContraint.constant = 0
-//            UIView.animate(withDuration: 0.5) {
-//                cell.setNeedsLayout()
-//            }*/
-//        }
-
     }
 }
 
@@ -221,16 +195,37 @@ extension TeamViewModelDataSource : UITableViewDelegate {
             switch indexPath.row {
             case 0:
                 if indexPath.section >= autobots.count {
-                   return 0
+                    return 0
                 }
             case 2:
                 if indexPath.section >= decepticons.count {
-                   return 0
+                    return 0
                 }
             default:
                 return 0
             }
             return UITableView.automaticDimension
         }
+    }
+    
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        if indexPath.row == 1 {
+            return .none;
+        }
+        let deleteAction = UITableViewRowAction(style: .default, title: "Delete", handler: {
+            (action, indexPath) in
+        })
+        let editAction = UITableViewRowAction(style: .default, title: "Edit", handler: {
+            (action, indexPath) in
+            if indexPath.row == 0 {
+                Transformer.shared = autobots[indexPath.section]
+            }
+            else if indexPath.row == 2 {
+                Transformer.shared = decepticons[indexPath.section]
+            }
+            NavigationViewController.shared.gotoCreateTransformer(isUpdate: true)
+        })
+        editAction.backgroundColor = UIColor.lightGray
+        return [deleteAction, editAction]
     }
 }
