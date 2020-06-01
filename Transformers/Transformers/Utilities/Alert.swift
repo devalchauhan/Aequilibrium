@@ -7,8 +7,7 @@
 //
 
 import UIKit
-let kAlertTitle = "TRANSFORMERS"
-let kAlertButtonTitle = "OK"
+
 
 /// This is a class created for handling Alerts in Project
 class Alert: NSObject {

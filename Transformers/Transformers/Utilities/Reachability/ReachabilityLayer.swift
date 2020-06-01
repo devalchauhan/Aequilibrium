@@ -39,7 +39,7 @@ class ReachabilityLayer: NSObject {
     Call this function to check network reachability related error
     */
     func displayNetworkErrorAlert()  {
-        let closeAction = UIAlertAction(title: kAlertButtonTitle, style: .cancel){ action -> Void in
+        let closeAction = UIAlertAction(title: AlertMessages.kAlertButtonTitle, style: .cancel){ action -> Void in
             exit(0)
         }
         let retryAction: UIAlertAction = UIAlertAction(title: "Retry", style: .default) { action -> Void in
@@ -48,6 +48,6 @@ class ReachabilityLayer: NSObject {
                 self.displayNetworkErrorAlert()
             }
         }
-        Alert.displayAlert(message: "Unable to establish connection. Check your internet connection and try again.", withTitle: kAlertTitle, withActions: [closeAction,retryAction])
+        Alert.displayAlert(message: AlertMessages.kInternetAlert, withTitle: AlertMessages.kAlertTitle, withActions: [closeAction,retryAction])
     }
 }

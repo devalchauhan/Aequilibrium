@@ -55,6 +55,7 @@
 		D02AC3CB2483C29000C5D8BA /* DecepticonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D02AC3C92483C29000C5D8BA /* DecepticonTableViewCell.xib */; };
 		D02AC3CE2483C29B00C5D8BA /* VsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02AC3CC2483C29B00C5D8BA /* VsTableViewCell.swift */; };
 		D02AC3CF2483C29B00C5D8BA /* VsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D02AC3CD2483C29B00C5D8BA /* VsTableViewCell.xib */; };
+		D0A92E9E24853365002505A0 /* UtilsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A92E9D24853365002505A0 /* UtilsManager.swift */; };
 		DC68710E46FDE949EE5B6811 /* Pods_TransformersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E334CE754C7ABA4F12046F9 /* Pods_TransformersTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -136,6 +137,7 @@
 		D02AC3C92483C29000C5D8BA /* DecepticonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DecepticonTableViewCell.xib; sourceTree = "<group>"; };
 		D02AC3CC2483C29B00C5D8BA /* VsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VsTableViewCell.swift; sourceTree = "<group>"; };
 		D02AC3CD2483C29B00C5D8BA /* VsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VsTableViewCell.xib; sourceTree = "<group>"; };
+		D0A92E9D24853365002505A0 /* UtilsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsManager.swift; sourceTree = "<group>"; };
 		D1CEB5CAD0A6F8270C561235 /* Pods-Transformers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transformers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Transformers/Pods-Transformers.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -400,6 +402,7 @@
 				67FDE3BF22193C940098C759 /* TextFieldValidator.swift */,
 				67FDE3C122193EFB0098C759 /* Alert.swift */,
 				D0257E7A24850F5100FD532E /* UnderlineTextField.swift */,
+				D0A92E9D24853365002505A0 /* UtilsManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -652,6 +655,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				674C2237221743D300DB7E3C /* FontName.swift in Sources */,
+				D0A92E9E24853365002505A0 /* UtilsManager.swift in Sources */,
 				D02AC3CE2483C29B00C5D8BA /* VsTableViewCell.swift in Sources */,
 				D0257E7B24850F5100FD532E /* UnderlineTextField.swift in Sources */,
 				67BB98EB221740A30011AA7D /* UIApplication.swift in Sources */,

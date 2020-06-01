@@ -74,7 +74,7 @@ class ResultDataSource: NSObject {
     /**
      Call this function for UITableView setup by providing delegate,datasource, few basic properties.
      - Parameters:
-        - _tableview : Pass UITableView object.
+     - _tableview : Pass UITableView object.
      
      ### Usage Example: ###
      ````
@@ -93,7 +93,7 @@ class ResultDataSource: NSObject {
     /**
      Call this function for reloading UITableView.
      - Parameters:
-        - _tableview : Pass UITableView object.
+     - _tableview : Pass UITableView object.
      
      ### Usage Example: ###
      ````
@@ -155,10 +155,10 @@ class ResultDataSource: NSObject {
     /**
      Call this function to check winner by TranformerName.
      - Parameters:
-        - source : Transfer model of one team.
-        - destination : Transfer model of another(opponent) team.
+     - source : Transfer model of one team.
+     - destination : Transfer model of another(opponent) team.
      - Returns:
-        - Bool : it will return Bool
+     - Bool : it will return Bool
      ### Usage Example: ###
      ````
      checkTransformerName(source: Transformer, destination: Transformer)
@@ -166,9 +166,12 @@ class ResultDataSource: NSObject {
      */
     func checkTransformerName(source : Transformer, destination : Transformer) -> Bool {
         let array = [kOptimusPrime,kPredaking]
-        let sourceName = source.name?.transformerName() ?? ""
-        let destinationName = destination.name?.transformerName() ?? ""
-        
+        var sourceName: String = source.name?.transformerName() ?? ""
+        var destinationName: String = destination.name?.transformerName() ?? ""
+        sourceName = sourceName.uppercased()
+        sourceName = sourceName.trimmingCharacters(in: .whitespaces)
+        destinationName = destinationName.uppercased()
+        destinationName = destinationName.trimmingCharacters(in: .whitespaces)
         if array.contains(sourceName) && array.contains(destinationName) {
             endGame = true
             return false
@@ -186,10 +189,10 @@ class ResultDataSource: NSObject {
     /**
      Call this function to check winner by Transformer courage and strength.
      - Parameters:
-        - sourceTranformer : Transfer model of one team.
-        - destinationTransformer : Transfer model of another(opponent) team.
+     - sourceTranformer : Transfer model of one team.
+     - destinationTransformer : Transfer model of another(opponent) team.
      - Returns:
-        - Bool : it will return Bool
+     - Bool : it will return Bool
      ### Usage Example: ###
      ````
      checkCourageAndStrength(sourceTranformer: Transformer, destinationTransformer: Transformer)
@@ -213,10 +216,10 @@ class ResultDataSource: NSObject {
     /**
      Call this function to check winner by Transformer skill.
      - Parameters:
-        - sourceTranformer : Transfer model of one team.
-        - destinationTransformer : Transfer model of another(opponent) team.
+     - sourceTranformer : Transfer model of one team.
+     - destinationTransformer : Transfer model of another(opponent) team.
      - Returns:
-        - Bool : it will return Bool
+     - Bool : it will return Bool
      ### Usage Example: ###
      ````
      checkSkill(sourceTranformer: Transformer, destinationTransformer: Transformer)
@@ -237,10 +240,10 @@ class ResultDataSource: NSObject {
     /**
      Call this function to check winner by Transformer overall rating.
      - Parameters:
-        - sourceTranformer : Transfer model of one team.
-        - destinationTransformer : Transfer model of another(opponent) team.
+     - sourceTranformer : Transfer model of one team.
+     - destinationTransformer : Transfer model of another(opponent) team.
      - Returns:
-        - Bool : it will return Bool
+     - Bool : it will return Bool
      ### Usage Example: ###
      ````
      checkOverAllRating(sourceTranformer: Transformer, destinationTransformer: Transformer)
@@ -261,8 +264,8 @@ class ResultDataSource: NSObject {
     /**
      Call this function to destroy all Transformers by calling API.
      - Parameters:
-        - allTransformers : Array of Transformer model
-        - goBack : Bool to decide pop operation after completion
+     - allTransformers : Array of Transformer model
+     - goBack : Bool to decide pop operation after completion
      ### Usage Example: ###
      ````
      destroyTransformers(allTransformers: autobots, goBack: true)
@@ -275,16 +278,19 @@ class ResultDataSource: NSObject {
             APIServiceClient.shared.deleteTransformer(path: (URLPath.Transformers + "/" + item.id!), success: { (data, response, error) in
                 dispatchGroup.leave()
             }) { (error) -> (Void) in
-                let okAction = UIAlertAction(title: kAlertButtonTitle, style: .cancel)
-                Alert.displayAlert(message: "Something went wrong, while destroying tranformer.", withTitle: kAlertTitle, withActions: [okAction])
+                let okAction = UIAlertAction(title: AlertMessages.kAlertButtonTitle, style: .cancel)
+                Alert.displayAlert(message: AlertMessages.kDestroyTransformerFailed, withTitle: AlertMessages.kAlertTitle, withActions: [okAction])
                 return
             }
         }
         dispatchGroup.notify(queue: .main) {
             if goBack {
-                NavigationViewController.shared.popViewController(animated: true)
-                let okAction = UIAlertAction(title: kAlertButtonTitle, style: .cancel)
-                Alert.displayAlert(message: "Game over.", withTitle: kAlertTitle, withActions: [okAction])
+                NotificationCenter.default.post(name: Notification.Name(Strings.kFeatchTranformersNotification), object: nil)
+                
+                let okAction = UIAlertAction(title: AlertMessages.kAlertButtonTitle, style: .cancel) { action -> Void in
+                    NavigationViewController.shared.popViewController(animated: true)
+                }
+                Alert.displayAlert(message: AlertMessages.kGameOver, withTitle: AlertMessages.kAlertTitle, withActions: [okAction])
             }
         }
     }
@@ -329,7 +335,7 @@ extension String {
     /**
      Call this string extension to covert string into uppercase and remove " ".
      - Returns:
-        - String : converted string
+     - String : converted string
      ### Usage Example: ###
      ````
      transformerName()

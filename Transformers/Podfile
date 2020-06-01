@@ -9,6 +9,7 @@ target 'Transformers' do
   
   pod 'IQKeyboardManagerSwift'
   pod 'SDWebImage'
+  pod 'MBProgressHUD'
 
   target 'TransformersTests' do
     inherit! :search_paths

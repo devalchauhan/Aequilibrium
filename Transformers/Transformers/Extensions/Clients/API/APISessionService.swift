@@ -45,7 +45,9 @@ class APISessionService: NSObject {
     
     //MARK: Without Mappable Webcall
     func callWebServiceWithoutMapping(method: HTTPMethod, path: String ,params:[String:AnyObject]?, completion:@escaping SuccessCompletion) -> Void {
-        
+        DispatchQueue.main.async {
+            UtilsManager.shared.showMBProgressHUD(UIWindow.key?.rootViewController?.view)
+        }
         var urlRequest = URLRequest(url: URL(string: path)!)
         urlRequest.httpMethod = method.rawValue
         for item in headers {
@@ -57,8 +59,14 @@ class APISessionService: NSObject {
         }
         let task = session.dataTask(with: urlRequest) { (data, response, error) in
             if (error != nil) {
+                DispatchQueue.main.async {
+                    UtilsManager.shared.hideMBProgressHUD(UIWindow.key?.rootViewController?.view)
+                }
                 completion(data, nil, error)
             } else {
+                DispatchQueue.main.async {
+                    UtilsManager.shared.hideMBProgressHUD(UIWindow.key?.rootViewController?.view)
+                }
                 completion(data, (response as! HTTPURLResponse), error)
             }
         }

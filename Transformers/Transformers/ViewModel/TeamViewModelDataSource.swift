@@ -87,8 +87,8 @@ class TeamViewModelDataSource: NSObject {
             userDefault.synchronize()
             success()
         }) { (error) -> (Void) in
-            let okAction = UIAlertAction(title: kAlertButtonTitle, style: .cancel)
-            Alert.displayAlert(message: "Something went wrong, while authorization.", withTitle: kAlertTitle, withActions: [okAction])
+            let okAction = UIAlertAction(title: AlertMessages.kAlertButtonTitle, style: .cancel)
+            Alert.displayAlert(message: AlertMessages.kAuthorization, withTitle: AlertMessages.kAlertTitle, withActions: [okAction])
             return
         }
     }
@@ -129,8 +129,8 @@ class TeamViewModelDataSource: NSObject {
             decepticons = (transformers.filter() { $0.team == "D" }.sorted(by: { $0.rank > $1.rank }))
             self.reloadTableView(_tableView: self.tableView!)
         }) { (error) -> (Void) in
-            let okAction = UIAlertAction(title: kAlertButtonTitle, style: .cancel)
-            Alert.displayAlert(message: "Something went wrong, while getting all the transformers.", withTitle: kAlertTitle, withActions: [okAction])
+            let okAction = UIAlertAction(title: AlertMessages.kAlertButtonTitle, style: .cancel)
+            Alert.displayAlert(message: AlertMessages.kFetchTranformerFailed, withTitle: AlertMessages.kAlertTitle, withActions: [okAction])
             return
         }
     }
@@ -139,8 +139,8 @@ class TeamViewModelDataSource: NSObject {
         APIServiceClient.shared.deleteTransformer(path: (URLPath.Transformers + "/" + transformer.id!), success: { (data, response, error) in
             NotificationCenter.default.post(name: Notification.Name(Strings.kFeatchTranformersNotification), object: nil)
         }) { (error) -> (Void) in
-            let okAction = UIAlertAction(title: kAlertButtonTitle, style: .cancel)
-            Alert.displayAlert(message: "Something went wrong, while destroying tranformer.", withTitle: kAlertTitle, withActions: [okAction])
+            let okAction = UIAlertAction(title: AlertMessages.kAlertButtonTitle, style: .cancel)
+            Alert.displayAlert(message: AlertMessages.kDestroyTransformerFailed, withTitle: AlertMessages.kAlertTitle, withActions: [okAction])
             return
         }
     }
