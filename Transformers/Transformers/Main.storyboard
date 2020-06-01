@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -62,14 +62,15 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vac-6t-RX1">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="488"/>
                                 <subviews>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="b5s-45-go4">
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b5s-45-go4">
                                         <rect key="frame" x="16" y="15" width="288" height="32"/>
                                         <segments>
                                             <segment title="Autobots"/>
                                             <segment title="Decepticons"/>
                                         </segments>
+                                        <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </segmentedControl>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Strength" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jTb-Uw-Rmx">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Strength" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jTb-Uw-Rmx" customClass="UnderlineTextField" customModule="Transformers" customModuleProvider="target">
                                         <rect key="frame" x="16" y="95" width="288" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="PN9-ZB-t4T"/>
@@ -80,7 +81,7 @@
                                             <outlet property="delegate" destination="Is6-FZ-eM4" id="zCC-eU-NVi"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Intelligence" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FgZ-jP-8Jr">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Intelligence" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FgZ-jP-8Jr" customClass="UnderlineTextField" customModule="Transformers" customModuleProvider="target">
                                         <rect key="frame" x="16" y="135" width="288" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="KXp-oe-i1f"/>
@@ -91,7 +92,7 @@
                                             <outlet property="delegate" destination="Is6-FZ-eM4" id="dfW-Tc-XkA"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Speed" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GKm-cy-Wiu">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Speed" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GKm-cy-Wiu" customClass="UnderlineTextField" customModule="Transformers" customModuleProvider="target">
                                         <rect key="frame" x="16" y="175" width="288" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Xcw-ZX-H7X"/>
@@ -102,7 +103,7 @@
                                             <outlet property="delegate" destination="Is6-FZ-eM4" id="pgA-TR-krV"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Endurance" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8HR-8t-e7k">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Endurance" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8HR-8t-e7k" customClass="UnderlineTextField" customModule="Transformers" customModuleProvider="target">
                                         <rect key="frame" x="16" y="215" width="288" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="llX-XO-05G"/>
@@ -113,7 +114,7 @@
                                             <outlet property="delegate" destination="Is6-FZ-eM4" id="Ol0-eP-gKS"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Rank" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E83-69-erd">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Rank" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E83-69-erd" customClass="UnderlineTextField" customModule="Transformers" customModuleProvider="target">
                                         <rect key="frame" x="16" y="255" width="288" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="zsI-oS-ZAW"/>
@@ -124,7 +125,7 @@
                                             <outlet property="delegate" destination="Is6-FZ-eM4" id="SVH-oN-E1J"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Courage" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n1Z-kf-B74">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Courage" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n1Z-kf-B74" customClass="UnderlineTextField" customModule="Transformers" customModuleProvider="target">
                                         <rect key="frame" x="16" y="295" width="288" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="FiA-f0-hmu"/>
@@ -135,7 +136,7 @@
                                             <outlet property="delegate" destination="Is6-FZ-eM4" id="RIY-IO-w1O"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Firepower" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xEx-zJ-209">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Firepower" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xEx-zJ-209" customClass="UnderlineTextField" customModule="Transformers" customModuleProvider="target">
                                         <rect key="frame" x="16" y="335" width="288" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Cfm-xO-rF1"/>
@@ -146,7 +147,7 @@
                                             <outlet property="delegate" destination="Is6-FZ-eM4" id="G7O-o0-prd"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skill" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bIf-KN-YqF">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Skill" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bIf-KN-YqF" customClass="UnderlineTextField" customModule="Transformers" customModuleProvider="target">
                                         <rect key="frame" x="16" y="375" width="288" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="5JI-Na-6cD"/>
@@ -176,13 +177,21 @@
                                             <action selector="clearFields" destination="Is6-FZ-eM4" eventType="touchUpInside" id="bSn-hV-1mC"/>
                                         </connections>
                                     </button>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CbC-cE-BfO">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CbC-cE-BfO" customClass="UnderlineTextField" customModule="Transformers" customModuleProvider="target">
                                         <rect key="frame" x="16" y="54" width="288" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="QYE-GH-6mC"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="underlineHeight">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="underlineColor">
+                                                <color key="value" red="0.97254901959999995" green="0.15686274510000001" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <outlet property="delegate" destination="Is6-FZ-eM4" id="LVC-xj-gbo"/>
                                         </connections>

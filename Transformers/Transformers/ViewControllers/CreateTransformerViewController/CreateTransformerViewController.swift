@@ -12,16 +12,16 @@ let kUpdateTitle = "UPDATE TRANSFROMER"
 /// This is a class created for CreateUpdateTransformerViewController
 class CreateTransformerViewController: UIViewController {
     
-    @IBOutlet weak var nameTextField : UITextField!
+    @IBOutlet weak var nameTextField : UnderlineTextField!
     @IBOutlet weak var teamSegment : UISegmentedControl!
-    @IBOutlet weak var strengthTextField : UITextField!
-    @IBOutlet weak var intelligenceTextField : UITextField!
-    @IBOutlet weak var speedTextField : UITextField!
-    @IBOutlet weak var enduranceTextField : UITextField!
-    @IBOutlet weak var rankTextField : UITextField!
-    @IBOutlet weak var courageTextField : UITextField!
-    @IBOutlet weak var firepowerTextField : UITextField!
-    @IBOutlet weak var skillTextField : UITextField!
+    @IBOutlet weak var strengthTextField : UnderlineTextField!
+    @IBOutlet weak var intelligenceTextField : UnderlineTextField!
+    @IBOutlet weak var speedTextField : UnderlineTextField!
+    @IBOutlet weak var enduranceTextField : UnderlineTextField!
+    @IBOutlet weak var rankTextField : UnderlineTextField!
+    @IBOutlet weak var courageTextField : UnderlineTextField!
+    @IBOutlet weak var firepowerTextField : UnderlineTextField!
+    @IBOutlet weak var skillTextField : UnderlineTextField!
     @IBOutlet weak var createButton : UIButton!
     @IBOutlet weak var clearButton : UIButton!
     
@@ -36,6 +36,7 @@ class CreateTransformerViewController: UIViewController {
     /// CreateTransformerViewController lifecycle method
     override func viewWillAppear(_ animated: Bool) {
         configureUI()
+        configureTextFields()
     }
     /** Call this function to configure navigationbar */
     func configureNavigationBar() {
@@ -68,6 +69,28 @@ class CreateTransformerViewController: UIViewController {
             skillTextField.text = String(describing: tranformer.skill)
         }
     }
+    
+    func configureTextFields() {
+        self.nameTextField.underlineColor = .white
+        self.nameTextField.underlineEditingColor = .white
+        self.strengthTextField.underlineColor = .gray
+        self.strengthTextField.underlineEditingColor = .gray
+        self.intelligenceTextField.underlineColor = .orange
+        self.intelligenceTextField.underlineEditingColor = .orange
+        self.speedTextField.underlineColor = .cyan
+        self.speedTextField.underlineEditingColor = .cyan
+        self.enduranceTextField.underlineColor = .purple
+        self.enduranceTextField.underlineEditingColor = .purple
+        self.rankTextField.underlineColor = .green
+        self.rankTextField.underlineEditingColor = .green
+        self.courageTextField.underlineColor = .blue
+        self.courageTextField.underlineEditingColor = .blue
+        self.firepowerTextField.underlineColor = .red
+        self.firepowerTextField.underlineEditingColor = .red
+        self.skillTextField.underlineColor = .yellow
+        self.skillTextField.underlineEditingColor = .yellow
+    }
+    
     /// This IBAction function is used to create or update transformer
     @IBAction func createOrUpdateTransformer () {
         let textFields : [UITextField] = [nameTextField,strengthTextField,intelligenceTextField,speedTextField,enduranceTextField,rankTextField,courageTextField,firepowerTextField,skillTextField]
@@ -141,14 +164,22 @@ class CreateTransformerViewController: UIViewController {
 
 extension CreateTransformerViewController : UITextFieldDelegate {
     /// UITextField delegate to restrict user entry
+    
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+    
         if textField == nameTextField {
             return true
         }
-        let maxLength = 2
-        let currentString: NSString = textField.text! as NSString
-        let newString: NSString =
-            currentString.replacingCharacters(in: range, with: string) as NSString
-        return newString.length <= maxLength
+        else  {
+            let aSet = NSCharacterSet(charactersIn:"0123456789").inverted
+            let compSepByCharInSet = string.components(separatedBy: aSet)
+            let numberFiltered = compSepByCharInSet.joined(separator: "")
+            if ((textField.text! + string).toInt() ?? 0 >= 11 && range.length == 0) {
+                textField.shake()
+                return false
+            }
+            return string == numberFiltered
+        }
     }
+    
 }

@@ -11,7 +11,6 @@
 		55E2CC5C0BD82EBEDA61A7F8 /* Pods_TransformersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F1D9993905FE0833D29EF22 /* Pods_TransformersUITests.framework */; };
 		67041D6E221718C100BD9C91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67041D6D221718C100BD9C91 /* AppDelegate.swift */; };
 		67041D70221718C100BD9C91 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67041D6F221718C100BD9C91 /* TeamViewController.swift */; };
-		67041D73221718C100BD9C91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67041D71221718C100BD9C91 /* Main.storyboard */; };
 		67041D78221718C100BD9C91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67041D77221718C100BD9C91 /* Assets.xcassets */; };
 		67041D7B221718C100BD9C91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67041D79221718C100BD9C91 /* LaunchScreen.storyboard */; };
 		67041D86221718C100BD9C91 /* TransformersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67041D85221718C100BD9C91 /* TransformersTests.swift */; };
@@ -34,7 +33,6 @@
 		674C223B2217441700DB7E3C /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 674C223A2217441700DB7E3C /* FontAwesome.otf */; };
 		6782FF0922198DA2003D775F /* ReachabilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6782FF0822198DA2003D775F /* ReachabilityTests.swift */; };
 		6782FF0D221998BB003D775F /* ResultDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6782FF0C221998BB003D775F /* ResultDataSourceTests.swift */; };
-		67A5F64522172FFA00D13907 /* CreateTransformerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A5F64422172FFA00D13907 /* CreateTransformerViewController.swift */; };
 		67AF1FF92217549B00E78E4B /* Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AF1FF82217549B00E78E4B /* Sizes.swift */; };
 		67BB98EA221740A30011AA7D /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BB98E7221740A30011AA7D /* UIColor.swift */; };
 		67BB98EB221740A30011AA7D /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BB98E8221740A30011AA7D /* UIApplication.swift */; };
@@ -47,6 +45,9 @@
 		67FDE3C4221961E00098C759 /* ReachabilityLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FDE3C3221961E00098C759 /* ReachabilityLayer.swift */; };
 		67FDE3C7221962920098C759 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FDE3C6221962920098C759 /* Reachability.swift */; };
 		D01ADDB124850AE300E7ABA3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01ADDB024850AE300E7ABA3 /* Constants.swift */; };
+		D0257E7B24850F5100FD532E /* UnderlineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0257E7A24850F5100FD532E /* UnderlineTextField.swift */; };
+		D0257E7D24850FB700FD532E /* CreateTransformerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0257E7C24850FB700FD532E /* CreateTransformerViewController.swift */; };
+		D0257E7F2485109D00FD532E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0257E7E2485109D00FD532E /* Main.storyboard */; };
 		D02AC3C32483AC5100C5D8BA /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02AC3C22483AC5100C5D8BA /* UIViewExtension.swift */; };
 		D02AC3C62483C28000C5D8BA /* AutobotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02AC3C42483C27F00C5D8BA /* AutobotTableViewCell.swift */; };
 		D02AC3C72483C28000C5D8BA /* AutobotTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D02AC3C52483C28000C5D8BA /* AutobotTableViewCell.xib */; };
@@ -84,7 +85,6 @@
 		67041D6A221718C100BD9C91 /* Transformers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transformers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67041D6D221718C100BD9C91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67041D6F221718C100BD9C91 /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
-		67041D72221718C100BD9C91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		67041D77221718C100BD9C91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67041D7A221718C100BD9C91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67041D7C221718C100BD9C91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -112,7 +112,6 @@
 		674C223A2217441700DB7E3C /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
 		6782FF0822198DA2003D775F /* ReachabilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityTests.swift; sourceTree = "<group>"; };
 		6782FF0C221998BB003D775F /* ResultDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultDataSourceTests.swift; sourceTree = "<group>"; };
-		67A5F64422172FFA00D13907 /* CreateTransformerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTransformerViewController.swift; sourceTree = "<group>"; };
 		67AF1FF82217549B00E78E4B /* Sizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sizes.swift; sourceTree = "<group>"; };
 		67BB98E7221740A30011AA7D /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		67BB98E8221740A30011AA7D /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
@@ -127,6 +126,9 @@
 		814D78B3851195A73CA23241 /* Pods-TransformersUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransformersUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TransformersUITests/Pods-TransformersUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9CEC778652FDD018406A3F18 /* Pods-Transformers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transformers.release.xcconfig"; path = "Pods/Target Support Files/Pods-Transformers/Pods-Transformers.release.xcconfig"; sourceTree = "<group>"; };
 		D01ADDB024850AE300E7ABA3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D0257E7A24850F5100FD532E /* UnderlineTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnderlineTextField.swift; sourceTree = "<group>"; };
+		D0257E7C24850FB700FD532E /* CreateTransformerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTransformerViewController.swift; sourceTree = "<group>"; };
+		D0257E7E2485109D00FD532E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		D02AC3C22483AC5100C5D8BA /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		D02AC3C42483C27F00C5D8BA /* AutobotTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutobotTableViewCell.swift; sourceTree = "<group>"; };
 		D02AC3C52483C28000C5D8BA /* AutobotTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutobotTableViewCell.xib; sourceTree = "<group>"; };
@@ -208,7 +210,7 @@
 				673626B122171EB100E55B8D /* ViewControllers */,
 				673626AE22171D9500E55B8D /* Extensions */,
 				67041D6D221718C100BD9C91 /* AppDelegate.swift */,
-				67041D71221718C100BD9C91 /* Main.storyboard */,
+				D0257E7E2485109D00FD532E /* Main.storyboard */,
 				67041D77221718C100BD9C91 /* Assets.xcassets */,
 				67041D79221718C100BD9C91 /* LaunchScreen.storyboard */,
 				67041D7C221718C100BD9C91 /* Info.plist */,
@@ -375,7 +377,7 @@
 		67A5F64322172FD800D13907 /* CreateTransformerViewController */ = {
 			isa = PBXGroup;
 			children = (
-				67A5F64422172FFA00D13907 /* CreateTransformerViewController.swift */,
+				D0257E7C24850FB700FD532E /* CreateTransformerViewController.swift */,
 			);
 			path = CreateTransformerViewController;
 			sourceTree = "<group>";
@@ -383,6 +385,7 @@
 		67BB98E6221740890011AA7D /* CommonExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				D02AC3C22483AC5100C5D8BA /* UIViewExtension.swift */,
 				67BB98E9221740A30011AA7D /* Int.swift */,
 				67BB98E8221740A30011AA7D /* UIApplication.swift */,
 				67BB98E7221740A30011AA7D /* UIColor.swift */,
@@ -396,7 +399,7 @@
 				67FDE3C52219627D0098C759 /* Reachability */,
 				67FDE3BF22193C940098C759 /* TextFieldValidator.swift */,
 				67FDE3C122193EFB0098C759 /* Alert.swift */,
-				D02AC3C22483AC5100C5D8BA /* UIViewExtension.swift */,
+				D0257E7A24850F5100FD532E /* UnderlineTextField.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -531,13 +534,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0257E7F2485109D00FD532E /* Main.storyboard in Resources */,
 				D02AC3CF2483C29B00C5D8BA /* VsTableViewCell.xib in Resources */,
 				67041D7B221718C100BD9C91 /* LaunchScreen.storyboard in Resources */,
 				67041D78221718C100BD9C91 /* Assets.xcassets in Resources */,
 				D02AC3CB2483C29000C5D8BA /* DecepticonTableViewCell.xib in Resources */,
 				674C223B2217441700DB7E3C /* FontAwesome.otf in Resources */,
 				D02AC3C72483C28000C5D8BA /* AutobotTableViewCell.xib in Resources */,
-				67041D73221718C100BD9C91 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -650,9 +653,11 @@
 			files = (
 				674C2237221743D300DB7E3C /* FontName.swift in Sources */,
 				D02AC3CE2483C29B00C5D8BA /* VsTableViewCell.swift in Sources */,
+				D0257E7B24850F5100FD532E /* UnderlineTextField.swift in Sources */,
 				67BB98EB221740A30011AA7D /* UIApplication.swift in Sources */,
 				671A83E82217E241003D7A7E /* Transformer.swift in Sources */,
 				67BB98EC221740A30011AA7D /* Int.swift in Sources */,
+				D0257E7D24850FB700FD532E /* CreateTransformerViewController.swift in Sources */,
 				67FDE3C4221961E00098C759 /* ReachabilityLayer.swift in Sources */,
 				67FDE3C022193C940098C759 /* TextFieldValidator.swift in Sources */,
 				67041D70221718C100BD9C91 /* TeamViewController.swift in Sources */,
@@ -663,7 +668,6 @@
 				673626FB221725A200E55B8D /* RightNavigationItem.swift in Sources */,
 				67041D6E221718C100BD9C91 /* AppDelegate.swift in Sources */,
 				673626B022171DBB00E55B8D /* AppDelegateExtension.swift in Sources */,
-				67A5F64522172FFA00D13907 /* CreateTransformerViewController.swift in Sources */,
 				673626F82217225600E55B8D /* Storyboard.swift in Sources */,
 				671A83F622188D50003D7A7E /* ResultViewController.swift in Sources */,
 				673626B722171FD700E55B8D /* SharedInstances.swift in Sources */,
@@ -719,14 +723,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		67041D71221718C100BD9C91 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				67041D72221718C100BD9C91 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		67041D79221718C100BD9C91 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
